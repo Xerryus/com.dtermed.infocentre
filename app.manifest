@@ -1,0 +1,75 @@
+{
+    "namespace": "com.dtermed.infocentre",
+    "git": "https://github.com/Xerryus/com.dtermed.infocentre",
+    "title": "Infocentre",
+    "description": "Package description goes here",
+    "platform": "desktop",
+    "targets": [
+        "webapp"
+    ],
+    "uid": "1a1a4897-6061-4ea6-8a32-2b85d34a454e",
+    "version": "1.0.1",
+    "build": 10,
+    "copyright": "Copyright (c) 2014 By DTERMED",
+    "license": "BSD",
+    "author": {
+        "name": "XXX",
+        "mail": "xxx@xxx.com",
+        "twitter": "@xxx",
+        "web": "",
+        "github": ""
+    },
+    "team": {
+        "debugger": [],
+        "tester": []
+    },
+    "langs": [
+        "en",
+        "fr"
+    ],
+    "frameworks": [
+        {
+            "name": "ext",
+            "version": "4.2.1",
+            "src": "http://cdn.sencha.com/ext/gpl/{version}/ext-all-debug.js",
+            "res": "http://cdn.sencha.com/ext/gpl/{version}/resources/ext-theme-classic/ext-theme-classic-all.css"
+        },
+        {
+            "name": "jquery",
+            "version": "2.0.3",
+            "src": "http://cdnjs.cloudflare.com/ajax/libs/jquery/{version}/jquery.js"
+        }
+    ],
+    "auth": [],
+    "db": [
+        "bd01",
+        "bpclight",
+        "dashboard",
+        "infocentre2015",
+        "sysiphe2"
+    ],
+    "paths": {},
+    "controllers": [
+        "CMain",
+        "CForm"
+    ],
+    "modules": [],
+    "plugins": [],
+    "api": [
+        "MyService",
+        "TraitementTable"
+    ],
+    "packages": [],
+    "icon": {
+        "background": "#FFFFFF",
+        "file": "app.png"
+    },
+    "splashscreen": {
+        "background": "#FFFFFF",
+        "color": "orange",
+        "file": "app.png"
+    },
+    "server": {
+        "port": 3000
+    }
+}
