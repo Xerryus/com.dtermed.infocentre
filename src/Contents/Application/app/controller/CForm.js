@@ -260,6 +260,7 @@ App.controller.define('CForm',
 						if(error) Ext.Msg.alert('Mise à jour','données mises à jour');
 						App.get("grid#grid_Base").getStore().load();
 					});
+				console.log(val_chbspecial);					
 				App.get('VForm').close();						
 				Ext.Msg.alert('Mise à jour','données mises à jour');
 			},
