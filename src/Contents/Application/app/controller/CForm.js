@@ -227,10 +227,10 @@ App.controller.define('CForm',
 		btnvalider_onclik: function(p) // pour valider une demande avec son Px definitif
 			{
 
-				// Traiment de la zone des radios boutons
 				var rdgvalue=-1;
 				var val_chbspecial=-1;
-
+				
+				// Traiment de la zone des radios boutons
 				if (App.get('radio#RP0').getValue()) rdgvalue=0;
 				if (App.get('radio#RP1').getValue()) rdgvalue=1;
 				if (App.get('radio#RP2').getValue()) rdgvalue=2;
@@ -250,7 +250,7 @@ App.controller.define('CForm',
 							//priorite_niveau: "-1", // à definir
 							//priorite_niveau: p.up('window').phasage,
 							avancement: '2', // Etape en cours							
-							special: val_chbspecial,
+							special: val_chbspecial, // Valeur à 1 si coché sinon 0
 							//annulation: App.get('false').getValue(), // à definir
 							annulation: '0', // 1 si annulé 0 si non annulé
 							ID_demande: UPDATE_ID
