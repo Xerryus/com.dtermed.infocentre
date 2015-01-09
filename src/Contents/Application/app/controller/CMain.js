@@ -32,6 +32,7 @@ App.controller.define('CMain',
 		
 				App.init('VMain',this.onLoad);
 				dat=""; // Pour stocker le record
+				//UPDATE_ID;
 			},
 	
 		Menu_onClick: function(p)
@@ -131,7 +132,7 @@ App.controller.define('CMain',
 //------------------------------------------------------------------------------------------------------
 	VForm_onshow: function()
 		{
-			if(!OP)	// Si OP est faux
+/* 			if(!OP)	// Si OP est faux
 			{
 			
 					App.get('combo#cbo1').setValue(dat.departement);
@@ -155,7 +156,7 @@ App.controller.define('CMain',
 				
 				UPDATE_ID=dat.ID_demande;
 			}		
-			else;
+			else; */
 		},	
 	grid_onselect: function(p, record) //
 		{
@@ -175,7 +176,7 @@ App.controller.define('CMain',
 				
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
-					console.log(record);
+					console.log(dat.ID_demande);
 
 					App.get('combo#cbo1').setValue(dat.departement);
 					App.get('combo#cbo2').setValue(dat.LibSub);
@@ -200,28 +201,19 @@ App.controller.define('CMain',
 					if (dat.phasage==1) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'orange';
 					if (dat.phasage==2) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'green';
 					if (dat.phasage==3) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'purple';
-
-/* 					if (dat.phasage==0) App.get('progressbar#progbAvancement').getEl().dom.style.color = 'red';
-					if (dat.phasage==1) App.get('progressbar#progbAvancement').getEl().dom.style.color = 'purple';
-					if (dat.phasage==2) App.get('progressbar#progbAvancement').getEl().dom.style.color = 'green';
-					if (dat.phasage==3) App.get('progressbar#progbAvancement').getEl().dom.style.color = 'yellow'; */					
-					
+										
 					if (dat.phasage==0) App.get('radio#RP0').setValue(true);
 					if (dat.phasage==1) App.get('radio#RP1').setValue(true);
 					if (dat.phasage==2) App.get('radio#RP2').setValue(true);
 					if (dat.phasage==3) App.get('radio#RP3').setValue(true);
 					
 					App.get('checkbox#chbspecial').setValue(dat.special);
-					
-					//App.get('label#annee').setValue(dat.annee_budget);
-					
+
 					store: App.store.create('getAffichegrid01', // Creation du store
 						{
 							autoLoad: true,
-						})
-					
+						})					
 				};
-
 		}
 //------------------------------------------------------------------------------------------------------			
 
