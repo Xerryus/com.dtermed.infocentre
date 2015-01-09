@@ -32,7 +32,6 @@ App.controller.define('CMain',
 		
 				App.init('VMain',this.onLoad);
 				dat=""; // Pour stocker le record
-				//UPDATE_ID;
 			},
 	
 		Menu_onClick: function(p)
@@ -162,6 +161,11 @@ App.controller.define('CMain',
 		{
 			//console.log(record);
 			//dat=record.data;
+			if ( profil == 1 )
+				{
+							App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('button#btnenregistrer').hide(true);
+				};
 			if ( profil != 4 )
 				{
 					App.view.create('VForm',
