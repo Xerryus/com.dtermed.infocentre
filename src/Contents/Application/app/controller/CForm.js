@@ -90,12 +90,13 @@ App.controller.define('CForm',
 			{	
 				p.up('window').phasage=p.inputValue;
 				p.setValue(true);
-				console.log(p);
+				//console.log(p);
 			},
 		on_focus_chekbox: function(p)
 			{	
 				p.up('window').special=p.inputValue;
 				p.setValue(true);
+				console.log(p);
 			},
 		VForm_onshow: function()
 			{
@@ -118,7 +119,7 @@ App.controller.define('CForm',
 							
 							break ;
 						case 3: // Profil Chef de service
-							Ext.Msg.alert('Omneedia','Ptofil Chef de Service');
+							Ext.Msg.alert('Omneedia','Profil Chef de Service');
 							//App.get('VForm',{height:490});
 							App.get('panel#regroupement_z1').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('panel#regroupement_z1').hide(true);
@@ -225,38 +226,35 @@ App.controller.define('CForm',
 			},
 		btnvalider_onclik: function(p) // pour valider une demande avec son Px definitif
 			{
- 				//priorite_valide
-				//dat="";
-				//console.log(p.inputValue);
+
+				// Traiment de la zone des radios boutons
 				var rdgvalue=-1;
-				console.log(App.get('radio#RP0').getValue());
-				if (App.get('radio#RP0').getValue())
-					{rdgvalue=0};
-				if (App.get('radio#RP1').getValue())
-					{rdgvalue=1};
-				if (App.get('radio#RP2').getValue())
-					{rdgvalue=2};
+				var val_chbspecial=-1;
+
+				if (App.get('radio#RP0').getValue()) rdgvalue=0;
+				if (App.get('radio#RP1').getValue()) rdgvalue=1;
+				if (App.get('radio#RP2').getValue()) rdgvalue=2;
 				if (App.get('radio#RP3').getValue()) rdgvalue=3;
-				//console.log(rdgvalue);
+				
+				//Traitement de la case à cocher special
+				if (App.get('numberfield#numberfieldquantite').getValue()) val_chbspecial=1 ;
+				console.log(val_chbspecial);				
+				
 				var o= {						
 							phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
 							//libelle_commande: App.get('textarea#txtalibelledemande').getValue(), // à definir
 							//motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 							//commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
-							//priorite_valide: App.get('').getValue(), // à definir
 							priorite_valide: '1',// Validé par le chef de Dpt si =1 et non validé si =0
-							//etape_valide: App.get('').getValue(), // à definir
 							etape_valide: '1', // Validé par le chef de Dpt si =1 et non validé si =0
 							//priorite_niveau: "-1", // à definir
 							//priorite_niveau: p.up('window').phasage,
-							//avancement: App.get('5').getValue(), // à definir
 							avancement: '2', // Etape en cours							
-							//special: p.up('window').special,
+							special: val_chbspecial,
 							//annulation: App.get('false').getValue(), // à definir
 							annulation: '0', // 1 si annulé 0 si non annulé
 							ID_demande: UPDATE_ID
 						};
-				//console.log(rdgvalue);
 				App.TraitementTable.acces_infocentre2015_base_update(o,function(error,result)
 					{
 						if(error) Ext.Msg.alert('Mise à jour','données mises à jour');

@@ -76,7 +76,7 @@ TraitementTable = {
 					acces_infocentre2015_base_update: function(o,cb)
 						{
 							var db=TraitementTable.using('db');
-							db.query('infocentre2015','update base set phasage="'+o.phasage+'",priorite_valide="'+o.priorite_valide+'", etape_valide="'+o.etape_valide+'", avancement="'+o.avancement+'", annulation="'+o.annulation+'" where ID_demande="'+o.ID_demande+'" ',cb);	
+							db.query('infocentre2015','update base set phasage="'+o.phasage+'",priorite_valide="'+o.priorite_valide+'", etape_valide="'+o.etape_valide+'", avancement="'+o.avancement+'", annulation="'+o.annulation+'", special="'+o.special+'" where ID_demande="'+o.ID_demande+'" ',cb);	
 						},
 					acces_infocentre2015_base_lecture: function(o,cb)
 						{
