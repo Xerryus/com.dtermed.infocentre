@@ -261,6 +261,8 @@ App.controller.define('CForm',
 						App.get("grid#grid_Base").getStore().load();
 					});
 				console.log(val_chbspecial);					
+				console.log(o.special);
+				
 				App.get('VForm').close();						
 				Ext.Msg.alert('Mise à jour','données mises à jour');
 			},
