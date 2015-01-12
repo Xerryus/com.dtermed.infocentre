@@ -131,7 +131,7 @@ App.controller.define('CMain',
 //------------------------------------------------------------------------------------------------------
 	VForm_onshow: function()
 		{
-/* 			if(!OP)	// Si OP est faux
+			if(!OP)	// Si OP est faux
 			{
 			
 					App.get('combo#cbo1').setValue(dat.departement);
@@ -155,7 +155,7 @@ App.controller.define('CMain',
 				
 				UPDATE_ID=dat.ID_demande;
 			}		
-			else; */
+			else;
 		},	
 	grid_onselect: function(p, record) //
 		{
@@ -163,8 +163,8 @@ App.controller.define('CMain',
 			//dat=record.data;
 			if ( profil == 1 )
 				{
-							App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('button#btnenregistrer').hide(true);
+					App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
+					App.get('button#btnenregistrer').hide(true);
 				};
 			if ( profil != 4 )
 				{
