@@ -354,7 +354,7 @@ App.view.define('VMain',
 										listeners: {
 											load: function(p)
 											{
-												//App.get('VMain grid#grid_Base').setHeight(App.get('VMain grid#grid_Base').getHeight());
+												//autoLoad: true
 												
 											}
 										}

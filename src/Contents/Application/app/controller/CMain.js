@@ -166,10 +166,10 @@ App.controller.define('CMain',
 
 	cboAnnee_budgetaire_onclik: function()
 		{
-				var id=App.get('combo#cboAnnee_budgetaire').getValue();
+/* 				var id=App.get('combo#cboAnnee_budgetaire').getValue();
 				App.get('grid#grid_Base').setValue('');
 				App.get('grid#grid_Base').getStore().getProxy().extraParams.id=id;
-				App.get('grid#grid_Base').getStore().load();			
+				App.get('grid#grid_Base').getStore().load(); */			
 		},
 		
 	grid_onselect: function(p, record) //
