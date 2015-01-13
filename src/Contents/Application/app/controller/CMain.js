@@ -10,6 +10,7 @@ App.controller.define('CMain',
 				"getAgent",
 				"getBase",
 				"getAffichegrid01",
+				"getAffichegrid02",
 				"getAnneebudgetaire"
 			],
 	
@@ -169,7 +170,17 @@ App.controller.define('CMain',
 /* 				var id=App.get('combo#cboAnnee_budgetaire').getValue();
 				App.get('grid#grid_Base').setValue('');
 				App.get('grid#grid_Base').getStore().getProxy().extraParams.id=id;
-				App.get('grid#grid_Base').getStore().load(); */			
+				App.get('grid#grid_Base').getStore().load();
+				ID_annee_budgetaire
+*/
+			var id=App.get('combo#cboAnnee_budgetaire').getValue();
+			Ext.Msg.alert('Status', 'Click event on '+id);
+
+			store: App.store.create('getAffichegrid02', // Creation du store
+				{
+					autoLoad: true,
+				})			
+			
 		},
 		
 	grid_onselect: function(p, record) //
