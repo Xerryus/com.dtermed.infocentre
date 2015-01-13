@@ -25,6 +25,10 @@ App.controller.define('CMain',
 							{
 								click: "clickme_onclick"
 							},
+						"combo#cboAnnee_budgetaire":
+							{
+								select: "cboAnnee_budgetaire_onclik"
+							},
 						"grid#grid_Base":
 							{
 								select: "grid_onselect" 
@@ -158,7 +162,16 @@ App.controller.define('CMain',
 				UPDATE_ID=dat.ID_demande;
 			}		
 			else; */
-		},	
+		},
+
+	cboAnnee_budgetaire_onclik: function()
+		{
+				var id=App.get('combo#cboAnnee_budgetaire').getValue();
+				App.get('grid#grid_Base').setValue('');
+				App.get('grid#grid_Base').getStore().getProxy().extraParams.id=id;
+				App.get('grid#grid_Base').getStore().load();			
+		},
+		
 	grid_onselect: function(p, record) //
 		{
 			//console.log(record);
@@ -210,7 +223,7 @@ App.controller.define('CMain',
 					//console.log(dat.annee_budget);
 					//App.get('lable#labelannee').setText(dat.annee_budget);
 					App.get('label#labelannee').setText('Année: '+dat.annee_budget); // dans le VForm
-					App.get('label#annee').setText('Année: '+dat.annee_budget); // dans le VMain
+					App.get('combo#cboAnnee_budgetaire').setValue(dat.annee_budget); // dans le VMain combo
 					App.get('textfield#textfieldbudgetannuel').setValue(dat.budget_annuel);
 					App.get('textfield#textfieldbudgetactuel').setValue(dat.budget_actuel);
 					

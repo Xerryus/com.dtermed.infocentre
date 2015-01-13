@@ -95,7 +95,7 @@ TraitementTable = {
 					acces_infocentre2015_annee_budgetaire_lecture: function(o,cb)
 						{
 							var db=TraitementTable.using('db');
-							db.model('infocentre2015','select * from annee_budgetaire',cb);							
+							db.model('infocentre2015','select * from annee_budgetaire where ID_annee_budgetaire='+o.id,cb);							
 						}
 					}
 module.exports = TraitementTable;
