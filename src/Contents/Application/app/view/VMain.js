@@ -91,7 +91,7 @@ App.view.define('VMain',
 												text: "A propos"
 											}
 										  ]
-							},
+							}/*,
 							{
 								xtype: "label",
 								text: "Année budgétaire :",
@@ -114,34 +114,49 @@ App.view.define('VMain',
 										left: 4,
 										right: 0
 									}
-							},
+							},*/
 //-------------------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------------------------------------							
+						  ]		// Fin du menu
+				},		
+				{
+					region: "center",			
+					split:true,
+					layout: "fit",
+					items: 
+						[
+ 							{
+								xtype: "grid", // Composant de type grille
+								itemId: "grid_Base", // grid services
+								width: "100%",
+								/*height: 400,*/
+								tbar:[
+									'->',
 							{
-								layout: "hbox",
-								itemId: "regroupement_z1",								
-								width: 400, // "100%"
+								xtype: "label",
+								text: "Année budgétaire :",
 								margin:
 									{
 										top: 0,
 										bottom: 0,
-										left: 0,
-										right: 0
-									},
-								border: false,
-								items:
-									[								
-										{
+										left: 20,
+										right: 10
+									}
+							},
+								{
 											xtype: "combo", // Object combobox table departement
 											labelAlign: "top",
 											//fieldLabel: "Département",
 											itemId: "cboAnnee_budgetaire",
+											width: 60,
 											//allowBlank: false,
-											flex: 1,
+											//flex: 1,
 											margin:
 												{
-													top: 5,
+													//top: 5,
 													bottom: 5,
-													left: 20,
+													//left: 20,
 													right: 10
 												},
 											displayField: "cle_annee", // Valeur de la liste
@@ -149,23 +164,11 @@ App.view.define('VMain',
 											store: App.store.create('getAnneebudgetaire', // Creation du store
 												{
 													autoLoad: true
-												})
-										}
-									]	
-							},							
-//-------------------------------------------------------------------------------------------------------------------------							
-						  ]		// Fin du menu
-				},		
-				{
-					region: "center",			
-					split:true,
-					items: 
-						[
- 							{
-								xtype: "grid", // Composant de type grille
-								itemId: "grid_Base", // grid services
-								width: "100%",
-								height: 400,
+												}
+												)
+										
+								}
+								],
 								columns: 
 									[
   									
