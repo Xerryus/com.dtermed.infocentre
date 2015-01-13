@@ -232,24 +232,25 @@ App.controller.define('CForm',
 						if (App.get('radio#RP3').getValue()) rdgvalue=3;						
 						//Traitement de la case à cocher special
 						if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;						
-						// Definition du numero de l'etape selon le profil qui va valider						
+						
+						// Implementation des regles de gestions selon le profil et l'operation de validation						
 						if ( profil == 1 ) 
 							{
-								var valeur_etape = 3;
+								var valeur_etape = 3; // Definition du numero de l'etape selon le profil qui va valider
 								var valeur_etape_valide = 1; // ?
 								var valeur_annulation = 0; // ?
 								var valeur_priorite_valide = 1;								
 							};
 						if ( profil == 2 ) 
 							{
-								var valeur_etape = 2;
+								var valeur_etape = 2; // Definition du numero de l'etape selon le profil qui va valider
 								var valeur_etape_valide = 1; // ?
 								var valeur_annulation = 0; // ?
 								var valeur_priorite_valide = 1;								
 							};
 						if ( profil == 3 ) 
 							{
-								var valeur_etape = 1;
+								var valeur_etape = 1; // Definition du numero de l'etape selon le profil qui va valider
 								var valeur_etape_valide = 0;
 								var valeur_annulation = 0;
 								var valeur_priorite_valide = 0;

@@ -9,7 +9,8 @@ App.controller.define('CMain',
 			[
 				"getAgent",
 				"getBase",
-				"getAffichegrid01"
+				"getAffichegrid01",
+				"getAnneebudgetaire"
 			],
 	
 		init: function()
@@ -132,7 +133,7 @@ App.controller.define('CMain',
 //------------------------------------------------------------------------------------------------------
 	VForm_onshow: function()
 		{
-			if(!OP)	// Si OP est faux
+/* 			if(!OP)	// Si OP est faux
 			{
 			
 					App.get('combo#cbo1').setValue(dat.departement);
@@ -156,7 +157,7 @@ App.controller.define('CMain',
 				
 				UPDATE_ID=dat.ID_demande;
 			}		
-			else;
+			else; */
 		},	
 	grid_onselect: function(p, record) //
 		{

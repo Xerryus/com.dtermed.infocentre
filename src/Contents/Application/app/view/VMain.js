@@ -114,8 +114,46 @@ App.view.define('VMain',
 										left: 4,
 										right: 0
 									}
-							}
-							
+							},
+//-------------------------------------------------------------------------------------------------------------------------
+							{
+								layout: "hbox",
+								itemId: "regroupement_z1",								
+								width: 400, // "100%"
+								margin:
+									{
+										top: 0,
+										bottom: 0,
+										left: 0,
+										right: 0
+									},
+								border: false,
+								items:
+									[								
+										{
+											xtype: "combo", // Object combobox table departement
+											labelAlign: "top",
+											//fieldLabel: "Département",
+											itemId: "cboAnnee_budgetaire",
+											//allowBlank: false,
+											flex: 1,
+											margin:
+												{
+													top: 5,
+													bottom: 5,
+													left: 20,
+													right: 10
+												},
+											displayField: "cle_annee", // Valeur de la liste
+											valueField: "ID_annee_budgetaire", // Colonne Age de la table (Affichage dans la boite message d'alerte)
+											store: App.store.create('getAnneebudgetaire', // Creation du store
+												{
+													autoLoad: true
+												})
+										}
+									]	
+							},							
+//-------------------------------------------------------------------------------------------------------------------------							
 						  ]		// Fin du menu
 				},		
 				{
