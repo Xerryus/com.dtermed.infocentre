@@ -174,13 +174,23 @@ App.controller.define('CMain',
 				ID_annee_budgetaire
 */
 			var id=App.get('combo#cboAnnee_budgetaire').getValue();
-			Ext.Msg.alert('Status', 'Click event on '+id);
+			//Ext.Msg.alert('Status', 'Click event on '+id);
 
 			store: App.store.create('getAffichegrid02', // Creation du store
 				{
-					autoLoad: true,
+					//autoLoad: true,
+					App.get("grid#grid_Base").getStore().load();
 				})			
+			//App.get("grid#grid_Base").getStore().load();
 			
+/* 						App.TraitementTable.acces_infocentre2015_base_update(o,function(error,result)
+							{
+								if(error) Ext.Msg.alert('Mise à jour','données mises à jour');
+								App.get("grid#grid_Base").getStore().load();
+							});
+							
+						App.get('VForm').close();						
+						Ext.Msg.alert('Mise à jour','données mises à jour'); */			
 		},
 		
 	grid_onselect: function(p, record) //

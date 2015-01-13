@@ -91,7 +91,8 @@ App.view.define('VMain',
 												text: "A propos"
 											}
 										  ]
-							}/*,
+							}
+							/*,
 							{
 								xtype: "label",
 								text: "Année budgétaire :",
