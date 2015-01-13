@@ -90,7 +90,7 @@ App.view.define('VForm',
 			{
 				xtype: "label", // Object text Budget actuel
 				itemId: "labelannee",
-				text: 'Année: 2015',
+				text: 'Année: 2018',
 				width: 64,
 				margin:
 					{
@@ -369,7 +369,7 @@ App.view.define('VForm',
 													autoLoad: true
 												})
 										},
-																				{
+										{
 											xtype: "combo", // Object combobox table objet
 											itemId: "cbo7",
 											labelAlign: "top",
@@ -546,7 +546,7 @@ App.view.define('VForm',
 											itemId: "chbspecial",
 											boxLabel: 'P5 ( Spécial )',
 											inputValue: '1',
-											checked: false,
+											//checked: false,
 											margin:
 												{
 													top: 0,

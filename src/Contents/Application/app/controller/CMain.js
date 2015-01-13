@@ -44,7 +44,8 @@ App.controller.define('CMain',
 				if (p.itemId == 'menuNouvelleDemande')
 					{
 						this.btnajouter_onclick();
-						App.get('progressbar#progbAvancement').hide(true); // cache la progressbar de progression
+						App.get('progressbar#progbAvancement').hide(true); // cache la progressbar de progression				
+						App.get('button#btnvalider').setVisible(false); // cache le bouton valider
 					};
 				if (p.itemId == 'menuMiseajourDemande')
 					{
@@ -105,7 +106,7 @@ App.controller.define('CMain',
 							App.get('menu>menuitem#menuNouvelleDemande').hide(true);							
 							break ;
 						case 3:
-							Ext.Msg.alert('Omneedia','Ptofil Chef de Service');
+							Ext.Msg.alert('Omneedia','Profil Chef de Service');
 							//App.get('VForm',{height:490});
 							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnajouter').hide(true);
@@ -161,11 +162,7 @@ App.controller.define('CMain',
 		{
 			//console.log(record);
 			//dat=record.data;
-			if ( profil == 1 )
-				{
-					App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
-					App.get('button#btnenregistrer').hide(true);
-				};
+
 			if ( profil != 4 )
 				{
 					App.view.create('VForm',
@@ -178,10 +175,19 @@ App.controller.define('CMain',
 								]
 						}).show();
 				
+					if ( profil == 1 ) // Cache le bouton enregistrer 
+						{
+							App.get('button#btnenregistrer').setVisible(false);
+						};
+					if ( profil == 3 ) // Cache les boutons enregistrer et valider
+						{
+							App.get('button#btnenregistrer').setVisible(false);
+							App.get('button#btnvalider').setVisible(true);
+						}
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
 					console.log(dat.ID_demande);
-
+					console.log(record);
 					App.get('combo#cbo1').setValue(dat.departement);
 					App.get('combo#cbo2').setValue(dat.LibSub);
 					//App.get('combo#cbo3').setValue(dat.agent_beneficiaire);
@@ -199,7 +205,13 @@ App.controller.define('CMain',
 					var valeurprogress = (dat.avancement / 8);
 					App.get('progressbar#progbAvancement').updateProgress(valeurprogress);
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Valider devient update
-					//console.log(dat.phasage);
+					
+					//console.log(dat.annee_budget);
+					//App.get('lable#labelannee').setText(dat.annee_budget);
+					App.get('label#labelannee').setText('Année: '+dat.annee_budget); // dans le VForm
+					App.get('label#annee').setText('Année: '+dat.annee_budget); // dans le VMain
+					App.get('textfield#textfieldbudgetannuel').setValue(dat.budget_annuel);
+					App.get('textfield#textfieldbudgetactuel').setValue(dat.budget_actuel);
 					
 					if (dat.phasage==0) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'red';
 					if (dat.phasage==1) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'orange';

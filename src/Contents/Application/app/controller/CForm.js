@@ -97,7 +97,7 @@ App.controller.define('CForm',
 			{	
 				p.up('window').special=p.inputValue;
 				p.setValue(true);
-				console.log(p);
+				//console.log(p);
 			},
 		VForm_onshow: function()
 			{
@@ -223,30 +223,52 @@ App.controller.define('CForm',
 		btnvalider_onclik: function( p ) // pour valider une demande avec son Px definitif
 			{
 						var rdgvalue=-1;
-						var val_chbspecial=-1;
-						
+						var val_chbspecial=0;
+						//console.log(dat.ID_demande);
 						// Traiment de la zone des radios boutons
 						if (App.get('radio#RP0').getValue()) rdgvalue=0;
 						if (App.get('radio#RP1').getValue()) rdgvalue=1;
 						if (App.get('radio#RP2').getValue()) rdgvalue=2;
-						if (App.get('radio#RP3').getValue()) rdgvalue=3;
-						
+						if (App.get('radio#RP3').getValue()) rdgvalue=3;						
 						//Traitement de la case à cocher special
-						if (App.get('numberfield#numberfieldquantite').getValue()) val_chbspecial=1 ;
-						console.log(val_chbspecial);				
-						
+						if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;						
+						// Definition du numero de l'etape selon le profil qui va valider						
+						if ( profil == 1 ) 
+							{
+								var valeur_etape = 3;
+								var valeur_etape_valide = 1; // ?
+								var valeur_annulation = 0; // ?
+								var valeur_priorite_valide = 1;								
+							};
+						if ( profil == 2 ) 
+							{
+								var valeur_etape = 2;
+								var valeur_etape_valide = 1; // ?
+								var valeur_annulation = 0; // ?
+								var valeur_priorite_valide = 1;								
+							};
+						if ( profil == 3 ) 
+							{
+								var valeur_etape = 1;
+								var valeur_etape_valide = 0;
+								var valeur_annulation = 0;
+								var valeur_priorite_valide = 0;
+							};						
+						console.log(val_chbspecial);
+						console.log(dat.ID_demande);
+						console.log(profil);						
 						var o= {						
 									phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
 									//libelle_commande: App.get('textarea#txtalibelledemande').getValue(), // à definir
 									//motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 									//commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
-									priorite_valide: '1',// Validé par le chef de Dpt si =1 et non validé si =0
-									etape_valide: '1', // Validé par le chef de Dpt si =1 et non validé si =0
+									priorite_valide: valeur_priorite_valide,// Validé par le chef de Dpt si =1 et non validé si =0
+									etape_valide: valeur_etape_valide, // Validé par le chef de Dpt si =1 et non validé si =0
 									//priorite_niveau: "-1", // à definir
-									avancement: '2', // Etape en cours							
+									avancement: valeur_etape, // Etape en cours							
 									special: val_chbspecial, // Valeur à 1 si coché sinon 0
 									//annulation: App.get('false').getValue(), // à definir
-									annulation: '0', // 1 si annulé 0 si non annulé
+									annulation: valeur_annulation, // 1 si annulé 0 si non annulé
 									ID_demande: UPDATE_ID
 								};
 						App.TraitementTable.acces_infocentre2015_base_update(o,function(error,result)
