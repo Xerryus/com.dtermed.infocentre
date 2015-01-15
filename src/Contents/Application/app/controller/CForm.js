@@ -224,15 +224,13 @@ App.controller.define('CForm',
 			{
 						var rdgvalue=-1;
 						var val_chbspecial=0;
-						//console.log(dat.ID_demande);
 						// Traiment de la zone des radios boutons
 						if (App.get('radio#RP0').getValue()) rdgvalue=0;
 						if (App.get('radio#RP1').getValue()) rdgvalue=1;
 						if (App.get('radio#RP2').getValue()) rdgvalue=2;
 						if (App.get('radio#RP3').getValue()) rdgvalue=3;						
 						//Traitement de la case à cocher special
-						if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;						
-						
+						if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;												
 						// Implementation des regles de gestions selon le profil et l'operation de validation						
 						if ( profil == 1 ) 
 							{
@@ -254,10 +252,7 @@ App.controller.define('CForm',
 								var valeur_etape_valide = 0;
 								var valeur_annulation = 0;
 								var valeur_priorite_valide = 0;
-							};						
-						console.log(val_chbspecial);
-						console.log(dat.ID_demande);
-						console.log(profil);						
+							};												
 						var o= {						
 									phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
 									//libelle_commande: App.get('textarea#txtalibelledemande').getValue(), // à definir
@@ -276,11 +271,9 @@ App.controller.define('CForm',
 							{
 								if(error) Ext.Msg.alert('Mise à jour','données mises à jour');
 								App.get("grid#grid_Base").getStore().load();
-							});
-							
+							});							
 						App.get('VForm').close();						
 						Ext.Msg.alert('Mise à jour','données mises à jour');
-
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
