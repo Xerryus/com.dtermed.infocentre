@@ -54,7 +54,6 @@ TraitementTable = {
 							console.log(o);
 							var db=TraitementTable.using('db');
 							db.model('infocentre2015','select * from nature where ID_domaine_metier='+o.id,cb);
-							//db.model('infocentre2015','select * from nature',cb);
 						},
 					acces_infocentre2015_lecture_evolution: function(o,cb)
 						{

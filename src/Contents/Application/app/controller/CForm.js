@@ -235,23 +235,23 @@ App.controller.define('CForm',
 						if ( profil == 1 ) 
 							{
 								var valeur_etape = 3; // Definition du numero de l'etape selon le profil qui va valider
-								var valeur_etape_valide = 1; // ?
-								var valeur_annulation = 0; // ?
+								var valeur_etape_valide = 1; //
+								var valeur_annulation = 0; //
 								var valeur_priorite_valide = 1;								
 							};
 						if ( profil == 2 ) 
 							{
 								var valeur_etape = 2; // Definition du numero de l'etape selon le profil qui va valider
-								var valeur_etape_valide = 1; // ?
-								var valeur_annulation = 0; // ?
+								var valeur_etape_valide = 1; //
+								var valeur_annulation = 0; //
 								var valeur_priorite_valide = 1;								
 							};
 						if ( profil == 3 ) 
 							{
 								var valeur_etape = 1; // Definition du numero de l'etape selon le profil qui va valider
-								var valeur_etape_valide = 0;
-								var valeur_annulation = 0;
-								var valeur_priorite_valide = 0;
+								var valeur_etape_valide = 0; //
+								var valeur_annulation = 0; //
+								var valeur_priorite_valide = 0; //
 							};												
 						var o= {						
 									phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
@@ -281,7 +281,7 @@ App.controller.define('CForm',
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
-							agent_demandeur: App.get('combo#cbo3').getValue(), // à definir
+							agent_demandeur: App.get('combo#cbo3').getValue(),
 							agent_beneficiaire: App.get('combo#cbo3').getValue(),
 							budget_annuel: "12345678",
 							budget_actuel: "2546",
