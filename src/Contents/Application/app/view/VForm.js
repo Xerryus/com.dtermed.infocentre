@@ -90,7 +90,7 @@ App.view.define('VForm',
 			{
 				xtype: "label", // Object text Budget actuel
 				itemId: "labelannee",
-				text: 'Année: 2018',
+				text: 'Année: 2015',
 				width: 64,
 				margin:
 					{
