@@ -174,7 +174,7 @@ App.controller.define('CMain',
 		
 	grid_onselect: function(p, record) // quand on clique sur un enregistrement dans le tableau
 		{
-			if ( profil != 4 )
+			if ( profil != 5 )
 				{
 					App.view.create('VForm', // on affiche le formulaire de saisie 
 						{					// avec une configuration lié au profil
@@ -194,6 +194,12 @@ App.controller.define('CMain',
 						{
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnvalider').setVisible(true);
+						};
+					if ( profil == 4 )
+						{
+							App.get('button#btnenregistrer').setVisible(false);
+							App.get('button#btnvalider').setVisible(true);
+							App.get('button#btnenregistrer').setVisible(false);
 						}
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
