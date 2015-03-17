@@ -52,6 +52,7 @@ App.controller.define('CMain',
 						this.btnajouter_onclick();
 						App.get('progressbar#progbAvancement').hide(true); // cache la progressbar de progression				
 						App.get('button#btnvalider').setVisible(false); // cache le bouton valider
+						App.get('button#btninstallation').setVisible(false); // cache le bouton installation
 					};
 				if (p.itemId == 'menuMiseajourDemande')
 					{
