@@ -272,11 +272,11 @@ App.view.define('VForm',
 													//right: 10
 												}
 										},
-																				{
+										{
 											xtype: "button",
 											itemId: "btninstallation",
 											text: "Installé",
-											hidden: true,
+											hidden: false,
 											margin:
 												{
 													top: 23,
