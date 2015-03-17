@@ -1,6 +1,6 @@
 {
     "namespace": "com.dtermed.infocentre",
-    "git": "https://github.com/Xerryus/com.dtermed.infocentre",
+    "git": "https://github.com/Xerryus/com.dtermed.infocentre.git",
     "title": "Infocentre",
     "description": "Package description goes here",
     "platform": "desktop",
