@@ -276,7 +276,6 @@ App.view.define('VForm',
 											xtype: "button",
 											itemId: "btninstallation",
 											text: "Installation",
-											hidden: false,
 											margin:
 												{
 													top: 23,
