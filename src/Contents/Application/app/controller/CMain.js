@@ -95,7 +95,7 @@ App.controller.define('CMain',
 				switch ( profil ) // En fonction du profil entré 1-->4
 					{
 						case 1: 
-							Ext.Msg.alert('Omneedia','Profil Administrateur'); // Affichage du profil
+							//Ext.Msg.alert('Omneedia','Profil Administrateur'); // Affichage du profil
 							//App.get('VForm',{height:590});
 							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnajouter').hide(true);
@@ -103,7 +103,7 @@ App.controller.define('CMain',
 							App.get('button#btnmodifier').hide(true);							
 							break ;
 						case 2: 
-							Ext.Msg.alert('Omneedia','Profil Chef de Département'); // Affichage du profil
+							//Ext.Msg.alert('Omneedia','Profil Chef de Département'); // Affichage du profil
 							//App.get('VForm',{height:490});
 							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnajouter').hide(true);
@@ -112,7 +112,7 @@ App.controller.define('CMain',
 							App.get('menu>menuitem#menuNouvelleDemande').hide(true);							
 							break ;
 						case 3:
-							Ext.Msg.alert('Omneedia','Profil Chef de Service'); // Affichage du profil
+							//Ext.Msg.alert('Omneedia','Profil Chef de Service'); // Affichage du profil
 							//App.get('VForm',{height:490});
 							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnajouter').hide(true);
@@ -121,7 +121,7 @@ App.controller.define('CMain',
 							App.get('menu>menuitem#menuMiseajourDemande').hide(true);							
 							break ;
 						case 4: 
-							Ext.Msg.alert('Omneedia','Profil Utilisateur'); // Affichage du profil
+							//Ext.Msg.alert('Omneedia','Profil Utilisateur'); // Affichage du profil
 							//App.get('VMain',{height:590});
 							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnajouter').hide(true);
