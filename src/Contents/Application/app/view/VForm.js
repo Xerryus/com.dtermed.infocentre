@@ -261,8 +261,8 @@ App.view.define('VForm',
 												}
 										},
 										{
-											xtype: 'progressbar',
-											itemId: 'progbAvancement',
+											xtype: "progressbar"",
+											itemId: "progbAvancement",
 											labelAlign: "top",
 											fieldLabel: "Avancement",
 											width: 100,
