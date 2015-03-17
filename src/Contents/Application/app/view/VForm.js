@@ -178,7 +178,7 @@ App.view.define('VForm',
 									[									
 										{
 											xtype: "combo", // Object combobox table Service
-											itemId: "cbo2"
+											itemId: "cbo2",
 											labelAlign: "top",
 											fieldLabel: "Service",
 											//allowBlank: false,
