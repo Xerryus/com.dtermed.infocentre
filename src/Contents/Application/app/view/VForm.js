@@ -271,7 +271,20 @@ App.view.define('VForm',
 													left: 12
 													//right: 10
 												}
-										}	
+										},
+																				{
+											xtype: "button",
+											itemId: "btninstallation",
+											text: "Installé",
+											hidden: true,
+											margin:
+												{
+													top: 23,
+													//bottom: 5,
+													left: 10
+													//right: 10
+												}
+										}
 									]	
 							},
 //-- 3 eme zone hbox ( fin )
