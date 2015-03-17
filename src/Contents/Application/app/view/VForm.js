@@ -139,9 +139,9 @@ App.view.define('VForm',
 									[								
 										{
 											xtype: "combo", // Object combobox table departement
-											labelAlign: "top",
-											//fieldLabel: "Département",
 											itemId: "cbo1",
+											labelAlign: "top",
+											fieldLabel: "Département",											
 											//allowBlank: false,
 											flex: 1,
 											margin:
