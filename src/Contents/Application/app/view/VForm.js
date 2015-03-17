@@ -263,7 +263,7 @@ App.view.define('VForm',
 										{
 											xtype: 'progressbar',
 											itemId: 'progbAvancement',
-											width: 200,
+											width: 100,
 											margin:
 												{
 													top: 23,
