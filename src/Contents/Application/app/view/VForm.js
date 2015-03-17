@@ -13,7 +13,7 @@ App.view.define('VForm',
 		labelWidth: 125,
 		hidden: true,
 		frame: false,
-		title: 'Saisie de la demande',
+		//title: 'Saisie de la demande',
 		bodyStyle:'padding:5px 5px 0',
 		width: 420, // 420
 		bbar: 
