@@ -289,7 +289,7 @@ App.controller.define('CForm',
 							nature: App.get('combo#cbo4').getValue(),							
 							sous_nature: App.get('combo#cbo5').getValue(),
 							evolution: App.get('combo#cbo7').getValue(),
-							quantité: App.get('numberfield#numberfieldquantite').getValue(),
+							quantite: App.get('numberfield#numberfieldquantite').getValue(),
 							phasage: p.up('window').phasage,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
 							libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
 							motivation_demande: App.get('textfield#txtfmotivation').getValue(),

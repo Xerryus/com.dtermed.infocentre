@@ -160,7 +160,8 @@ App.view.define('VMain',
 											text: "Departement", //
 											dataIndex: "LibUni", // Valeur de la table
 											width: 125,
-											hidden: true
+											locked   : true
+											//hidden: true
 										},										
 										{
 											text: "Service", //
@@ -205,11 +206,11 @@ App.view.define('VMain',
 											//dateFormat: 'date',
 											//renderer: Ext.util.Format.dateRenderer('d/m/Y'),
 											//renderer: Ext.util.Format.dateRenderer('Y-m-d H:i'),
-											renderer: function(value) {
+/* 											renderer: function(value) {
 												var dd=value.split('T')[0];
 												return dd.split('-')[2]+'/'+dd.split('-')[1]+'/'+dd.split('-')[0];
-											},
-											//renderer: Ext.util.Format.dateRenderer('Y-m-d'),
+											}, */
+											renderer: Ext.util.Format.dateRenderer('Y-m-d'),
 											width: 70,											
 											locked   : true
 											//hidden: true
@@ -217,12 +218,14 @@ App.view.define('VMain',
 										{
 											text: "Modifié le", //
 											dataIndex: "date_modif", // Valeur de la table
+											//type: 'datetime',
 											//format: 'y/m/d',
-											renderer: function(value) 
+/* 											renderer: function(value) 
 												{
 													var dd=value.split('T')[0];
 													return dd.split('-')[2]+'/'+dd.split('-')[1]+'/'+dd.split('-')[0];
-												},
+												}, */
+											renderer: Ext.util.Format.dateRenderer('Y-m-d'),		
 											width: 70,
 											//hidden: true
 											locked   : true
@@ -249,7 +252,7 @@ App.view.define('VMain',
 										},
  										{
 											text: "Qté", //
-											dataIndex: "quantité", // Valeur de la table
+											dataIndex: "quantite", // Valeur de la table
 											width: 30
 										},
  										{
