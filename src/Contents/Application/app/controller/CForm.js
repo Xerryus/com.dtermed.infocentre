@@ -105,12 +105,12 @@ App.controller.define('CForm',
 				switch ( profil )
 					{
 						case 1: // Profil Administrateur
-							Ext.Msg.alert('Omneedia','Profil Administrateur');
+							//Ext.Msg.alert('Omneedia','Profil Administrateur');
 							//App.get('VForm',{height:590});
 							
 							break ;
 						case 2: // Profil Chef de departement
-							Ext.Msg.alert('Omneedia','Profil Chef de Département');
+							//Ext.Msg.alert('Omneedia','Profil Chef de Département');
 							//App.get('VForm',{height:490});
 							App.get('panel#regroupement_z1').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('panel#regroupement_z1').hide(true);
@@ -120,7 +120,7 @@ App.controller.define('CForm',
 							
 							break ;
 						case 3: // Profil Chef de service
-							Ext.Msg.alert('Omneedia','Profil Chef de Service');
+							//Ext.Msg.alert('Omneedia','Profil Chef de Service');
 							//App.get('VForm',{height:490});
 							App.get('panel#regroupement_z1').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('panel#regroupement_z1').hide(true);
@@ -141,7 +141,7 @@ App.controller.define('CForm',
 							App.get('textfield#textfieldbudgetactuel').hide(true);							
 							break ;
 						case 4: // Profil utilisateur
-							Ext.Msg.alert('Omneedia','Profil Utilisateur');
+							//Ext.Msg.alert('Omneedia','Profil Utilisateur');
 							//App.get('VForm',{height:590});
 							break ;							
 					};		
