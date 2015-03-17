@@ -198,7 +198,7 @@ App.controller.define('CMain',
 					if ( profil == 4 )
 						{
 							App.get('button#btnenregistrer').setVisible(false);
-							App.get('button#btnvalider').setVisible(true);
+							App.get('button#btnvalider').setVisible(false);
 							App.get('button#btnenregistrer').setVisible(false);
 						}
 					dat=record.data;
