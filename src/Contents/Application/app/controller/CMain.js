@@ -179,7 +179,7 @@ App.controller.define('CMain',
 					App.view.create('VForm', // on affiche le formulaire de saisie 
 						{					// avec une configuration lié au profil
 							modal: true,
-							_title: 'Formulaire Saisie Modifier',
+							//_title: 'Formulaire Saisie Modifier',
 							labels:
 								[
 					
