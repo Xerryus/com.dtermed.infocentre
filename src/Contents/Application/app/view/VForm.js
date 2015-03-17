@@ -281,7 +281,7 @@ App.view.define('VForm',
 												{
 													top: 23,
 													//bottom: 5,
-													left: 40
+													left: 50
 													//right: 10
 												}
 										}
