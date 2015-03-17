@@ -143,6 +143,30 @@ App.controller.define('CForm',
 						case 4: // Profil utilisateur
 							//Ext.Msg.alert('Omneedia','Profil Utilisateur');
 							//App.get('VForm',{height:590});
+							// Cache regroupement_z1
+							App.get('panel#regroupement_z1').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z1').hide(true);
+							// Cache regroupement_z2
+							App.get('panel#regroupement_z2').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z2').hide(true);
+							// Cache regroupement_z4
+							App.get('panel#regroupement_z4').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z4').hide(true);							
+							// Cache regroupement_z5
+							App.get('panel#regroupement_z5').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z5').hide(true);							
+							// Cache regroupement_z6
+							App.get('panel#regroupement_z6').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z6').hide(true);							
+							// Cache regroupement_z7
+							App.get('panel#regroupement_z7').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z7').hide(true);							
+							// Cache regroupement_z8
+							App.get('panel#regroupement_z8').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z8').hide(true);							
+							// Cache regroupement_z9
+							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z9').hide(true);							
 							break ;							
 					};		
 
