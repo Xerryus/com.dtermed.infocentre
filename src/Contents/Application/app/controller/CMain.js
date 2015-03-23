@@ -216,7 +216,7 @@ App.controller.define('CMain',
 					App.get('textarea#txtacommentaire').setValue(dat.commentaire_demande);
 					App.get('numberfield#numberfieldquantite').setValue(dat.quantite);
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage);
-					var valeurprogress = (dat.avancement / 8); // la progressbar se remplit selon son etape 1-->8
+					var valeurprogress = (dat.avancement / 7); // la progressbar se remplit selon son etape 1-->8
 					App.get('progressbar#progbAvancement').updateProgress(valeurprogress);
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Valider devient update
 
