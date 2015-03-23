@@ -166,7 +166,12 @@ App.controller.define('CForm',
 							App.get('panel#regroupement_z8').hide(true);							
 							// Cache regroupement_z9
 							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('panel#regroupement_z9').hide(true);							
+							App.get('panel#regroupement_z9').hide(true);
+							// Budget
+							App.get('label#label_budget').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('label#label_budget').hide(true);
+							App.get('label#label_budgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('label#label_budgetannuel').hide(true);
 							break ;							
 					};		
 
