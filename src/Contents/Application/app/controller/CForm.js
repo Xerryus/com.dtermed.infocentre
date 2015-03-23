@@ -133,8 +133,7 @@ App.controller.define('CForm',
 							App.get('label#label_budget').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('label#label_budget').hide(true);
 							App.get('label#label_budgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('label#label_budgetannuel').hide(true);
-							
+							App.get('label#label_budgetannuel').hide(true);							
 							App.get('textfield#textfieldbudgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('textfield#textfieldbudgetannuel').hide(true);
 							App.get('textfield#textfieldbudgetactuel').el.setVisibilityMode(Ext.Element.DISPLAY);
@@ -172,6 +171,10 @@ App.controller.define('CForm',
 							App.get('label#label_budget').hide(true);
 							App.get('label#label_budgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('label#label_budgetannuel').hide(true);
+							App.get('textfield#textfieldbudgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('textfield#textfieldbudgetannuel').hide(true);
+							App.get('textfield#textfieldbudgetactuel').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('textfield#textfieldbudgetactuel').hide(true);
 							break ;							
 					};		
 
