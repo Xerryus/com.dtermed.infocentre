@@ -106,9 +106,9 @@ App.controller.define('CForm',
 					{
 						case 1: // Profil Administrateur
 							//Ext.Msg.alert('Omneedia','Profil Administrateur');
-							//App.get('VForm',{height:590});
-							
+							//App.get('VForm',{height:590});							
 							break ;
+							
 						case 2: // Profil Chef de departement
 							//Ext.Msg.alert('Omneedia','Profil Chef de Département');
 							//App.get('VForm',{height:490});
@@ -117,8 +117,8 @@ App.controller.define('CForm',
 							// efface le bouton enregistrer
 							App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnenregistrer').hide(true);
-							
 							break ;
+							
 						case 3: // Profil Chef de service
 							//Ext.Msg.alert('Omneedia','Profil Chef de Service');
 							//App.get('VForm',{height:490});
@@ -139,6 +139,7 @@ App.controller.define('CForm',
 							App.get('textfield#textfieldbudgetactuel').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('textfield#textfieldbudgetactuel').hide(true);							
 							break ;
+							
 						case 4: // Profil utilisateur
 							//Ext.Msg.alert('Omneedia','Profil Utilisateur');
 							//App.get('VForm',{height:590});
