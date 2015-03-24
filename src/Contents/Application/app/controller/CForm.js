@@ -85,6 +85,10 @@ App.controller.define('CForm',
 							{
 								click: "btnenregistrer_onclik"
 								//click: "btnvalider_onclik"
+							},
+						"button:#btnmodifier":
+							{
+								click: "btnmodifier_onclik"
 							}
 					});
 				dat="";
@@ -356,6 +360,12 @@ App.controller.define('CForm',
 					});
 				App.get('VForm').close();
 								
-			}			
+			},
+
+		btnmodifier_onclik: function(p) // pour modifier unenregistrement
+			{
+				Ext.Msg.alert('Omneedia','Modification');
+			}
+			
 			
 	});
