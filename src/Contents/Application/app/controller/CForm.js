@@ -324,6 +324,7 @@ App.controller.define('CForm',
 			{
 			
 				var o= {						
+							ID_demande: UPDATE_ID
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
 							agent_demandeur: App.get('combo#cbo3').getValue(),
@@ -339,7 +340,7 @@ App.controller.define('CForm',
 							libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
 							motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 							commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
-							commentaire_s2i: App.get('textarea#txtacommentaire').getValue(),
+							commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),
 							//etat_s2i: App.get('').getValue(), // à definir
 							etat_s2i: "0",
 							priorite_valide: "0",
@@ -368,11 +369,7 @@ App.controller.define('CForm',
 				var o= {						
 					service: App.get('combo#cbo2').getValue(),
 					departement: App.get('combo#cbo1').getValue(),
-					agent_demandeur: App.get('combo#cbo3').getValue(),
 					agent_beneficiaire: App.get('combo#cbo3').getValue(),
-					budget_annuel: "12345678",
-					budget_actuel: "2546",
-					date_de_demande: Date.now(),
 					nature: App.get('combo#cbo4').getValue(),							
 					sous_nature: App.get('combo#cbo5').getValue(),
 					evolution: App.get('combo#cbo7').getValue(),
@@ -381,25 +378,15 @@ App.controller.define('CForm',
 					libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
 					motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 					commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
-					commentaire_s2i: App.get('textarea#txtacommentaire').getValue(),
-					//etat_s2i: App.get('').getValue(), // à definir
-					etat_s2i: "0",
-					priorite_valide: "0",
-					//etape_valide: App.get('').getValue(), // à definir
-					etape_valide: "-1",
-					priorite_niveau: p.up('window').phasage,
-					avancement: "1",							
-					special: p.up('window').special,
-					//annulation: App.get('false').getValue(), // à definir
-					annulation: "false",
-					cloture: "false",
-					annee_budget: "2015",					
+					commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),
+					priorite_niveau: p.up('window').phasage,							
+					special: p.up('window').special,				
 					domaine_metier: App.get('combo#cbo6').getValue()
 						};
 				Ext.Msg.alert('Omneedia',o.motivation_demande);
-				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
+						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 							{
-								if(error) Ext.Msg.alert('Modification','données modifiés');
+								if(error) Ext.Msg.alert('Modification','enregistrement modifié');
 								App.get("grid#grid_Base").getStore().load();
 							});							
 						App.get('VForm').close();						
