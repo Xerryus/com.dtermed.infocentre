@@ -365,7 +365,38 @@ App.controller.define('CForm',
 
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
-				Ext.Msg.alert('Omneedia',App.get('checkbox#chbspecial').getValue());
+				var o= {						
+					service: App.get('combo#cbo2').getValue(),
+					departement: App.get('combo#cbo1').getValue(),
+					agent_demandeur: App.get('combo#cbo3').getValue(),
+					agent_beneficiaire: App.get('combo#cbo3').getValue(),
+					budget_annuel: "12345678",
+					budget_actuel: "2546",
+					date_de_demande: Date.now(),
+					nature: App.get('combo#cbo4').getValue(),							
+					sous_nature: App.get('combo#cbo5').getValue(),
+					evolution: App.get('combo#cbo7').getValue(),
+					quantite: App.get('numberfield#numberfieldquantite').getValue(),
+					phasage: p.up('window').phasage,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
+					libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
+					motivation_demande: App.get('textfield#txtfmotivation').getValue(),
+					commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
+					commentaire_s2i: App.get('textarea#txtacommentaire').getValue(),
+					//etat_s2i: App.get('').getValue(), // à definir
+					etat_s2i: "0",
+					priorite_valide: "0",
+					//etape_valide: App.get('').getValue(), // à definir
+					etape_valide: "-1",
+					priorite_niveau: p.up('window').phasage,
+					avancement: "1",							
+					special: p.up('window').special,
+					//annulation: App.get('false').getValue(), // à definir
+					annulation: "false",
+					cloture: "false",
+					annee_budget: "2015",					
+					domaine_metier: App.get('combo#cbo6').getValue()
+						};
+				Ext.Msg.alert('Omneedia',o);
 			}
 			
 			
