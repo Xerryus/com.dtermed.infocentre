@@ -365,9 +365,9 @@ App.controller.define('CForm',
 
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
-				var _nature = App.get('combo#cbo4').getValue();
+/* 				var _nature = App.get('combo#cbo4').getValue();
 				var _sous_nature = App.get('combo#cbo5').getValue();
-				var _evolution = App.get('combo#cbo7').getValue();
+				var _evolution = App.get('combo#cbo7').getValue(); */
 							
 				var o= {					
 						nature: App.get('combo#cbo4').getValue(),							
@@ -378,14 +378,15 @@ App.controller.define('CForm',
 						commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
 						ID_demande: UPDATE_ID
 						};
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
-				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
+				
+/* 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 					{
 						if(error) Ext.Msg.alert('Modification','enregistrement modifié');
 						App.get("grid#grid_Base").getStore().load();
-					});							
+					}); */							
 				App.get('VForm').close();						
-				Ext.Msg.alert('Modification','données modifiés');
+				//Ext.Msg.alert('Modification','données modifiés');
+				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 			}
 			
 			
