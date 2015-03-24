@@ -396,7 +396,7 @@ App.controller.define('CForm',
 					annee_budget: "2015",					
 					domaine_metier: App.get('combo#cbo6').getValue()
 						};
-				Ext.Msg.alert('Omneedia',o.service);
+				Ext.Msg.alert('Omneedia',o.motivation_demande);
 			}
 			
 			
