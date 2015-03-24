@@ -347,7 +347,7 @@ App.controller.define('CForm',
 							etape_valide: "-1",
 							priorite_niveau: p.up('window').phasage,
 							avancement: "1",							
-							special: p.up('window').special,
+							special: val_chbspecial,
 							//annulation: App.get('false').getValue(), // à definir
 							annulation: "false",
 							cloture: "false",
@@ -384,13 +384,13 @@ App.controller.define('CForm',
 					sous_nature: App.get('combo#cbo5').getValue(),
 					evolution: App.get('combo#cbo7').getValue(),
 					quantite: App.get('numberfield#numberfieldquantite').getValue(),
-					phasage: p.up('window').phasage,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
+					phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
 					libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
 					motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 					commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
 					commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),
 					priorite_niveau: p.up('window').phasage,							
-					special: p.up('window').special,				
+					special: val_chbspecial,				
 					domaine_metier: App.get('combo#cbo6').getValue(),
 					ID_demande: UPDATE_ID
 						};
