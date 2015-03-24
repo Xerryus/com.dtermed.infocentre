@@ -365,6 +365,16 @@ App.controller.define('CForm',
 
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
+				var rdgvalue=-1;
+				var val_chbspecial=0;
+				// Traiment de la zone des radios boutons
+				if (App.get('radio#RP0').getValue()) rdgvalue=0;
+				if (App.get('radio#RP1').getValue()) rdgvalue=1;
+				if (App.get('radio#RP2').getValue()) rdgvalue=2;
+				if (App.get('radio#RP3').getValue()) rdgvalue=3;						
+				//Traitement de la case à cocher special
+				if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;
+				
 				var o= {
 					
 					service: App.get('combo#cbo2').getValue(),
