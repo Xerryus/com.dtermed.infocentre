@@ -324,7 +324,6 @@ App.controller.define('CForm',
 			{
 			
 				var o= {						
-							ID_demande: UPDATE_ID
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
 							agent_demandeur: App.get('combo#cbo3').getValue(),
@@ -366,7 +365,8 @@ App.controller.define('CForm',
 
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
-				var o= {						
+				var o= {
+					ID_demande: UPDATE_ID,
 					service: App.get('combo#cbo2').getValue(),
 					departement: App.get('combo#cbo1').getValue(),
 					agent_beneficiaire: App.get('combo#cbo3').getValue(),
