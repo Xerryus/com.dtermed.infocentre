@@ -18,6 +18,7 @@ App.controller.define('CForm',
 				"getEvolution",
 				"SetBaseInsert",
 				"SetBaseUpdate",
+				"SetBaseModifier",
 				"getBase"
 			],
 	
