@@ -371,8 +371,8 @@ App.controller.define('CForm',
 				
 				
 				var o= {					
-						nature: _nature,							
-						sous_nature: _sous_nature,
+						nature: App.get('combo#cbo4').getValue(),							
+						sous_nature: App.get('combo#cbo5').getValue(),
 						evolution: App.get('combo#cbo7').getValue(),
 						libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
 						motivation_demande: App.get('textfield#txtfmotivation').getValue(),
