@@ -1,3 +1,4 @@
+
 App.view.define('VForm', 
 	{
 		extend: 'Ext.window.Window',
@@ -28,6 +29,12 @@ App.view.define('VForm',
 				xtype: "button",
 				itemId: "btnenregistrer",
 				text: "Enregistrer"
+			},
+			'->',			
+			{
+				xtype: "button",
+				itemId: "btnmodifier",
+				text: "Modifier"
 			},
 			{
 				xtype: "button",
