@@ -16,18 +16,7 @@ App.view.define('VMain',
 					xtype: "Menu",
 					itemId: "MenuPanel",
 					menu: [
-							{
-								xtype: "button", // Object type bouton
-								itemId: "btnajouter",
-								text: "Ajouter"
 
-							},		
-							{
-								xtype: "button",
-								itemId: "btnmodifier",
-								text: "Modifier"
-							},
-							//'->',
 							{
 								itemId: 'MenuDemande',
 								text: "Demande",
