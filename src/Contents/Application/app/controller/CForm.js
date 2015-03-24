@@ -365,7 +365,7 @@ App.controller.define('CForm',
 
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
-				Ext.Msg.alert('Omneedia','Modification');
+				Ext.Msg.alert('Omneedia',App.get('checkbox#chbspecial').getValue());
 			}
 			
 			
