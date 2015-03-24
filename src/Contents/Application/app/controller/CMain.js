@@ -99,8 +99,8 @@ App.controller.define('CMain',
 						case 1: 
 							Ext.Msg.alert('Omneedia','Profil Administrateur'); // Affichage du profil
 							//App.get('VForm',{height:590});
-							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('button#btnajouter').hide(true);
+							//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
+							//App.get('button#btnajouter').hide(true);
 							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnmodifier').hide(true);							
 							break ;
