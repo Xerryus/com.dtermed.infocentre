@@ -375,12 +375,10 @@ App.controller.define('CForm',
 				//Traitement de la case à cocher special
 				if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;
 				
-				var o= {
-					
+				var o= {					
 					nature: App.get('combo#cbo4').getValue(),							
 					sous_nature: App.get('combo#cbo5').getValue(),
 					evolution: App.get('combo#cbo7').getValue(),
-					phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
 					libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
 					motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 					commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
