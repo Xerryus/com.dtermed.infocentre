@@ -365,34 +365,29 @@ App.controller.define('CForm',
 
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
-				var rdgvalue=-1;
-				var val_chbspecial=0;
-				// Traiment de la zone des radios boutons
-				if (App.get('radio#RP0').getValue()) rdgvalue=0;
-				if (App.get('radio#RP1').getValue()) rdgvalue=1;
-				if (App.get('radio#RP2').getValue()) rdgvalue=2;
-				if (App.get('radio#RP3').getValue()) rdgvalue=3;						
-				//Traitement de la case à cocher special
-				if (App.get('checkbox#chbspecial').getValue()) val_chbspecial=1 ;
+				var _nature = App.get('combo#cbo4').getValue();
+				var _sous_nature = App.get('combo#cbo5').getValue();
+				var _evolution = App.get('combo#cbo7').getValue();
+				
 				
 				var o= {					
-					nature: App.get('combo#cbo4').getValue(),							
-					sous_nature: App.get('combo#cbo5').getValue(),
-					evolution: App.get('combo#cbo7').getValue(),
-					libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
-					motivation_demande: App.get('textfield#txtfmotivation').getValue(),
-					commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
-					commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
-					ID_demande: UPDATE_ID
+						nature: _nature,							
+						sous_nature: _sous_nature,
+						evolution: App.get('combo#cbo7').getValue(),
+						libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
+						motivation_demande: App.get('textfield#txtfmotivation').getValue(),
+						commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
+						commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
+						ID_demande: UPDATE_ID
 						};
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution);
- 						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
+				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution" "+o.libelle_commande+" "+o.motivation_demande);
+ /* 						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 							{
 								if(error) Ext.Msg.alert('Modification','enregistrement modifié');
 								App.get("grid#grid_Base").getStore().load();
 							});							
 						App.get('VForm').close();						
-						Ext.Msg.alert('Modification','données modifiés');
+						Ext.Msg.alert('Modification','données modifiés'); */
 			}
 			
 			
