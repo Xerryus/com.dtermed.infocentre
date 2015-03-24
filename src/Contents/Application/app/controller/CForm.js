@@ -386,7 +386,7 @@ App.controller.define('CForm',
 					}); */							
 				App.get('VForm').close();						
 				//Ext.Msg.alert('Modification','données modifiés');
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
+				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 			}
 			
 			
