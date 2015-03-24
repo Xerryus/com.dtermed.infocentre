@@ -394,7 +394,7 @@ App.controller.define('CForm',
 					domaine_metier: App.get('combo#cbo6').getValue(),
 					ID_demande: UPDATE_ID
 						};
-				Ext.Msg.alert('Omneedia',o.special);
+				Ext.Msg.alert('Omneedia',o.special+" "+o.nature);
 /* 						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 							{
 								if(error) Ext.Msg.alert('Modification','enregistrement modifié');
