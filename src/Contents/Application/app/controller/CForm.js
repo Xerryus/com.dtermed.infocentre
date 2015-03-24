@@ -366,7 +366,7 @@ App.controller.define('CForm',
 		btnmodifier_onclik: function(p) // pour modifier unenregistrement
 			{
 				var o= {
-					ID_demande: UPDATE_ID,
+					
 					service: App.get('combo#cbo2').getValue(),
 					departement: App.get('combo#cbo1').getValue(),
 					agent_beneficiaire: App.get('combo#cbo3').getValue(),
@@ -381,7 +381,8 @@ App.controller.define('CForm',
 					commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),
 					priorite_niveau: p.up('window').phasage,							
 					special: p.up('window').special,				
-					domaine_metier: App.get('combo#cbo6').getValue()
+					domaine_metier: App.get('combo#cbo6').getValue(),
+					ID_demande: UPDATE_ID
 						};
 				Ext.Msg.alert('Omneedia',o.ID_demande);
 /* 						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
