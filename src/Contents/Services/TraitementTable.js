@@ -80,7 +80,7 @@ TraitementTable =
 			{
 
 				var db=TraitementTable.using('db');
-				db.query('infocentre2015','update base set nature="'+o.nature+'", sous_nature="'+o.sous_nature+'", evolution="'+o.evolution+'", phasage="'+o.phasage+'", libelle_commande="'+o.libelle_commande+'", motivation_demande="'+o.motivation_demande+'", commentaire_demande="'+o.commentaire_demande+'", commentaire_S2i="'+o.commentaire_S2i+'", domaine_metier="'+o.domaine_metier+'" where ID_demande="'+o.ID_demande+'" ',cb);
+				db.query('infocentre2015','update base set nature="'+o.nature+'", sous_nature="'+o.sous_nature+'", evolution="'+o.evolution+'", libelle_commande="'+o.libelle_commande+'", motivation_demande="'+o.motivation_demande+'", commentaire_demande="'+o.commentaire_demande+'", commentaire_S2i="'+o.commentaire_S2i+'", domaine_metier="'+o.domaine_metier+'" where ID_demande="'+o.ID_demande+'" ',cb);
 			},		
 		acces_infocentre2015_base_lecture: function(o,cb)
 			{
