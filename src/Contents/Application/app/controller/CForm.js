@@ -347,7 +347,7 @@ App.controller.define('CForm',
 							etape_valide: "-1",
 							priorite_niveau: p.up('window').phasage,
 							avancement: "1",							
-							special: val_chbspecial,
+							special: p.up('window').special,
 							//annulation: App.get('false').getValue(), // à definir
 							annulation: "false",
 							cloture: "false",
