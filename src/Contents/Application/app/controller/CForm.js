@@ -383,14 +383,14 @@ App.controller.define('CForm',
 					special: p.up('window').special,				
 					domaine_metier: App.get('combo#cbo6').getValue()
 						};
-				Ext.Msg.alert('Omneedia',o.motivation_demande);
-						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
+				Ext.Msg.alert('Omneedia',o.ID_demande);
+/* 						App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 							{
 								if(error) Ext.Msg.alert('Modification','enregistrement modifié');
 								App.get("grid#grid_Base").getStore().load();
 							});							
 						App.get('VForm').close();						
-						Ext.Msg.alert('Modification','données modifiés');
+						Ext.Msg.alert('Modification','données modifiés'); */
 			}
 			
 			
