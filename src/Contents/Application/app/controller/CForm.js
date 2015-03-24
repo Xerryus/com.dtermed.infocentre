@@ -118,6 +118,9 @@ App.controller.define('CForm',
 							// efface le bouton enregistrer
 							App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnenregistrer').hide(true);
+							// efface le bouton modifier
+							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('button#btnmodifier').hide(true);
 							break ;
 							
 						case 3: // Profil Chef de service
