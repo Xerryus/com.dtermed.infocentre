@@ -30,12 +30,12 @@ App.view.define('VForm',
 				itemId: "btnenregistrer",
 				text: "Enregistrer"
 			},
-			'->',			
+/* 			'->',			
 			{
 				xtype: "button",
 				itemId: "btnmodifier",
 				text: "Modifier"
-			},
+			}, */
 			{
 				xtype: "button",
 				itemId: "btnannuler",

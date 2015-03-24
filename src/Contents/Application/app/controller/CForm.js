@@ -177,9 +177,6 @@ App.controller.define('CForm',
 							App.get('textfield#textfieldbudgetannuel').hide(true);
 							App.get('textfield#textfieldbudgetactuel').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('textfield#textfieldbudgetactuel').hide(true);
-							// Cache le bouton modifier
-							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('button#btnmodifier').hide(true);
 							break ;							
 					};		
 

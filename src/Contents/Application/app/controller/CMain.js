@@ -127,12 +127,10 @@ App.controller.define('CMain',
 							//App.get('VMain',{height:590});
 							App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnajouter').hide(true);
-							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('button#btnmodifier').hide(true);
-							App.get('Menu').hide(true);
 							// Cache le bouton modifier
 							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnmodifier').hide(true);
+							App.get('Menu').hide(true);
 							break ;							
 					};
 			},
