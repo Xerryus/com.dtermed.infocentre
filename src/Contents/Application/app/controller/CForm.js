@@ -86,7 +86,7 @@ App.controller.define('CForm',
 								click: "btnenregistrer_onclik"
 								//click: "btnvalider_onclik"
 							},
-						"button:#btnmodifier":
+						"button#btnmodifier":
 							{
 								click: "btnmodifier_onclik"
 							}
