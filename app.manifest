@@ -42,11 +42,8 @@
     ],
     "auth": [],
     "db": [
-        "bd01",
-        "bpclight",
-        "dashboard",
         "infocentre2015",
-        "sysiphe2"
+        "bpclight"
     ],
     "paths": {},
     "controllers": [
