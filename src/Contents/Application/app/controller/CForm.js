@@ -378,15 +378,17 @@ App.controller.define('CForm',
 						commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
 						ID_demande: UPDATE_ID
 						};
+				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 				
 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 					{
-						//if(error) Ext.Msg.alert('Modification','enregistrement modifié');
+						if(error) Ext.Msg.alert('Modification','enregistrement modifié');
 						App.get("grid#grid_Base").getStore().load();
-					});							
+					});
+					
 				App.get('VForm').close();						
 				//Ext.Msg.alert('Modification','données modifiés');
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
+				
 			}
 			
 			
