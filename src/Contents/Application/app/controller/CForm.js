@@ -141,6 +141,9 @@ App.controller.define('CForm',
 							// efface le bouton valider
 							App.get('button#btnvalider').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnvalider').hide(true);
+							// efface le bouton modifier
+							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('button#btnmodifier').hide(true);
 							// Budget
 							App.get('label#label_budget').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('label#label_budget').hide(true);
