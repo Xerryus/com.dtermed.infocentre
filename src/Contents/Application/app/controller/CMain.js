@@ -195,6 +195,12 @@ App.controller.define('CMain',
 							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
 							//App.get('button#btnmodifier').hide(true);
 						};
+					if ( profil == 2 ) // Cache les boutons enregistrer et valider
+						{
+							App.get('button#btnenregistrer').setVisible(false);
+							App.get('button#btnvalider').setVisible(true);
+							App.get('button#btnmodifier').setVisible(false);
+						};
 					if ( profil == 3 ) // Cache les boutons enregistrer et valider
 						{
 							App.get('button#btnenregistrer').setVisible(false);
