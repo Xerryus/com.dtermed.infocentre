@@ -215,12 +215,7 @@ App.controller.define('CMain',
 					
 					//App.get('combo#cbo4').setValue(dat.ID_Nature);
 					
-				    var id=App.get('combo#cbo4').getValue();
-				
-				    App.get('combo#cbo5').getStore().getProxy().extraParams.id=id;
-				    App.get('combo#cbo5').setValue(dat.ID_sous_nature);
-				    App.get('combo#cbo5').getStore().load();
-					
+				   
 					
 					
 					//App.get('combo#cbo5').setValue(dat.libelle_sous_nature);
@@ -232,6 +227,12 @@ App.controller.define('CMain',
 				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id2;
 				App.get('combo#cbo4').setValue(dat.ID_nature);
 				App.get('combo#cbo4').getStore().load();
+					
+					 var id=App.get('combo#cbo4').getValue();
+				
+				    App.get('combo#cbo5').getStore().getProxy().extraParams.id=id;
+				    App.get('combo#cbo5').setValue(dat.ID_sous_nature);
+				    App.get('combo#cbo5').getStore().load();
 					
 					
 					App.get('combo#cbo7').setValue(dat.evolution);
