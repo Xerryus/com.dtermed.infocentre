@@ -98,7 +98,7 @@ TraitementTable =
 					console.log(result);
 					cb(err,result);
 				})
-				});
+				
 				//console.log('select * from base as b left join domaine_metier as dm on b.domaine_metier = dm.ID_domaine_metier left join nature as n on b.nature = n.ID_nature left join sous_nature as sn on b.sous_nature = sn.ID_sous_nature left join priorite as p on b.priorite_niveau = p.ID_priorite');
 			},
 		acces_infocentre2015_base_affiche_grid02: function(o,cb)
