@@ -206,37 +206,36 @@ App.controller.define('CMain',
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
 		
-					App.get('combo#cbo1').setValue(dat.departement);
-					App.get('combo#cbo2').setValue(dat.LibSub);
-					App.get('combo#cbo3').setValue(dat.NomPre);
+					App.get('combo#cbo1').setValue(dat.departement); // Departement
+					App.get('combo#cbo2').setValue(dat.LibSub); // Service
+					App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
 								
-					//App.get('combo#cbo4').setValue(dat.ID_Nature);
-					
+					//App.get('combo#cbo4').setValue(dat.ID_Nature);					
 					//App.get('combo#cbo5').setValue(dat.libelle_sous_nature);
-					App.get('combo#cbo6').setValue(dat.ID_domaine_metier);
+					
+					App.get('combo#cbo6').setValue(dat.ID_domaine_metier); // Domaine metier
 					
 				    var id2=App.get('combo#cbo6').getValue();
 					console.log(App.get('combo#cbo6').getValue())
-					App.get('combo#cbo4').getStore().getProxy().extraParams.id=id2;
+					App.get('combo#cbo4').getStore().getProxy().extraParams.id=id2; // Nature
 					App.get('combo#cbo4').setValue(dat.ID_nature);
 					App.get('combo#cbo4').getStore().load();
 					
-					var id=App.get('combo#cbo4').getValue();
-				
-				    App.get('combo#cbo5').getStore().getProxy().extraParams.id=id;
+					var id=App.get('combo#cbo4').getValue();				
+				    App.get('combo#cbo5').getStore().getProxy().extraParams.id=id; // Sous nature
 				    App.get('combo#cbo5').setValue(dat.ID_sous_nature);
 				    App.get('combo#cbo5').getStore().load();
 									
-					App.get('combo#cbo7').setValue(dat.evolution);
+					App.get('combo#cbo7').setValue(dat.evolution); // Evolution
 					
-					App.get('textfield#txtfmotivation').setValue(dat.motivation_demande);
-					App.get('textarea#txtalibelledemande').setValue(dat.libelle_commande);
-					App.get('textarea#txtacommentaire').setValue(dat.commentaire_demande);
-					App.get('numberfield#numberfieldquantite').setValue(dat.quantite);
-					App.get('radiogroup#rdgpriorite').setValue(dat.phasage);
+					App.get('textfield#txtfmotivation').setValue(dat.motivation_demande); // Motivation de la demande
+					App.get('textarea#txtalibelledemande').setValue(dat.libelle_commande); // Details complementaire
+					App.get('textarea#txtacommentaire').setValue(dat.commentaire_demande);  // Commentaire / Observation
+					App.get('numberfield#numberfieldquantite').setValue(dat.quantite); // Quantite
+					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Phasage ( priorité)
 					var valeurprogress = (dat.avancement / 7); // la progressbar se remplit selon son etape 1-->8
 					App.get('progressbar#progbAvancement').updateProgress(valeurprogress);
-					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Valider devient update
+					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); //
 
 					App.get('label#labelannee').setText('Année: '+dat.annee_budget); // dans le VForm
 					App.get('combo#cboAnnee_budgetaire').setValue(dat.annee_budget); // dans le VMain combo
