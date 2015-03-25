@@ -198,7 +198,7 @@ App.controller.define('CForm',
 					};		
 
 			},
-		cbo1_onclik: function()
+		cbo1_onclik: function() // Departement
 			{
 				var id=App.get('combo#cbo1').getValue();
 				App.get('combo#cbo2').setValue('');
@@ -206,7 +206,7 @@ App.controller.define('CForm',
 				App.get('combo#cbo2').getStore().load();
 				App.get('combo#cbo3').setValue('');
 			},
-		cbo2_onclik: function()
+		cbo2_onclik: function() // Service
 			{
 				var store = App.get('combo#cbo3').getStore();
 				store.getProxy().extraParams.kuni=App.get('combo#cbo1').getValue();
@@ -223,7 +223,7 @@ App.controller.define('CForm',
 					});
 				store.load();				
 			},
-		cbo3_onclik: function()
+		cbo3_onclik: function() // Beneficiaire
 			{
 					if (App.get('combo#cbo3').getValue() == -1) 
 						{
@@ -235,18 +235,18 @@ App.controller.define('CForm',
 								App.get('button#btnsaisiemanuelle').hide();
 							}
 			},
-		cbo4_onclik: function() // nature
+		cbo4_onclik: function() // Nature
 			{
 				var id=App.get('combo#cbo4').getValue();
 				App.get('combo#cbo5').setValue('');
 				App.get('combo#cbo5').getStore().getProxy().extraParams.id=id;
 				App.get('combo#cbo5').getStore().load();				
 			},
-		cbo5_onclik: function() // sous_nature
+		cbo5_onclik: function() // Sous_nature
 			{
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo5').getValue());
 			},
-		cbo6_onclik: function()
+		cbo6_onclik: function() // Domaine metier
 			{
 				var id=App.get('combo#cbo6').getValue();
 				App.get('combo#cbo4').setValue('');
@@ -254,7 +254,7 @@ App.controller.define('CForm',
 				App.get('combo#cbo4').getStore().load();
 
 			},
-		cbo7_onclik: function()
+		cbo7_onclik: function() // Evolution
 			{
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo7').getValue());
 
@@ -306,9 +306,6 @@ App.controller.define('CForm',
 							};												
 						var o= {						
 									phasage: rdgvalue,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
-									//libelle_commande: App.get('textarea#txtalibelledemande').getValue(), // à definir
-									//motivation_demande: App.get('textfield#txtfmotivation').getValue(),
-									//commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
 									priorite_valide: valeur_priorite_valide,// Validé par le chef de Dpt si =1 et non validé si =0
 									etape_valide: valeur_etape_valide, // Validé par le chef de Dpt si =1 et non validé si =0
 									//priorite_niveau: "-1", // à definir
@@ -324,7 +321,7 @@ App.controller.define('CForm',
 								App.get("grid#grid_Base").getStore().load();
 							});							
 						App.get('VForm').close();						
-						Ext.Msg.alert('Mise à jour','données mises à jour');
+						//Ext.Msg.alert('Mise à jour','données mises à jour');
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
@@ -342,7 +339,7 @@ App.controller.define('CForm',
 							evolution: App.get('combo#cbo7').getValue(),
 							quantite: App.get('numberfield#numberfieldquantite').getValue(),
 							phasage: p.up('window').phasage,// radiogroup#rdgpriorite P0,P1,P2,P3,P4 Priorité
-							libelle_commande: App.get('textarea#txtalibelledemande').getValue(),
+							libelle_commande: App.get('textfield#txtfmotivation').getValue(),
 							motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 							commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
 							commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),
@@ -362,11 +359,11 @@ App.controller.define('CForm',
 						};			
 				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
-						if (error.insertId) Ext.Msg.alert('Insertion','données inseré');
+						if (error.insertId) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
 					});
 				App.get('VForm').close();
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);								
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);								
 			},
 
 		btnmodifier_onclik: function( p ) // pour modifier un enregistrement
@@ -393,8 +390,7 @@ App.controller.define('CForm',
 					});
 					
 				App.get('VForm').close();
-				
-				//Ext.Msg.alert('Modification','données modifiés');				
+			
 			}
 						
 	});
