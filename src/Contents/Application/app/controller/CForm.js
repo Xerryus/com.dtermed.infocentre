@@ -105,7 +105,7 @@ App.controller.define('CForm',
 				p.setValue(true);
 				//console.log(p);
 			},
-		VForm_onshow: function()
+		VForm_onshow: function() // Affiche formulaire nouvelle demande
 			{
 				//profil = 1;			
 				switch ( profil )
