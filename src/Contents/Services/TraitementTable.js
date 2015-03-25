@@ -79,15 +79,12 @@ TraitementTable =
 		acces_infocentre2015_base_modifier: function(o,cb)
 			{
 				var db=TraitementTable.using('db');
-				//console.log('update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'",domaine_metier="'+o.domaine_metier+'" where ID_demande="'+o.ID_demande+'" ');
+				console.log('update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'" where ID_demande="'+o.ID_demande+'" ');
 				db.query('infocentre2015','update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'" where ID_demande="'+o.ID_demande+'" ',cb);
 			},		
 		acces_infocentre2015_base_lecture: function(o,cb)
 			{
-/* 							var db=TraitementTable.using('db');
-				db.model('infocentre2015',db.sql('test_sql',{
-					toto : "007"
-				}),cb); */
+
 				var db=TraitementTable.using('db');
 				db.model('infocentre2015','select * from base',cb);
 			},
@@ -100,13 +97,11 @@ TraitementTable =
 					cb(err,result);
 				})
 				
-				//console.log('select * from base as b left join domaine_metier as dm on b.domaine_metier = dm.ID_domaine_metier left join nature as n on b.nature = n.ID_nature left join sous_nature as sn on b.sous_nature = sn.ID_sous_nature left join priorite as p on b.priorite_niveau = p.ID_priorite');
 			},
 		acces_infocentre2015_base_affiche_grid02: function(o,cb)
 			{
 				var db=TraitementTable.using('db');
-				db.model('infocentre2015','select *, concat(Nom," ",Prenom) NomPre from base as b join domaine_metier as dm on b.domaine_metier = dm.ID_domaine_metier join nature as n on b.nature = n.ID_nature join sous_nature as sn on b.sous_nature = sn.ID_sous_nature join priorite as p on b.priorite_niveau = p.ID_priorite join evolution as ev on b.evolution = ev.ID_evolution join priorite as pr on b.phasage = pr.ID_priorite join bpclight.agents as ka on b.agent_beneficiaire = ka.Kage join bpclight.unites as ku on b.departement = ku.Kuni join bpclight.subdis as su on b.service = su.Ksub order by date_de_demande desc where ID_annee_budgetaire='+o.id,cb);
-				//console.log('select * from base as b left join domaine_metier as dm on b.domaine_metier = dm.ID_domaine_metier left join nature as n on b.nature = n.ID_nature left join sous_nature as sn on b.sous_nature = sn.ID_sous_nature left join priorite as p on b.priorite_niveau = p.ID_priorite');
+				db.model('infocentre2015','select *, concat(Nom," ",Prenom) NomPre from base as b join domaine_metier as dm on b.domaine_metier = dm.ID_domaine_metier join nature as n on b.nature = n.ID_nature join sous_nature as sn on b.sous_nature = sn.ID_sous_nature join priorite as p on b.priorite_niveau = p.ID_priorite join evolution as ev on b.evolution = ev.ID_evolution join priorite as pr on b.phasage = pr.ID_priorite join bpclight.agents as ka on b.agent_beneficiaire = ka.Kage join bpclight.unites as ku on b.departement = ku.Kuni join bpclight.subdis as su on b.service = su.Ksub order by date_de_demande desc where ID_annee_budgetaire='+o.id,cb);				
 			},						
 		acces_infocentre2015_annee_budgetaire_lecture: function(o,cb)
 			{
