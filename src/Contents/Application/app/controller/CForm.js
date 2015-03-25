@@ -369,7 +369,7 @@ App.controller.define('CForm',
 				var _sous_nature = App.get('combo#cbo5').getValue();
 				var _evolution = App.get('combo#cbo7').getValue();
 				
-				dat=record.data;
+				dat=p.data;
 				
 				Ext.Msg.alert('Omneedia',record.data);
 				
