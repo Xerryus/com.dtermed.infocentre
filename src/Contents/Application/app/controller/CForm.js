@@ -229,14 +229,14 @@ App.controller.define('CForm',
 								App.get('button#btnsaisiemanuelle').hide();
 							}
 			},
-		cbo4_onclik: function()
+		cbo4_onclik: function() // nature
 			{
 				var id=App.get('combo#cbo4').getValue();
 				App.get('combo#cbo5').setValue('');
 				App.get('combo#cbo5').getStore().getProxy().extraParams.id=id;
 				App.get('combo#cbo5').getStore().load();				
 			},
-		cbo5_onclik: function()
+		cbo5_onclik: function() // sous_nature
 			{
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo5').getValue());
 			},
