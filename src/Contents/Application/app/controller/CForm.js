@@ -376,9 +376,9 @@ App.controller.define('CForm',
 						ID_demande: UPDATE_ID
 						};
 						
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
 				
-				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
+				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 /* 				
 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 					{
