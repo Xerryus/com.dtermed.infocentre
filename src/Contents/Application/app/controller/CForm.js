@@ -363,12 +363,14 @@ App.controller.define('CForm',
 								
 			},
 
-		btnmodifier_onclik: function(p) // pour modifier unenregistrement
+		btnmodifier_onclik: function(p , record) // pour modifier unenregistrement
 			{
 				var _nature = App.get('combo#cbo4').getValue;
 				var _sous_nature = App.get('combo#cbo5').getValue();
 				var _evolution = App.get('combo#cbo7').getValue();
-
+				
+				dat=record.data;
+				
 				var o= {					
 						nature: App.get('combo#cbo4').getValue(),							
 						sous_nature: App.get('combo#cbo5').getValue(),
