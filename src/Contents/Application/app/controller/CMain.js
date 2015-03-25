@@ -193,8 +193,7 @@ App.controller.define('CMain',
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnmodifier').setVisible(true);
 							App.get('button#btnvalider').setVisible(true);
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);
+
 						};
 					if ( profil == 2 ) // Cache les boutons enregistrer et valider
 						{
@@ -207,8 +206,7 @@ App.controller.define('CMain',
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnvalider').setVisible(true);
 							App.get('button#btnmodifier').setVisible(true);
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);
+
 						};
 					if ( profil == 4 )
 						{
@@ -222,10 +220,7 @@ App.controller.define('CMain',
 		
 					App.get('combo#cbo1').setValue(dat.departement); // Departement
 					App.get('combo#cbo2').setValue(dat.LibSub); // Service
-					App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
-								
-					//App.get('combo#cbo4').setValue(dat.ID_Nature);					
-					//App.get('combo#cbo5').setValue(dat.libelle_sous_nature);
+					App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire								
 					
 					App.get('combo#cbo6').setValue(dat.ID_domaine_metier); // Domaine metier
 					
@@ -245,6 +240,7 @@ App.controller.define('CMain',
 					App.get('textfield#txtfmotivation').setValue(dat.motivation_demande); // Motivation de la demande
 					App.get('textarea#txtalibelledemande').setValue(dat.libelle_commande); // Details complementaire
 					App.get('textarea#txtacommentaire').setValue(dat.commentaire_demande);  // Commentaire / Observation
+					
 					App.get('numberfield#numberfieldquantite').setValue(dat.quantite); // Quantite
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Phasage ( priorité)
 					var valeurprogress = (dat.avancement / 7); // la progressbar se remplit selon son etape 1-->8
@@ -255,6 +251,7 @@ App.controller.define('CMain',
 					App.get('combo#cboAnnee_budgetaire').setValue(dat.annee_budget); // dans le VMain combo
 					App.get('textfield#textfieldbudgetannuel').setValue(dat.budget_annuel);
 					App.get('textfield#textfieldbudgetactuel').setValue(dat.budget_actuel);
+					
 					// la couleur de la progressbar prend une couleur selon son phasage P0->P3
 					if (dat.phasage==0) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'red';
 					if (dat.phasage==1) App.get('progressbar#progbAvancement').getEl().dom.style.background = 'orange';
