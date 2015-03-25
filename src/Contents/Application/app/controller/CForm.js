@@ -371,7 +371,7 @@ App.controller.define('CForm',
 				
 				dat=p.data;
 				
-				Ext.Msg.alert('Omneedia',record.data);
+				Ext.Msg.alert('Omneedia',p.data);
 				
 				var o= {					
 						nature: App.get('combo#cbo4').getValue(),							
