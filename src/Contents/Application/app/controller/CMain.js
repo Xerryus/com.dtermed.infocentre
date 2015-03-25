@@ -229,7 +229,7 @@ App.controller.define('CMain',
 					
 					
 					//App.get('combo#cbo5').setValue(dat.libelle_sous_nature);
-					App.get('combo#cbo6').setValue(dat.domaine_metier);
+					App.get('combo#cbo6').setValue(dat.ID_domaine_metier);
 					App.get('combo#cbo7').setValue(dat.evolution);
 					
 					App.get('textfield#txtfmotivation').setValue(dat.motivation_demande);
