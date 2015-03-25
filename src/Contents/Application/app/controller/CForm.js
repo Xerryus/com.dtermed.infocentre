@@ -354,13 +354,13 @@ App.controller.define('CForm',
 							annee_budget: "2015",					
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};			
-/* 				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
+				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error.insertId) Ext.Msg.alert('Insertion','données inseré');
 						App.get("grid#grid_Base").getStore().load();
 					});
-				App.get('VForm').close(); */
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);								
+				App.get('VForm').close();
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);								
 			},
 
 		btnmodifier_onclik: function( p ) // pour modifier un enregistrement
