@@ -211,12 +211,7 @@ App.controller.define('CMain',
 					App.get('combo#cbo3').setValue(dat.NomPre);
 					
 					
-				var id2=App.get('combo#cbo6').getValue();
-				console.log(App.get('combo#cbo6').getValue())
-				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id2;
-				App.get('combo#cbo4').setValue(dat.ID_nature);
-				App.get('combo#cbo4').getStore().load();
-					
+				
 					
 					//App.get('combo#cbo4').setValue(dat.ID_Nature);
 					
@@ -230,6 +225,15 @@ App.controller.define('CMain',
 					
 					//App.get('combo#cbo5').setValue(dat.libelle_sous_nature);
 					App.get('combo#cbo6').setValue(dat.ID_domaine_metier);
+					
+					
+					var id2=App.get('combo#cbo6').getValue();
+				console.log(App.get('combo#cbo6').getValue())
+				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id2;
+				App.get('combo#cbo4').setValue(dat.ID_nature);
+				App.get('combo#cbo4').getStore().load();
+					
+					
 					App.get('combo#cbo7').setValue(dat.evolution);
 					
 					App.get('textfield#txtfmotivation').setValue(dat.motivation_demande);
