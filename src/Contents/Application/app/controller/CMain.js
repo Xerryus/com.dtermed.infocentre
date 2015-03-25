@@ -236,7 +236,7 @@ App.controller.define('CMain',
 					if (dat.phasage==2) App.get('radio#RP2').setValue(true);
 					if (dat.phasage==3) App.get('radio#RP3').setValue(true);					
 					App.get('checkbox#chbspecial').setValue(dat.special);
-					console.load(record);
+					console.log(record);
 					
 /* 					store: App.store.create('getAffichegrid01', // Creation du store
 						{
