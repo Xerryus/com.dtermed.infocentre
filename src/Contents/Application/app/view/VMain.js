@@ -325,7 +325,7 @@ App.view.define('VMain',
 										listeners: {
 											load: function(p)
 											{
-												//autoLoad: true
+												alert('chargé');
 												
 											}
 										}
