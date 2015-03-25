@@ -114,8 +114,8 @@ App.controller.define('CForm',
 							//Ext.Msg.alert('Omneedia','Profil Administrateur');
 							//App.get('VForm',{height:590});
 							// efface le bouton modifier
-							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('button#btnmodifier').hide(true);
+							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+							//App.get('button#btnmodifier').hide(true);
 							break ;
 							
 						case 2: // Profil Chef de departement
