@@ -368,9 +368,7 @@ App.controller.define('CForm',
 				var _nature = App.get('combo#cbo4').getValue;
 				var _sous_nature = App.get('combo#cbo5').getValue();
 				var _evolution = App.get('combo#cbo7').getValue();
-				
-				dat=p;
-				
+
 				var o= {					
 						nature: App.get('combo#cbo4').getValue(),							
 						sous_nature: App.get('combo#cbo5').getValue(),
@@ -380,7 +378,7 @@ App.controller.define('CForm',
 						commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
 						ID_demande: UPDATE_ID
 						};
-				Ext.Msg.alert('Omneedia',dat.ID_nature);		
+				Ext.Msg.alert('Omneedia',p.nature);		
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 				
 /* 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
