@@ -208,7 +208,7 @@ App.controller.define('CMain',
 					App.get('combo#cbo1').setValue(dat.departement);
 					App.get('combo#cbo2').setValue(dat.LibSub);
 					App.get('combo#cbo3').setValue(dat.NomPre);
-					App.get('combo#cbo4').setValue(dat.libelle_nature);
+					App.get('combo#cbo4').setValue(dat.ID_Nature);
 					App.get('combo#cbo5').setValue(dat.libelle_sous_nature);
 					App.get('combo#cbo6').setValue(dat.domaine_metier);
 					App.get('combo#cbo7').setValue(dat.evolution);
