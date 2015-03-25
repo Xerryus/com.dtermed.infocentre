@@ -205,13 +205,14 @@ App.controller.define('CMain',
 						}
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
+		
 					App.get('combo#cbo1').setValue(dat.departement);
 					App.get('combo#cbo2').setValue(dat.LibSub);
 					App.get('combo#cbo3').setValue(dat.NomPre);
 					
 					
 				var id=App.get('combo#cbo6').getValue();
-				
+				console.log(App.get('combo#cbo6').getValue())
 				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id;
 				App.get('combo#cbo4').setValue(dat.ID_nature);
 				App.get('combo#cbo4').getStore().load();
