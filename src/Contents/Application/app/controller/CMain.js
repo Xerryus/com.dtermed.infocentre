@@ -211,9 +211,9 @@ App.controller.define('CMain',
 					App.get('combo#cbo3').setValue(dat.NomPre);
 					
 					
-				var id=App.get('combo#cbo6').getValue();
+				var id2=App.get('combo#cbo6').getValue();
 				console.log(App.get('combo#cbo6').getValue())
-				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id;
+				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id2;
 				App.get('combo#cbo4').setValue(dat.ID_nature);
 				App.get('combo#cbo4').getStore().load();
 					
