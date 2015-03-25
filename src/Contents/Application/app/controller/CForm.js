@@ -380,7 +380,7 @@ App.controller.define('CForm',
 						commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
 						ID_demande: UPDATE_ID
 						};
-				Ext.Msg.alert('Omneedia',App.get('combo#cbo4').originalValue());		
+				Ext.Msg.alert('Omneedia',App.get('combo#cbo4').originalValue);		
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 				
 /* 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
