@@ -205,9 +205,9 @@ App.controller.define('CMain',
 						{
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnvalider').setVisible(true);
-							App.get('button#btnmodifier').setVisible(false);
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);
+							//App.get('button#btnmodifier').setVisible(false);
+							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('button#btnmodifier').hide(true);
 						};
 					if ( profil == 4 )
 						{
