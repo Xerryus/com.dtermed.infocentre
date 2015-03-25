@@ -236,7 +236,7 @@ App.controller.define('CMain',
 					if (dat.phasage==2) App.get('radio#RP2').setValue(true);
 					if (dat.phasage==3) App.get('radio#RP3').setValue(true);					
 					App.get('checkbox#chbspecial').setValue(dat.special);
-					store: App.store.create('App.TraitementTable.acces_infocentre2015_base_affiche_grid01', // Creation du store
+					store: App.store.create('getAffichegrid01', // Creation du store
 						{
 							autoLoad: true,
 						})					
