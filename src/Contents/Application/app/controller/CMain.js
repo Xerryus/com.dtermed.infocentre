@@ -191,6 +191,9 @@ App.controller.define('CMain',
 					if ( profil == 1 ) // Cache le bouton enregistrer 
 						{
 							App.get('button#btnenregistrer').setVisible(false);
+							App.get('button#btnmodifier').setVisible(true);
+							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+							//App.get('button#btnmodifier').hide(true);
 						};
 					if ( profil == 3 ) // Cache les boutons enregistrer et valider
 						{
