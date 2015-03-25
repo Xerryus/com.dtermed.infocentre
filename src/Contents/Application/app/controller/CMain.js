@@ -213,7 +213,7 @@ App.controller.define('CMain',
 				var id=App.get('combo#cbo6').getValue();
 				
 				App.get('combo#cbo4').getStore().getProxy().extraParams.id=id;
-				App.get('combo#cbo4').setValue(dat.ID_Nature);
+				App.get('combo#cbo4').setValue(dat.ID_nature);
 				App.get('combo#cbo4').getStore().load();
 					
 					
