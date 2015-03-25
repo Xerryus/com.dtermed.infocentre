@@ -199,12 +199,14 @@ App.controller.define('CMain',
 						{
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnvalider').setVisible(true);
+							App.get('button#btnmodifier').setVisible(false);
 						};
 					if ( profil == 4 )
 						{
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnvalider').setVisible(false);
 							App.get('button#btnenregistrer').setVisible(false);
+							App.get('button#btnmodifier').setVisible(false);
 						}
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
