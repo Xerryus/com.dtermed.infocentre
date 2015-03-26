@@ -123,6 +123,9 @@ App.controller.define('CForm',
 							//App.get('VForm',{height:490});
 							App.get('panel#regroupement_z1').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('panel#regroupement_z1').hide(true);
+							// Cache regroupement_z9
+							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z9').hide(true);							
 							// efface le bouton enregistrer
 							App.get('button#btnenregistrer').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnenregistrer').hide(true);
