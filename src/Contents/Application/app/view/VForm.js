@@ -469,7 +469,7 @@ App.view.define('VForm',
 //-- 7 eme zone hbox ( debut )
 							{
 								layout: "vbox",
-								itemId: "regroupement_z6",
+								itemId: "regroupement_z7",
 								width: 400,
 								margin:
 									{
@@ -502,7 +502,7 @@ App.view.define('VForm',
 //-- 7bis eme zone hbox ( debut )										
 							{
 								layout: "hbox",
-								itemId: "regroupement_z7",
+								itemId: "regroupement_z7b",
 								width: 400,
 								height: 4,
 								margin:
