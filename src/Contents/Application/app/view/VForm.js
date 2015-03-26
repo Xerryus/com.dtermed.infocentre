@@ -452,7 +452,7 @@ App.view.define('VForm',
 											xtype: "textfield", // Object text libellé de la demande
 											itemId: "txtfmotivation",
 											width: 370,
-											fieldLabel: "Motivation de la demande",
+											fieldLabel: "Motivation de la demande (obligatoire)",
 											//allowBlank: false,
 											labelAlign: "top",
 											margin:
@@ -599,7 +599,7 @@ App.view.define('VForm',
 											xtype: "textarea", // Object text commentaire obsvervation
 											itemId: "txtacommentaire",
 											width: 370,
-											fieldLabel: "Commentaire / Observation sii",
+											fieldLabel: "Commentaire / Observation (SII)",
 											labelAlign: "top",
 											margin:
 												{
