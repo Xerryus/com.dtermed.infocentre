@@ -203,7 +203,8 @@ App.view.define('VMain',
 										{
 											text: "Domaine metier", //
 											dataIndex: "libelle_domaine_metier", // Valeur de la table
-											width: 90
+											width: 90,
+											hidden: true
 										},										
  										{
 											text: "Nature", //
