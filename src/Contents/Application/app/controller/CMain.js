@@ -43,11 +43,7 @@ App.controller.define('CMain',
 	
 		Menu_onClick: function(p)
 			{
-				//console.log(p);
-/* 				if (p.itemId) 
-					{
-						Ext.Msg.alert('Status', 'Click event on '+p.itemId);
-					}; */
+
 				if (p.itemId == 'menuNouvelleDemande')
 					{
 						this.btnajouter_onclick();
