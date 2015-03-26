@@ -129,9 +129,6 @@ App.controller.define('CForm',
 							// efface le bouton modifier
 							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnmodifier').hide(true);
-							// Cache regroupement_z9
-							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('panel#regroupement_z9').hide(true);
 							break ;
 							
 						case 3: // Profil Chef de service
@@ -155,10 +152,7 @@ App.controller.define('CForm',
 							App.get('textfield#textfieldbudgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('textfield#textfieldbudgetannuel').hide(true);
 							App.get('textfield#textfieldbudgetactuel').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('textfield#textfieldbudgetactuel').hide(true);
-							// Cache regroupement_z9
-							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('panel#regroupement_z9').hide(true);							
+							App.get('textfield#textfieldbudgetactuel').hide(true);							
 							break ;
 							
 						case 4: // Profil utilisateur
@@ -380,11 +374,13 @@ App.controller.define('CForm',
 						sous_nature: App.get('combo#cbo5').getValue(),
 						evolution: App.get('combo#cbo7').getValue(),
 						motivation_demande: App.get('textfield#txtfmotivation').getValue(), // Motivation
-						commentaire_demande: App.get('textarea#txtalibelledemande').getValue(), // Commentaire
+						commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
 						commentaire_s2i: App.get('textarea#txtacommentaire').getValue(), // Observation											
 						ID_demande: UPDATE_ID
 						};
-
+						
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
+				
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 				
 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
