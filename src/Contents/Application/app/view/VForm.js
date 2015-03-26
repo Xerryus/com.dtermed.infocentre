@@ -599,7 +599,7 @@ App.view.define('VForm',
 											xtype: "textarea", // Object text commentaire obsvervation
 											itemId: "txtacommentaire",
 											width: 370,
-											fieldLabel: "Commentaire / Observation",
+											fieldLabel: "Commentaire / Observation sii",
 											labelAlign: "top",
 											margin:
 												{
