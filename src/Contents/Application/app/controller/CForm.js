@@ -375,7 +375,7 @@ App.controller.define('CForm',
 						evolution: App.get('combo#cbo7').getValue(),
 						motivation_demande: App.get('textfield#txtfmotivation').getValue(),
 						commentaire_demande: App.get('textarea#txtalibelledemande').getValue(),
-						commentaire_S2i: App.get('textarea#txtacommentaire').getValue(),											
+						commentaire_s2i: App.get('textarea#txtacommentaire').getValue(),											
 						ID_demande: UPDATE_ID
 						};
 						
