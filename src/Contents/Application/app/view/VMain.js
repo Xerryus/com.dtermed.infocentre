@@ -233,7 +233,7 @@ App.view.define('VMain',
 											text: "Valide", //
 											dataIndex: "priorite_valide", // Valeur de la table
 											width: 40,
-											setDisabled: true
+											disabled: true
 											//hidden: true
 										},										
  										{
