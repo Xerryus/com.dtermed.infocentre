@@ -216,8 +216,8 @@ App.controller.define('CMain',
 					App.get('combo#cbo7').setValue(dat.evolution); // Evolution
 					
 					App.get('textfield#txtfmotivation').setValue(dat.motivation_demande); // Motivation de la demande
-					App.get('textarea#txtalibelledemande').setValue(dat.libelle_commande); // Details complementaire
-					App.get('textarea#txtacommentaire').setValue(dat.commentaire_demande);  // Commentaire / Observation
+					App.get('textarea#txtalibelledemande').setValue(dat.libelle_commande); // Motivation de la demande
+					App.get('textarea#txtacommentaire').setValue(dat.commentaire_s2i);  // Commentaire / Observation
 					
 					App.get('numberfield#numberfieldquantite').setValue(dat.quantite); // Quantite
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Phasage ( priorité)
