@@ -295,6 +295,40 @@ App.view.define('VForm',
 									]	
 							},
 //-- 3 eme zone hbox ( fin )
+//-- 6 eme zone hbox ( debut )										
+							{
+								layout: "vbox",
+								itemId: "regroupement_z6",
+								width: 400,
+								margin:
+									{
+										top: 0,
+										bottom: 0,
+										left: 0,
+										right: 0
+									},
+									border: false,
+									hidden: false,
+								items:
+									[
+										{
+											xtype: "textfield", // Object text libellé de la demande
+											itemId: "txtfmotivation",
+											width: 370,
+											fieldLabel: "Objet et/ou Motivation de la demande (obligatoire)",
+											//allowBlank: false,
+											labelAlign: "top",
+											margin:
+												{
+													top: 5,
+													bottom: 5,
+													left: 20,
+													right: 10
+												}
+										}
+									]	
+							},
+//-- 6 eme zone hbox ( fin )
 //-- 4 eme zone hbox ( debut )										
 							{
 								layout: "hbox",
@@ -432,40 +466,7 @@ App.view.define('VForm',
 									]	
 							},
 //-- 5 eme zone hbox ( fin )
-//-- 6 eme zone hbox ( debut )										
-							{
-								layout: "vbox",
-								itemId: "regroupement_z6",
-								width: 400,
-								margin:
-									{
-										top: 0,
-										bottom: 0,
-										left: 0,
-										right: 0
-									},
-									border: false,
-									hidden: false,
-								items:
-									[
-										{
-											xtype: "textfield", // Object text libellé de la demande
-											itemId: "txtfmotivation",
-											width: 370,
-											fieldLabel: "Objet et/ou Motivation de la demande (obligatoire)",
-											//allowBlank: false,
-											labelAlign: "top",
-											margin:
-												{
-													top: 5,
-													bottom: 5,
-													left: 20,
-													right: 10
-												}
-										}
-									]	
-							},
-//-- 6 eme zone hbox ( fin )
+
 //-- 7 eme zone hbox ( debut )
 							{
 								layout: "vbox",
