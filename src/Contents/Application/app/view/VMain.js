@@ -184,22 +184,7 @@ App.view.define('VMain',
  										{
 											text: 'Demandé le', //
 											dataIndex: 'date_de_demande', // Valeur de la table
-											//type: 'datetime',
-											//type: 'date',
-											//xtype: 'datecolumn',
-											//type: 'datecolumn',
-											//format: 'y/m/d',
-											//format: 'Y-m-d H:i',
-											//format: 'Y-m-d',
-											//dateFormat: 'yyyy-MM-ddTHH:mm:ss.SSSZ',
-											//dateFormat: 'time',
-											//dateFormat: 'date',
-											//renderer: Ext.util.Format.dateRenderer('d/m/Y'),
-											//renderer: Ext.util.Format.dateRenderer('Y-m-d H:i'),
-/* 											renderer: function(value) {
-												var dd=value.split('T')[0];
-												return dd.split('-')[2]+'/'+dd.split('-')[1]+'/'+dd.split('-')[0];
-											}, */
+
 											renderer: Ext.util.Format.dateRenderer('Y-m-d'),
 											width: 70,											
 											locked   : true
@@ -208,13 +193,6 @@ App.view.define('VMain',
 										{
 											text: "Modifié le", //
 											dataIndex: "date_modif", // Valeur de la table
-											//type: 'datetime',
-											//format: 'y/m/d',
-/* 											renderer: function(value) 
-												{
-													var dd=value.split('T')[0];
-													return dd.split('-')[2]+'/'+dd.split('-')[1]+'/'+dd.split('-')[0];
-												}, */
 											renderer: Ext.util.Format.dateRenderer('Y-m-d'),		
 											width: 70,
 											//hidden: true
@@ -251,6 +229,7 @@ App.view.define('VMain',
 											width: 140
 										},
  										{
+											xtype: 'checkcolumn',
 											text: "Valide", //
 											dataIndex: "priorite_valide", // Valeur de la table
 											width: 40											
@@ -283,6 +262,7 @@ App.view.define('VMain',
 										},
 //------------------------------------------------
  										{
+											xtype: 'checkcolumn',
 											text: "etape_valide", //
 											dataIndex: "etape_valide", // Valeur de la table
 											hidden: true
@@ -303,16 +283,19 @@ App.view.define('VMain',
 											width: 40
 										},										
  										{
+											xtype: 'checkcolumn',
 											text: "P05", //
 											dataIndex: "special", // Valeur de la table
 											width: 30
 										},
  										{
+											xtype: 'checkcolumn',
 											text: "Annulation", //
 											dataIndex: "annulation", // Valeur de la table
 											hidden: true
 										},
  										{
+											xtype: 'checkcolumn',
 											text: "Cloture", //
 											dataIndex: "cloture", // Valeur de la table
 											width: 50
