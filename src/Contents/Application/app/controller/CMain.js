@@ -1,139 +1,139 @@
 
 App.controller.define('CMain', 
 	{
-		views: 
-			[
-				"VMain"
-			],
-	
-		models: 
-			[
-				"getAgent",
-				"getBase",
-				"getAffichegrid01",
-				"getAffichegrid02",
-				"getAnneebudgetaire"
-			],
-	
-		init: function()
-			{
-				this.control(
-					{
-						"menu>menuitem": 
-							{
-								click: "Menu_onClick"
-							},
-						"button#clickme": 
-							{
-								click: "clickme_onclick"
-							},
-						"combo#cboAnnee_budgetaire":
-							{
-								select: "cboAnnee_budgetaire_onclik"
-							},
-						"grid#grid_Base":
-							{
-								select: "grid_onselect" 
-							}
-					});
-		
-				App.init('VMain',this.onLoad);
-				dat=""; // Pour stocker le record
-			},
-	
-		Menu_onClick: function(p)
-			{
+	views: 
+		[
+			"VMain"
+		],
 
-				if (p.itemId == 'menuNouvelleDemande')
-					{
-						this.btnajouter_onclick();
-						App.get('progressbar#progbAvancement').hide(true); // cache la progressbar de progression				
-						App.get('button#btnvalider').setVisible(false); // cache le bouton valider
-						App.get('button#btninstallation').setVisible(false); // cache le bouton installation
-					};
-				if (p.itemId == 'menuMiseajourDemande')
-					{
-						this.grid_onselect();
-					};
-				
-			},
-		clickme_onclick: function()
-			{
-				Ext.Msg.alert('Omneedia','hello world!');
-			},
-		btnajouter_onclick: function()
-			{				
-				App.view.create('VForm',
-					{
-						modal: true,
-						_title: 'Formulaire Saisie Ajouter',
-						//height: 490,
-						labels:
-							[
-				
-							]
-					}).show();
-			},
-		btnmodifier_onclick: function()
-			{
-				App.view.create('VForm',
-					{
-						modal: true,
-						_title: 'Formulaire Saisie Modifier',
-						labels:
-							[
-				
-							]
-					}).show();
-			},
-		onLoad: function()
-			{
-				profil = parseInt(document.location.href.split('?profil=')[1].trim());
-				//console.log(p); 
-				switch ( profil ) // En fonction du profil entré 1-->4
-					{
-						case 1: 
-							Ext.Msg.alert('Omneedia','Profil Administrateur'); // Affichage du profil
-							//App.get('VForm',{height:590});
-							//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnajouter').hide(true);
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);							
-							break ;
-						case 2: 
-							Ext.Msg.alert('Omneedia','Profil Chef de Département'); // Affichage du profil
-							//App.get('VForm',{height:490});
-							//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnajouter').hide(true);
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);
-							App.get('menu>menuitem#menuNouvelleDemande').hide(true);							
-							break ;
-						case 3:
-							Ext.Msg.alert('Omneedia','Profil Chef de Service'); // Affichage du profil
-							//App.get('VForm',{height:490});
-							//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnajouter').hide(true);
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);
-							App.get('menu>menuitem#menuMiseajourDemande').hide(true);							
-							break ;
-						case 4: 
-							Ext.Msg.alert('Omneedia','Profil Utilisateur'); // Affichage du profil
-							//App.get('VMain',{height:590});
-							//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnajouter').hide(true);
-							// Cache le bouton modifier
-							//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
-							//App.get('button#btnmodifier').hide(true);
-							App.get('Menu').hide(true);
-							break ;							
-					};
-			},
-		ShowGrid: function() 
-			{
+	models: 
+		[
+			"getAgent",
+			"getBase",
+			"getAffichegrid01",
+			"getAffichegrid02",
+			"getAnneebudgetaire"
+		],
 
-			},
+	init: function()
+		{
+			this.control(
+				{
+					"menu>menuitem": 
+						{
+							click: "Menu_onClick"
+						},
+					"button#clickme": 
+						{
+							click: "clickme_onclick"
+						},
+					"combo#cboAnnee_budgetaire":
+						{
+							select: "cboAnnee_budgetaire_onclik"
+						},
+					"grid#grid_Base":
+						{
+							select: "grid_onselect" 
+						}
+				});
+	
+			App.init('VMain',this.onLoad);
+			dat=""; // Pour stocker le record
+		},
+
+	Menu_onClick: function(p)
+		{
+
+			if (p.itemId == 'menuNouvelleDemande')
+				{
+					this.btnajouter_onclick();
+					App.get('progressbar#progbAvancement').hide(true); // cache la progressbar de progression				
+					App.get('button#btnvalider').setVisible(false); // cache le bouton valider
+					App.get('button#btninstallation').setVisible(false); // cache le bouton installation
+				};
+			if (p.itemId == 'menuMiseajourDemande')
+				{
+					this.grid_onselect();
+				};
+			
+		},
+	clickme_onclick: function()
+		{
+			Ext.Msg.alert('Omneedia','hello world!');
+		},
+	btnajouter_onclick: function()
+		{				
+			App.view.create('VForm',
+				{
+					modal: true,
+					_title: 'Formulaire Saisie Ajouter',
+					//height: 490,
+					labels:
+						[
+			
+						]
+				}).show();
+		},
+	btnmodifier_onclick: function()
+		{
+			App.view.create('VForm',
+				{
+					modal: true,
+					_title: 'Formulaire Saisie Modifier',
+					labels:
+						[
+			
+						]
+				}).show();
+		},
+	onLoad: function()
+		{
+			profil = parseInt(document.location.href.split('?profil=')[1].trim());
+			//console.log(p); 
+			switch ( profil ) // En fonction du profil entré 1-->4
+				{
+					case 1: 
+						Ext.Msg.alert('Omneedia','Profil Administrateur'); // Affichage du profil
+						//App.get('VForm',{height:590});
+						//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnajouter').hide(true);
+						//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnmodifier').hide(true);							
+						break ;
+					case 2: 
+						Ext.Msg.alert('Omneedia','Profil Chef de Département'); // Affichage du profil
+						//App.get('VForm',{height:490});
+						//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnajouter').hide(true);
+						//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnmodifier').hide(true);
+						App.get('menu>menuitem#menuNouvelleDemande').hide(true);							
+						break ;
+					case 3:
+						Ext.Msg.alert('Omneedia','Profil Chef de Service'); // Affichage du profil
+						//App.get('VForm',{height:490});
+						//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnajouter').hide(true);
+						//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnmodifier').hide(true);
+						App.get('menu>menuitem#menuMiseajourDemande').hide(true);							
+						break ;
+					case 4: 
+						Ext.Msg.alert('Omneedia','Profil Utilisateur'); // Affichage du profil
+						//App.get('VMain',{height:590});
+						//App.get('button#btnajouter').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnajouter').hide(true);
+						// Cache le bouton modifier
+						//App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
+						//App.get('button#btnmodifier').hide(true);
+						App.get('Menu').hide(true);
+						break ;							
+				};
+		},
+	ShowGrid: function() 
+		{
+
+		},
 //------------------------------------------------------------------------------------------------------
 	VForm_onshow: function()
 		{
@@ -149,25 +149,7 @@ App.controller.define('CMain',
 				ID_annee_budgetaire
 */
 			var id=App.get('combo#cboAnnee_budgetaire').getValue();
-			//Ext.Msg.alert('Status', 'Click event on '+id);
-/* 
-			store: App.store.create('getAffichegrid02', // Creation du store
-				{
-					//autoLoad: true,
-					App.get("grid#grid_Base").getStore().load();
-				})
- */				
-			//App.get("grid#grid_Base").getStore().load();
-/* 			
-			App.TraitementTable.acces_infocentre2015_base_update(o,function(error,result)
-				{
-					if(error) Ext.Msg.alert('Mise à jour','données mises à jour');
-					App.get("grid#grid_Base").getStore().load();
-				});
-				
-			App.get('VForm').close();						
-			Ext.Msg.alert('Mise à jour','données mises à jour'); 
- */
+
 		},
 		
 	grid_onselect: function(p, record) // quand on clique sur un enregistrement dans le tableau
@@ -258,7 +240,7 @@ App.controller.define('CMain',
 					if (dat.phasage==2) App.get('radio#RP2').setValue(true);
 					if (dat.phasage==3) App.get('radio#RP3').setValue(true);					
 					App.get('checkbox#chbspecial').setValue(dat.special);
-					//console.log(record);
+					console.log(record);
 					
 				};
 		}
