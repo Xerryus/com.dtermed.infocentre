@@ -452,22 +452,8 @@ App.view.define('VForm',
 											xtype: "textfield", // Object text libellé de la demande
 											itemId: "txtfmotivation",
 											width: 370,
-											fieldLabel: "Motivation de la demande (obligatoire)",
+											fieldLabel: "Objet et/ou Motivation de la demande (obligatoire)",
 											//allowBlank: false,
-											labelAlign: "top",
-											margin:
-												{
-													top: 5,
-													bottom: 5,
-													left: 20,
-													right: 10
-												}
-										},									
-										{
-											xtype: "textarea", // Object text libellé de la demande
-											itemId: "txtalibelledemande",
-											width: 370,
-											fieldLabel: "Détails complémentaires de la demande",
 											labelAlign: "top",
 											margin:
 												{
@@ -480,7 +466,40 @@ App.view.define('VForm',
 									]	
 							},
 //-- 6 eme zone hbox ( fin )
-//-- 7 eme zone hbox ( debut )										
+//-- 7 eme zone hbox ( debut )
+							{
+								layout: "vbox",
+								itemId: "regroupement_z6",
+								width: 400,
+								margin:
+									{
+										top: 0,
+										bottom: 0,
+										left: 0,
+										right: 0
+									},
+									border: false,
+									hidden: false,
+								items:
+									[									
+										{
+											xtype: "textarea", // Object text libellé de la demande
+											itemId: "txtalibelledemande",
+											width: 370,
+											fieldLabel: "Détails complémentaires de la demande (saisie par le service)",
+											labelAlign: "top",
+											margin:
+												{
+													top: 5,
+													bottom: 5,
+													left: 20,
+													right: 10
+												}
+										}
+									]	
+							},
+//-- 7 eme zone hbox ( fin )
+//-- 7bis eme zone hbox ( debut )										
 							{
 								layout: "hbox",
 								itemId: "regroupement_z7",
@@ -499,7 +518,7 @@ App.view.define('VForm',
 
 									]	
 							},
-//-- 7 eme zone hbox ( fin )
+//-- 7bis eme zone hbox ( fin )
 //-- 8 eme zone hbox ( debut )										
 							{
 								layout: "hbox",
