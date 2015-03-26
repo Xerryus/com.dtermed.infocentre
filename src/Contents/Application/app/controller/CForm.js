@@ -129,6 +129,9 @@ App.controller.define('CForm',
 							// efface le bouton modifier
 							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnmodifier').hide(true);
+							// Cache regroupement_z9
+							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z9').hide(true);
 							break ;
 							
 						case 3: // Profil Chef de service
@@ -152,7 +155,10 @@ App.controller.define('CForm',
 							App.get('textfield#textfieldbudgetannuel').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('textfield#textfieldbudgetannuel').hide(true);
 							App.get('textfield#textfieldbudgetactuel').el.setVisibilityMode(Ext.Element.DISPLAY);
-							App.get('textfield#textfieldbudgetactuel').hide(true);							
+							App.get('textfield#textfieldbudgetactuel').hide(true);
+							// Cache regroupement_z9
+							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z9').hide(true);							
 							break ;
 							
 						case 4: // Profil utilisateur
