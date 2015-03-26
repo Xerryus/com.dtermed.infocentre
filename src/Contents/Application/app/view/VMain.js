@@ -253,7 +253,7 @@ App.view.define('VMain',
 										},
  										{
 											text: "Commentaire S2i", //
-											dataIndex: "commentaire_S2i", // Valeur de la table
+											dataIndex: "commentaire_s2i", // Valeur de la table
 											hidden: true
 										},
  										{
