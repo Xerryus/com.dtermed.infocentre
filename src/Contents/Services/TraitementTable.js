@@ -69,7 +69,7 @@ TraitementTable =
 		acces_infocentre2015_base_insert: function(o,cb)
 			{
 				var db=TraitementTable.using('db');
-				db.query('infocentre2015','insert into base(service,departement,agent_demandeur,agent_beneficiaire,budget_annuel,budget_actuel,date_de_demande,nature,sous_nature,evolution,quantite,phasage,libelle_commande,motivation_demande,commentaire_demande,commentaire_S2i,etat_s2i,priorite_valide,etape_valide,priorite_niveau,avancement,special,annulation,cloture,annee_budget,domaine_metier,date_modif) values ("'+o.service+'","'+o.departement+'","'+o.agent_demandeur+'","'+o.agent_beneficiaire+'","'+o.budget_annuel+'","'+o.budget_actuel+'","'+o.date_de_demande+'","'+o.nature+'","'+o.sous_nature+'","'+o.evolution+'","'+o.quantite+'","'+o.phasage+'","'+o.libelle_commande+'","'+o.motivation_demande+'","'+o.commentaire_demande+'","'+o.commentaire_S2i+'","'+o.etat_s2i+'","'+o.priorite_valide+'","'+o.etape_valide+'","'+o.priorite_niveau+'","'+o.avancement+'","'+o.special+'","'+o.annulation+'","'+o.cloture+'","'+o.annee_budget+'","'+o.domaine_metier+'","'+o.date_modif+'")',cb);
+				db.query('infocentre2015','insert into base(service,departement,agent_demandeur,agent_beneficiaire,budget_annuel,budget_actuel,date_de_demande,nature,sous_nature,evolution,quantite,phasage,libelle_commande,motivation_demande,commentaire_demande,commentaire_s2i,etat_s2i,priorite_valide,etape_valide,priorite_niveau,avancement,special,annulation,cloture,annee_budget,domaine_metier,date_modif) values ("'+o.service+'","'+o.departement+'","'+o.agent_demandeur+'","'+o.agent_beneficiaire+'","'+o.budget_annuel+'","'+o.budget_actuel+'","'+o.date_de_demande+'","'+o.nature+'","'+o.sous_nature+'","'+o.evolution+'","'+o.quantite+'","'+o.phasage+'","'+o.libelle_commande+'","'+o.motivation_demande+'","'+o.commentaire_demande+'","'+o.commentaire_s2i+'","'+o.etat_s2i+'","'+o.priorite_valide+'","'+o.etape_valide+'","'+o.priorite_niveau+'","'+o.avancement+'","'+o.special+'","'+o.annulation+'","'+o.cloture+'","'+o.annee_budget+'","'+o.domaine_metier+'","'+o.date_modif+'")',cb);
 			},
 		acces_infocentre2015_base_update: function(o,cb)
 			{
@@ -79,8 +79,8 @@ TraitementTable =
 		acces_infocentre2015_base_modifier: function(o,cb)
 			{
 				var db=TraitementTable.using('db');
-				console.log('update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'" where ID_demande="'+o.ID_demande+'" ');
-				db.query('infocentre2015','update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'" where ID_demande="'+o.ID_demande+'" ',cb);
+				//console.log('update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'" where ID_demande="'+o.ID_demande+'" ');
+				db.query('infocentre2015','update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_s2i="'+o.commentaire_s2i+'" where ID_demande="'+o.ID_demande+'" ',cb);
 			},		
 		acces_infocentre2015_base_lecture: function(o,cb)
 			{
