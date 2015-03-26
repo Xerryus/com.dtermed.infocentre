@@ -352,7 +352,7 @@ App.controller.define('CForm',
 							avancement: "1",							
 							special: p.up('window').special,
 							//annulation: App.get('false').getValue(), // à definir
-							annulation: "false",
+							annulation: "false", //
 							cloture: "false",
 							annee_budget: "2015",					
 							domaine_metier: App.get('combo#cbo6').getValue()
