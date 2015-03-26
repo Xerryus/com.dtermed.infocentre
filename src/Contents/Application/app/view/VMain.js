@@ -266,6 +266,7 @@ App.view.define('VMain',
 											xtype: 'checkcolumn',
 											text: "etape_valide", //
 											dataIndex: "etape_valide", // Valeur de la table
+											disabled: true,
 											hidden: true
 										},
  										{
@@ -287,18 +288,21 @@ App.view.define('VMain',
 											xtype: 'checkcolumn',
 											text: "P05", //
 											dataIndex: "special", // Valeur de la table
+											disabled: true,
 											width: 30
 										},
  										{
 											xtype: 'checkcolumn',
 											text: "Annulation", //
 											dataIndex: "annulation", // Valeur de la table
+											disabled: true,
 											hidden: true
 										},
  										{
 											xtype: 'checkcolumn',
 											text: "Cloture", //
 											dataIndex: "cloture", // Valeur de la table
+											disabled: true,
 											width: 50
 										}
 									
