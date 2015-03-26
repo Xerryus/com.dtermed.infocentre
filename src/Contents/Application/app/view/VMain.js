@@ -232,7 +232,8 @@ App.view.define('VMain',
 											xtype: 'checkcolumn',
 											text: "Valide", //
 											dataIndex: "priorite_valide", // Valeur de la table
-											width: 40											
+											width: 40,
+											setDisabled: true
 											//hidden: true
 										},										
  										{
