@@ -222,6 +222,10 @@ App.view.define('VMain',
 											width: 90
 										},
  										{
+											text: "Motivation", //
+											dataIndex: "motivation_demande" // Valeur de la table
+										},										
+ 										{
 											text: "Qté", //
 											dataIndex: "quantite", // Valeur de la table
 											width: 30
@@ -239,16 +243,11 @@ App.view.define('VMain',
 											disabled: true
 											//hidden: true
 										},										
- 										{
-											text: "Motivation", //
-											dataIndex: "motivation_demande" // Valeur de la table
-										},
 										{
 											text: "Libellé de la demande", //
 											dataIndex: "libelle_commande", // Valeur de la table
 											hidden: true
 										},
-
  										{
 											text: "Commentaire Departement", //
 											dataIndex: "commentaire_demande", // Valeur de la table
