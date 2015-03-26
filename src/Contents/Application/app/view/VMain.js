@@ -155,7 +155,7 @@ App.view.define('VMain',
 										},										
 										{
 											text: "Service", //
-											dataIndex: "LibSubc", // Valeur de la table
+											dataIndex: "LibSubC", // Valeur de la table
 											width: 130,
 											//hidden: true
 											locked   : true
