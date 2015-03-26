@@ -327,7 +327,7 @@ App.controller.define('CForm',
 								App.get("grid#grid_Base").getStore().load();
 							});							
 						App.get('VForm').close();						
-						//Ext.Msg.alert('Mise à jour','données mises à jour');
+						//Ext.Msg.alert('Mise à jour','données mises à jour !');
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
