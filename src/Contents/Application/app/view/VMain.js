@@ -148,14 +148,14 @@ App.view.define('VMain',
 										},
 										{
 											text: "Departement", //
-											dataIndex: "LibUni", // Valeur de la table
+											dataIndex: "LibUnic", // Valeur de la table
 											width: 125,
 											locked   : true
 											//hidden: true
 										},										
 										{
 											text: "Service", //
-											dataIndex: "LibSub", // Valeur de la table
+											dataIndex: "LibSubc", // Valeur de la table
 											width: 130,
 											//hidden: true
 											locked   : true
