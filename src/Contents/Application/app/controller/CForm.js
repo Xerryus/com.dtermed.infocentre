@@ -144,6 +144,9 @@ App.controller.define('CForm',
 							// efface le bouton modifier
 							App.get('button#btnmodifier').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('button#btnmodifier').hide(true);
+							// Cache regroupement_z9
+							App.get('panel#regroupement_z9').el.setVisibilityMode(Ext.Element.DISPLAY);
+							App.get('panel#regroupement_z9').hide(true);							
 							// Budget
 							App.get('label#label_budget').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('label#label_budget').hide(true);
