@@ -340,16 +340,17 @@ App.controller.define('CForm',
 						if (App.get('combo#cbo1').getValue() == null)
 							{
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
-													if (App.get('combo#cbo2').getValue() == null)
-								{
-								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Service !');
-													if (App.get('combo#cbo3').getValue() == null)
-									{
-								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
-									}
-								}
+													
 							}
+						if (App.get('combo#cbo2').getValue() == null)
+							{
+								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Service !');
 
+							}
+						if (App.get('combo#cbo3').getValue() == null)
+							{
+								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
+							}
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
