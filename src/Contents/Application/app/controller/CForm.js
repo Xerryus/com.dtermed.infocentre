@@ -334,7 +334,7 @@ App.controller.define('CForm',
 			{
 				var controle = true;
 				
-				while ( control == false )
+				while ( control == true )
 					{
 						Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
 						
