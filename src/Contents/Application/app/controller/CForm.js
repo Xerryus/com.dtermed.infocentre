@@ -384,7 +384,7 @@ App.controller.define('CForm',
 						
 					};
 				
-				App.get('VForm').close();
+				//App.get('VForm').close();
 								
 			},
 
