@@ -364,13 +364,18 @@ App.controller.define('CForm',
 							annee_budget: "2015",					
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};			
-				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
+
+/* 				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error.insertId) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
-					});
+					}); */
+
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
+				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+profil);
+				
 				App.get('VForm').close();
-				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);								
+								
 			},
 
 		btnmodifier_onclik: function( p ) // pour modifier un enregistrement
@@ -386,16 +391,15 @@ App.controller.define('CForm',
 						date_modif: Date.now(),
 						ID_demande: UPDATE_ID
 						};
-						
-				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
-				
-				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
-				
+									
 				App.TraitementTable.acces_infocentre2015_base_modifier(o,function(error,result)
 					{
 						if(error) Ext.Msg.alert('Modification','enregistrement modifié');
 						App.get("grid#grid_Base").getStore().load();
 					});
+					
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);				
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 					
 				App.get('VForm').close();
 			
