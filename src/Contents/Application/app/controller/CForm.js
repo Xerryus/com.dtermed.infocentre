@@ -379,10 +379,10 @@ App.controller.define('CForm',
 						if (App.get('combo#cbo1').getValue()==null)
 						 {
 							Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
-								if (App.get('combo#cbo2').getValue()==null) 
+								else if (App.get('combo#cbo2').getValue()==null) 
 								{
 									Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Service !');
-									    if (App.get('combo#cbo3').getValue()==null)
+									    else if (App.get('combo#cbo3').getValue()==null)
 										{
 											Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
 										};
