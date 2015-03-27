@@ -332,6 +332,10 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
+				var controle = false;
+				
+				while ( control )
+					{
 						if (App.get('combo#cbo1').getValue() == null)
 							{
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
@@ -344,7 +348,7 @@ App.controller.define('CForm',
 							 {
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
 							 }
-			
+					};
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
