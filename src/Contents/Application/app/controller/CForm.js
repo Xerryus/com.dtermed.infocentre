@@ -332,10 +332,12 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
-				var controle = false;
+				var controle = true;
 				
-				while ( control )
+				while ( control == false )
 					{
+						Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
+						
 						if (App.get('combo#cbo1').getValue() == null)
 							{
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
@@ -348,6 +350,7 @@ App.controller.define('CForm',
 							 {
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
 							 }
+							
 					};
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
@@ -387,7 +390,6 @@ App.controller.define('CForm',
 						App.get("grid#grid_Base").getStore().load();
 					}); */
 
-				Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
 				//App.get('VForm').close();
 								
 			},
