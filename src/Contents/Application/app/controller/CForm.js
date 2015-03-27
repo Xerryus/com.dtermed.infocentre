@@ -385,9 +385,9 @@ App.controller.define('CForm',
 									    else if (App.get('combo#cbo3').getValue()==null)
 										{
 											Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
-										};
-								};
-						 };
+										}
+								}
+						 }
 					};
 				
 				if (profil==3)
