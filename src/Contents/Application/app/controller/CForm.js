@@ -376,7 +376,7 @@ App.controller.define('CForm',
 				
 				if (profil==1)
 					{
-						if (App.get('combo#cbo1').getValue()==null) Ext.Msg.alert('Status', 'Changes saved successfully.');
+						if (App.get('combo#cbo1').getValue()==null) Ext.Msg.alert('Erreur', 'Veuillez entrer une valeure pour Département !');
 					};
 				
 				if (profil==3)
