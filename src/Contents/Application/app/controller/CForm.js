@@ -319,6 +319,7 @@ App.controller.define('CForm',
 									special: val_chbspecial, // Valeur à 1 si coché sinon 0
 									//annulation: App.get('false').getValue(), // à definir
 									annulation: valeur_annulation, // 1 si annulé 0 si non annulé
+									date_modif: Date.now(),
 									ID_demande: UPDATE_ID
 								};
 						App.TraitementTable.acces_infocentre2015_base_update(o,function(error,result)
