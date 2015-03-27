@@ -383,10 +383,7 @@ App.controller.define('CForm',
 						App.get("grid#grid_Base").getStore().load();
 					}); */
 
-				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
-				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+profil);
-				
-				Ext.Msg.alert('Omneedia',o.departement+" "+o.service+" "+o.agent_beneficiaire);
+				Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
 				//App.get('VForm').close();
 								
 			},
