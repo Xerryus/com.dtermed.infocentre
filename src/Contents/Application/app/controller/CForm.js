@@ -372,11 +372,11 @@ App.controller.define('CForm',
 					}); */
 
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
-				Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+profil);
+				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+profil);
 				
 				if (profil==1)
 					{
-						if (App.get('combo#cbo1').getValue()=null) Ext.Msg.alert('Status', 'Changes saved successfully.');
+						if (App.get('combo#cbo1').getValue()==null) Ext.Msg.alert('Status', 'Changes saved successfully.');
 					};
 				
 				if (profil==3)
