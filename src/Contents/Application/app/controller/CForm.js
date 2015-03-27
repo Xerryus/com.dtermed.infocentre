@@ -395,6 +395,7 @@ App.controller.define('CForm',
 						
 					};
 				
+				Ext.Msg.alert('Omneedia',o.departement+" "+o.service+" "+o.agent_beneficiaire);
 				//App.get('VForm').close();
 								
 			},
