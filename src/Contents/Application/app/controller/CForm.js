@@ -386,7 +386,7 @@ App.controller.define('CForm',
 									{
 										Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !'); 
 									}
-					};
+					}
 				
 				if (profil==3)
 					{
