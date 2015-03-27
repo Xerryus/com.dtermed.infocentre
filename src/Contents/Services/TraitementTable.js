@@ -74,13 +74,13 @@ TraitementTable =
 		acces_infocentre2015_base_update: function(o,cb)
 			{
 				var db=TraitementTable.using('db');
-				db.query('infocentre2015','update base set phasage="'+o.phasage+'",priorite_valide="'+o.priorite_valide+'", etape_valide="'+o.etape_valide+'", avancement="'+o.avancement+'", annulation="'+o.annulation+'", special="'+o.special+'", ,date_modif="'+o.date_modif'" where ID_demande="'+o.ID_demande+'" ',cb);	
+				db.query('infocentre2015','update base set phasage="'+o.phasage+'",priorite_valide="'+o.priorite_valide+'", etape_valide="'+o.etape_valide+'", avancement="'+o.avancement+'", annulation="'+o.annulation+'", special="'+o.special+'", ,date_modif="'+o.date_modif+'" where ID_demande="'+o.ID_demande+'" ',cb);	
 			},
 		acces_infocentre2015_base_modifier: function(o,cb)
 			{
 				var db=TraitementTable.using('db');
 				//console.log('update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_S2i="'+o.commentaire_S2i+'" where ID_demande="'+o.ID_demande+'" ');
-				db.query('infocentre2015','update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_s2i="'+o.commentaire_s2i+'",date_modif="'+o.date_modif'" where ID_demande="'+o.ID_demande+'" ',cb);
+				db.query('infocentre2015','update base set nature="'+o.nature+'",sous_nature="'+o.sous_nature+'",evolution="'+o.evolution+'",motivation_demande="'+o.motivation_demande+'",commentaire_demande="'+o.commentaire_demande+'",commentaire_s2i="'+o.commentaire_s2i+'",date_modif="'+o.date_modif+'" where ID_demande="'+o.ID_demande+'" ',cb);
 			},		
 		acces_infocentre2015_base_lecture: function(o,cb)
 			{
