@@ -232,7 +232,7 @@ App.view.define('VMain',
 										},
  										{
 											text: "Priorité (Phasage)", //
-											dataIndex: "libelle_priorite", // Valeur de la table
+											dataIndex: "libelle_prioritec", // Valeur de la table
 											width: 140
 										},
  										{
