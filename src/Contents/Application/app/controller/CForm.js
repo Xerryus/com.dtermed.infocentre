@@ -376,7 +376,7 @@ App.controller.define('CForm',
 				
 				if (profil==1)
 					{
-						if (App.get('combo#cbo1').getValue()=='null' or 'undefined')
+						if (App.get('combo#cbo1').getValue()=='null' || 'undefined')
 						{
 						 	alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
 						} else 
