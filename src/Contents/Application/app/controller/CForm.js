@@ -388,7 +388,7 @@ App.controller.define('CForm',
 									 {
 										Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
 									 };
-					};
+					}
 				
 				if (profil==3)
 					{
