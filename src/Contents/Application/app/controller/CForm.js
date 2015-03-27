@@ -374,15 +374,15 @@ App.controller.define('CForm',
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+profil);
 				
-						if (App.get('combo#cbo1').getValue() === null)
+						if (App.get('combo#cbo1').getValue() == null)
 							{
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
 							} else
-						if (App.get('combo#cbo2').getValue()=== null)
+						if (App.get('combo#cbo2').getValue() == null)
 							{
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Service !');
 							} else
-						if(App.get('combo#cbo3').getValue()=== null)
+						if(App.get('combo#cbo3').getValue() == null)
 							 {
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
 							 }
