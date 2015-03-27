@@ -332,9 +332,9 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
-				var controle = true;
+				var controle = false;
 				
-				while ( control == true )
+				do
 					{
 						Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
 						
@@ -351,7 +351,7 @@ App.controller.define('CForm',
 								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Bénéficaire !'); 
 							 }
 							
-					};
+					}while ( controle == false );
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
