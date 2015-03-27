@@ -334,8 +334,7 @@ App.controller.define('CForm',
 			{
 				var controle = false;
 				
-				do
-					{
+
 						Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
 						
 						if (App.get('combo#cbo1').getValue() == null)
@@ -351,9 +350,6 @@ App.controller.define('CForm',
 							}
 							}
 
-
-							
-					}while ( controle == false );
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
