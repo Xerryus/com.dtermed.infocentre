@@ -332,7 +332,31 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
-				verification_saisie();
+				if ( App.get('combo#cbo1').getValue() == null )
+					{
+						alert("Veuillez saisir le Département svp !");
+						return false;
+					}					
+				if ( App.get('combo#cbo2').getValue() == null )
+					{
+						alert("Veuillez saisir le Service svp !");
+						return false;						
+					}					
+				if ( App.get('combo#cbo3').getValue() == null )
+					{
+						alert("Veuillez saisir le Bénéficiaire svp !");
+						return false;						
+					}					
+				if ( App.get('combo#cbo6').getValue() == null )
+					{
+						alert("Veuillez saisir le Domaine métier svp !");
+						return false;						
+					}				
+				if ( App.get('combo#cbo4').getValue() == null )
+					{
+						alert("Veuillez saisir la Nature svp !");
+						return false;						
+					} else return true ;
 /* 			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
