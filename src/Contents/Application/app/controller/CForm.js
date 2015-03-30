@@ -401,37 +401,37 @@ App.controller.define('CForm',
 					
 				App.get('VForm').close();			
 			},
-/* 		verification_saisie: function (p)
+		verification_saisie: function (p)
 			{
 				if ( App.get('combo#cbo1').getValue() === null )
 					{
 						alert("Veuillez saisir le Département svp !");
 						return false,
-					} else return true ;
+					}
 					
 				if ( App.get('combo#cbo2').getValue() === null )
 					{
 						alert("Veuillez saisir le Service svp !");
 						return false,						
-					}return true ;
+					}
 					
 				if ( App.get('combo#cbo3').getValue() === null )
 					{
 						alert("Veuillez saisir le Bénéficiaire svp !");
 						return false,						
-					}return true ;
+					}
 					
 				if ( App.get('combo#cbo6').getValue() === null )
 					{
 						alert("Veuillez saisir le Domaine métier svp !");
 						return false,						
-					}return true ;
+					}
 				
 				if ( App.get('combo#cbo4').getValue() === null)
 					{
 						alert("Veuillez saisir la Nature svp !");
 						return false,						
-					}return true ;
-			} */
+					}
+			}
 						
 	});
