@@ -401,7 +401,7 @@ App.controller.define('CForm',
 					
 				App.get('VForm').close();			
 			},
-		verification_saisie: function (p)
+/* 		verification_saisie: function (p)
 			{
 				if ( App.get('combo#cbo1').getValue() === null )
 					{
@@ -432,6 +432,6 @@ App.controller.define('CForm',
 						alert("Veuillez saisir la Nature svp !");
 						return false,						
 					}return true ;
-			}
+			} */
 						
 	});
