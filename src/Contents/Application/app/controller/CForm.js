@@ -420,15 +420,15 @@ App.controller.define('CForm',
 						return false;						
 					}					
 				if ( App.get('combo#cbo6').getValue() == null )
-					
+					{
 						alert("Veuillez saisir le Domaine métier svp !");
 						return false;						
 					}				
-				if ( App.get('combo#cbo4').getValue() == null)
+				if ( App.get('combo#cbo4').getValue() == null )
 					{
 						alert("Veuillez saisir la Nature svp !");
 						return false;						
-					} return true ;
+					} else return true ;
 			}
 						
 	});
