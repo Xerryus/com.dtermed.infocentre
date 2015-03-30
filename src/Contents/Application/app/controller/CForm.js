@@ -337,22 +337,22 @@ App.controller.define('CForm',
 						alert("Veuillez saisir le Département svp !");
 						return false;
 					}					
-				if ( App.get('combo#cbo2').getValue() == "" )
+				if ( App.get('combo#cbo2').getValue() == 'null' )
 					{
 						alert("Veuillez saisir le Service svp !");
 						return false;						
 					}					
-				if ( App.get('combo#cbo3').getValue() == "" )
+				if ( App.get('combo#cbo3').getValue() == 'null' )
 					{
 						alert("Veuillez saisir le Bénéficiaire svp !");
 						return false;						
 					}					
-				if ( App.get('combo#cbo6').getValue() == "" )
+				if ( App.get('combo#cbo6').getValue() == 'null' )
 					{
 						alert("Veuillez saisir le Domaine métier svp !");
 						return false;						
 					}				
-				if ( App.get('combo#cbo4').getValue() == "" )
+				if ( App.get('combo#cbo4').getValue() == 'null' )
 					{
 						alert("Veuillez saisir la Nature svp !");
 						return false;						
