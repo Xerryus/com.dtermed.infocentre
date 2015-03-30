@@ -332,6 +332,7 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
+				
 				if ( App.get('combo#cbo1').getValue() == null )
 					{
 						alert("Veuillez saisir le Département svp !");
@@ -347,7 +348,7 @@ App.controller.define('CForm',
 						alert("Veuillez saisir le Bénéficiaire svp !");
 						return false;						
 					}
-				if ( App.get('textfield#txtfmotivation').getValue() == null )
+				if ( App.get('textfield#txtfmotivation').getValue() == "" )
 					{
 						alert("Veuillez saisir l Objet svp !");
 						return false;						
@@ -433,7 +434,7 @@ App.controller.define('CForm',
 				App.get('VForm').close();			
 			},
 			
-		verification_saisie: function()
+/* 		verification_saisie: function()
 			{
 				if ( App.get('combo#cbo1').getValue() == null )
 					{
@@ -460,6 +461,6 @@ App.controller.define('CForm',
 						alert("Veuillez saisir la Nature svp !");
 						return false;						
 					} else return true ;
-			}
+			} */
 						
 	});
