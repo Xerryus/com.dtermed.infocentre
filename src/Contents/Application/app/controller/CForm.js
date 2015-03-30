@@ -344,7 +344,7 @@ App.controller.define('CForm',
 					{
 						Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
 						//Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
-						//break ;
+						
 					} else
 					{
 						Ext.Msg.alert('OK', 'Sauvegarde en cours !');
