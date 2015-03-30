@@ -332,7 +332,7 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
-				if ( App.get('combo#cbo1').getValue() == "" )
+				if ( App.get('combo#cbo1').getValue() == 'null' )
 					{
 						alert("Veuillez saisir le Département svp !");
 						return false;
