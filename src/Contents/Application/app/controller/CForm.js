@@ -428,7 +428,7 @@ App.controller.define('CForm',
 					{
 						alert("Veuillez saisir la Nature svp !");
 						return false;						
-					}
+					} return true ;
 			}
 						
 	});
