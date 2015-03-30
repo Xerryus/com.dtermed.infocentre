@@ -433,7 +433,7 @@ App.controller.define('CForm',
 				App.get('VForm').close();			
 			},
 			
-		verification_saisie: function ()
+		function verification_saisie()
 			{
 				if ( App.get('combo#cbo1').getValue() == null )
 					{
