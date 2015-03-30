@@ -78,11 +78,11 @@ TraitementTable = {
 			var db=TraitementTable.using('db');
 			db.model('dashboard', "select dashboard.filtre.nature from dashboard.filtre where dashboard.filtre.categorie = "+o.CAT+" and coche = 1 and annee= "+o.YEAR+" ",function(err,r) {
 
-				return;
+				
 				var nature=[];
 				for (var i=0;i<r.data.length;i++) nature.push(r.data[i].nature);
 				console.log('----NATURE---');
-				return;
+				
 				//console.log(nature);
 				db.model('infocentre2015',db.sql('base_affiche_grid01'), function(err,result) {
 					var AGENTS=[];
