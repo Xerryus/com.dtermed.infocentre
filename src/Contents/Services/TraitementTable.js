@@ -74,7 +74,7 @@ TraitementTable = {
 				return tmp;
 			};
 			
-			
+			console.log('----******************---');
 			var db=TraitementTable.using('db');
 			db.model('dashboard', "select dashboard.filtre.nature from dashboard.filtre where dashboard.filtre.categorie = "+o.CAT+" and coche = 1 and annee= "+o.YEAR+" ",function(err,r) {
 
