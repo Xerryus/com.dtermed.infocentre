@@ -53,7 +53,7 @@
     "modules": [],
     "plugins": [],
     "api": [
-        "MyService",
+        "TraitementTable",
         "TraitementTable"
     ],
     "packages": [],
