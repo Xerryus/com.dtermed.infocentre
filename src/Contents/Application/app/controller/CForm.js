@@ -346,6 +346,11 @@ App.controller.define('CForm',
 					{
 						alert("Veuillez saisir le Bénéficiaire svp !");
 						return false;						
+					}
+				if ( App.get('textfield#txtfmotivation').getValue() == null )
+					{
+						alert("Veuillez saisir l Objet svp !");
+						return false;						
 					}					
 				if ( App.get('combo#cbo6').getValue() == null )
 					{
