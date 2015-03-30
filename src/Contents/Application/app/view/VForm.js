@@ -148,7 +148,7 @@ App.view.define('VForm',
 											itemId: "cbo1",
 											labelAlign: "top",
 											fieldLabel: "Département",											
-											//allowBlank: false,
+											allowBlank: false,
 											flex: 1,
 											margin:
 												{
@@ -187,7 +187,7 @@ App.view.define('VForm',
 											itemId: "cbo2",
 											labelAlign: "top",
 											fieldLabel: "Service",
-											//allowBlank: false,
+											allowBlank: false,
 											flex: 1,
 											margin:
 												{
@@ -223,7 +223,7 @@ App.view.define('VForm',
 											itemId: "cbo3",
 											labelAlign: "top",
 											fieldLabel: "Bénéficiaire",
-											//allowBlank: false,
+											allowBlank: false,
 											margin:
 												{
 													top: 5,
@@ -316,7 +316,7 @@ App.view.define('VForm',
 											itemId: "txtfmotivation",
 											width: 370,
 											fieldLabel: "Objet et/ou Motivation de la demande (obligatoire)",
-											//allowBlank: false,
+											allowBlank: false,
 											labelAlign: "top",
 											margin:
 												{
@@ -349,7 +349,7 @@ App.view.define('VForm',
 											itemId: "cbo6",
 											labelAlign: "top",
 											fieldLabel: "Domaine métier",
-											//allowBlank: false,											
+											allowBlank: false,											
 											margin:
 												{
 													top: 5,
@@ -369,7 +369,7 @@ App.view.define('VForm',
 											itemId: "cbo4",
 											labelAlign: "top",
 											fieldLabel: "Nature",
-											//allowBlank: false,
+											allowBlank: false,
 											margin:
 												{
 													top: 5,
