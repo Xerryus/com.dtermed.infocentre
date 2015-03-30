@@ -207,10 +207,10 @@ App.controller.define('CForm',
 		cbo1_onclik: function() // Departement
 			{
 				var id=App.get('combo#cbo1').getValue();
-				App.get('combo#cbo2').setValue('');
+				//App.get('combo#cbo2').setValue('');
 				App.get('combo#cbo2').getStore().getProxy().extraParams.id=id;
 				App.get('combo#cbo2').getStore().load();
-				App.get('combo#cbo3').setValue('');
+				//App.get('combo#cbo3').setValue('');
 			},
 		cbo2_onclik: function() // Service
 			{
