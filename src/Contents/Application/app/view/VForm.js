@@ -149,6 +149,7 @@ App.view.define('VForm',
 											labelAlign: "top",
 											fieldLabel: "Département",											
 											allowBlank: false,
+											blankText: "Veuillez saisir une valeure",
 											flex: 1,
 											margin:
 												{
