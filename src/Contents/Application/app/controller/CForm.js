@@ -332,23 +332,7 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
-				var controle = false;
-
-				Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
-				
-				if ( (App.get('combo#cbo1').getValue() === null) || 
-					 (App.get('combo#cbo2').getValue() === null) || 
-					 (App.get('combo#cbo3').getValue() === null) ||
-					 (App.get('combo#cbo6').getValue() === null) ||
-					 (App.get('combo#cbo4').getValue() === null) )
-					{
-						Ext.Msg.alert('Erreur', 'Champs vide . Veuillez selectionner une valeure !');
-						//Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
-						
-					} else
-					{
-						Ext.Msg.alert('OK', 'Sauvegarde en cours !');
-					};
+				verification_saisie();
 /* 			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
@@ -415,8 +399,39 @@ App.controller.define('CForm',
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature);				
 				//Ext.Msg.alert('Omneedia',o.nature+" "+o.sous_nature+" "+o.evolution+" "+o.motivation_demande+" "+o.commentaire_demande+" "+o.commentaire_S2i);
 					
-				App.get('VForm').close();
-			
+				App.get('VForm').close();			
+			},
+		verification_saisie: function (p)
+			{
+				if ( App.get('combo#cbo1').getValue() === null )
+					{
+						alert("Veuillez saisir le Département svp !");
+						return false,
+					} else return true ;
+					
+				if ( App.get('combo#cbo2').getValue() === null )
+					{
+						alert("Veuillez saisir le Service svp !");
+						return false,						
+					}return true ;
+					
+				if ( App.get('combo#cbo3').getValue() === null )
+					{
+						alert("Veuillez saisir le Bénéficiaire svp !");
+						return false,						
+					}return true ;
+					
+				if ( App.get('combo#cbo6').getValue() === null )
+					{
+						alert("Veuillez saisir le Domaine métier svp !");
+						return false,						
+					}return true ;
+				
+				if ( App.get('combo#cbo4').getValue() === null)
+					{
+						alert("Veuillez saisir la Nature svp !");
+						return false,						
+					}return true ;
 			}
 						
 	});
