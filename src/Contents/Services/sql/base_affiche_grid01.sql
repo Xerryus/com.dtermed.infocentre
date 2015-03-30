@@ -1,4 +1,4 @@
-select *, concat(Nom," ",Prenom) NomPre 
+select *
 	from base as b 
 	join domaine_metier as dm on b.domaine_metier = dm.ID_domaine_metier 
 	join nature as n on b.nature = n.ID_nature 
