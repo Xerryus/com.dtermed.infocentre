@@ -76,7 +76,7 @@ TraitementTable = {
 			
 			console.log('----******************---');
 			var db=TraitementTable.using('db');
-			db.model('infocentre2015', db.sql('infocentre_getBaseFact',{ID: o.ID}), function(err,result) {
+			db.model('infocentre2015', db.sql('base_affiche_grid01',{ID: o.ID}), function(err,result) {
 				var AGENTS=[];
 				var DEPARTEMENTS=[];
 				var SERVICES=[];
