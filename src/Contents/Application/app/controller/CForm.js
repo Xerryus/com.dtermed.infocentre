@@ -369,7 +369,7 @@ App.controller.define('CForm',
 				if (Fag_control) return;
 				
 				//Ext.Msg.alert('Omneedia',"ok");
-/* 			
+			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
@@ -402,11 +402,11 @@ App.controller.define('CForm',
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};			
 
-/* 				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
+ 				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error.insertId) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
-					}); */
+					});
 
 				App.get('VForm').close();
 								
