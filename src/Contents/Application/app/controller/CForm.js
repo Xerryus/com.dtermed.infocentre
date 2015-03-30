@@ -358,7 +358,7 @@ App.controller.define('CForm',
 						return false;						
 					} else return true ;
 				
-				Ext.Msg.alert('Omneedia',"ok");
+				//Ext.Msg.alert('Omneedia',"ok");
 /* 			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
@@ -398,7 +398,7 @@ App.controller.define('CForm',
 						App.get("grid#grid_Base").getStore().load();
 					}); */
 
-				//App.get('VForm').close();
+				App.get('VForm').close();
 								
 			},
 
