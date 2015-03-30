@@ -336,7 +336,7 @@ App.controller.define('CForm',
 
 				Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
 				
-				if ( (App.get('combo#cbo1').getValue() == null) || (App.get('combo#cbo2').getValue() == null) || (App.get('combo#cbo3').getValue() == null))
+				if ( (App.get('combo#cbo1').getValue() === null) || (App.get('combo#cbo2').getValue() === null) || (App.get('combo#cbo3').getValue() === null))
 					{
 						Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');
 						Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
