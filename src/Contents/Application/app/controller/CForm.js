@@ -408,7 +408,7 @@ App.controller.define('CForm',
 					{
 						alert("Veuillez saisir le Département svp !");
 						return false;
-					}
+					};
 					
 				if ( App.get('combo#cbo2').getValue() == null )
 					{
