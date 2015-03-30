@@ -334,13 +334,20 @@ App.controller.define('CForm',
 			{
 				var Fag_control = false;
 				
+				console.log(App.get('combo#cbo1').getValue());
+				console.log(App.get('combo#cbo2').getValue());
+				console.log(App.get('combo#cbo3').getValue());
+				console.log(App.get('combo#cbo6').getValue());
+				console.log(App.get('combo#cbo4').getValue());
+				
 				if ( App.get('combo#cbo1').getValue() == null )
 					{
 						alert("Veuillez saisir le Département svp !");
 						Fag_control = true;
 						
 						
-					}					
+					}
+						
 				if ( App.get('combo#cbo2').getValue() == null )
 					{
 						alert("Veuillez saisir le Service svp !");
