@@ -332,7 +332,7 @@ App.controller.define('CForm',
 			},
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
-				verification_saisie();
+				//verification_saisie();
 /* 			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
