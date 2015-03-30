@@ -335,15 +335,15 @@ App.controller.define('CForm',
 				var controle = false;
 				
 
-						Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
-						
-						if ( (App.get('combo#cbo1').getValue() == "") || (App.get('combo#cbo2').getValue() == "") || (App.get('combo#cbo3').getValue() == "")
-							{
-								Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');													
-							} else
-							{
-								Ext.Msg.alert('OK', 'Sauvegarde en cours !');
-							};
+				//Ext.Msg.alert('Omneedia',App.get('combo#cbo1').getValue()+" "+App.get('combo#cbo2').getValue()+" "+App.get('combo#cbo3').getValue());
+				
+				if ( (App.get('combo#cbo1').getValue() == "") || (App.get('combo#cbo2').getValue() == "") || (App.get('combo#cbo3').getValue() == ""))
+					{
+						Ext.Msg.alert('Erreur', 'Veuillez selectionner une valeure pour Département !');													
+					} else
+					{
+						Ext.Msg.alert('OK', 'Sauvegarde en cours !');
+					};
 /* 			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
