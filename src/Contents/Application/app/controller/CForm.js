@@ -338,20 +338,20 @@ App.controller.define('CForm',
 					{
 						alert("Veuillez saisir le Département svp !");
 						Fag_control = true;
-						return;
+						
 						
 					}					
 				if ( App.get('combo#cbo2').getValue() == null )
 					{
 						alert("Veuillez saisir le Service svp !");
 						Fag_control = true;
-						return;
+						
 					}					
 				if ( App.get('combo#cbo3').getValue() == null )
 					{
 						alert("Veuillez saisir le Bénéficiaire svp !");
 						Fag_control = true;
-						return;
+						
 					}
 				if ( App.get('textfield#txtfmotivation').getValue() == "" )
 					{
