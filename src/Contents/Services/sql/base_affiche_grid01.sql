@@ -5,7 +5,8 @@ select *
 	join sous_nature as sn on b.sous_nature = sn.ID_sous_nature 
 	join priorite as p on b.priorite_niveau = p.ID_priorite 
 	join evolution as ev on b.evolution = ev.ID_evolution 
-	join priorite as pr on b.phasage = pr.ID_priorite 
+	join priorite as pr on b.phasage = pr.ID_priorite
+	join avancement as av on b.avancement = av.ID_avancement
 	/*join bpclight.agents as ka on b.agent_beneficiaire = ka.Kage 
 	join bpclight.unites as ku on b.departement = ku.Kuni 
 	join bpclight.subdis as su on b.service = su.Ksub*/

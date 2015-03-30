@@ -50,6 +50,7 @@ App.controller.define('CMain',
 					App.get('progressbar#progbAvancement').hide(true); // cache la progressbar de progression				
 					App.get('button#btnvalider').setVisible(false); // cache le bouton valider
 					App.get('button#btninstallation').setVisible(false); // cache le bouton installation
+					App.get('text#txtAvancement').setText('');
 				};
 			if (p.itemId == 'menuMiseajourDemande')
 				{
@@ -221,8 +222,9 @@ App.controller.define('CMain',
 					
 					App.get('numberfield#numberfieldquantite').setValue(dat.quantite); // Quantite
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); // Phasage ( priorité)
-					var valeurprogress = (dat.avancement / 7); // la progressbar se remplit selon son etape 1-->8
+					var valeurprogress = (dat.avancement / 6); // la progressbar se remplit selon son etape 1-->6
 					App.get('progressbar#progbAvancement').updateProgress(valeurprogress);
+					App.get('text#txtAvancement').setText(dat.libelle_avancement);
 					App.get('radiogroup#rdgpriorite').setValue(dat.phasage); //
 
 					App.get('label#labelannee').setText('Année: '+dat.annee_budget); // dans le VForm

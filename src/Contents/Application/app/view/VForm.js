@@ -224,6 +224,7 @@ App.view.define('VForm',
 											labelAlign: "top",
 											fieldLabel: "Bénéficiaire",
 											allowBlank: false,
+											//width: '33%',
 											margin:
 												{
 													top: 5,
@@ -267,6 +268,51 @@ App.view.define('VForm',
 												}
 										},
 										{
+											layout	: "vbox",
+											width	: 100,
+											margin	:
+												{
+													top		: 3,
+													bottom	: 0,
+													left	: 20,
+													right	: 10
+												},
+											border	: false,
+											items	: 
+											[
+												{
+													xtype	: 'text',
+													itemId	: 'txtAvancement',
+													width	: '100%',
+													text	: 'Avancement', // texte avancement à coder
+													margin	:
+														{
+															top		: 5,
+															//bottom: 5,
+															left	: 0,
+															right: 0
+														}
+												},
+												{
+													xtype	: 'progressbar',
+													itemId	: 'progbAvancement',
+													width	: '100%',
+													text	: '',
+													style	: {
+																color : 'red'
+													},
+													readOnly: true,
+													margin	:
+														{
+															top		: 1,
+															//bottom: 5,
+															left	: 0,
+															right: 0
+														}
+												}
+											]
+										},
+										/*{
 											xtype: 'progressbar',
 											itemId: "progbAvancement",
 											//labelAlign: "top",
@@ -279,16 +325,21 @@ App.view.define('VForm',
 													left: 12
 													//right: 10
 												}
-										},
+										},*/
+										
+										
+										
+										
 										{
 											xtype: "button",
 											itemId: "btninstallation",
 											text: "Installation",
+											width: 80,
 											margin:
 												{
 													top: 23,
 													//bottom: 5,
-													left: 30
+													left: 10
 													//right: 10
 												}
 										}

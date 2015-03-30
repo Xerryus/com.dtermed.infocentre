@@ -281,6 +281,12 @@ App.view.define('VMain',
 											dataIndex: "avancement", // Valeur de la table
 											width: 35
 										},
+										{
+											text: "Avancement", //
+											dataIndex: "libelle_avancement", // Valeur de la table
+											width: 35,
+											hidden: true
+										},
  										{
 											text: "Prix", //
 											dataIndex: "prix_sous_nature", // Valeur de la table
