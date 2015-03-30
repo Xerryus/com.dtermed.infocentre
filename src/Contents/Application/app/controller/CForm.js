@@ -357,6 +357,8 @@ App.controller.define('CForm',
 						alert("Veuillez saisir la Nature svp !");
 						return false;						
 					} else return true ;
+				
+				Ext.Msg.alert('Omneedia',"ok");
 /* 			
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
