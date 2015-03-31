@@ -198,7 +198,7 @@ App.controller.define('CMain',
 					UPDATE_ID=dat.ID_demande;
 		
 					App.get('combo#cbo1').setValue(dat.departement); // Departement
-					App.get('combo#cbo2').setValue(dat.service); // Service
+					App.get('combo#cbo2').setValue(dat.LibSubC); // Service
 					App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire								
 					
 					App.get('combo#cbo6').setValue(dat.ID_domaine_metier); // Domaine metier
