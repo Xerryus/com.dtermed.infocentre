@@ -218,7 +218,7 @@ App.view.define('VMain',
  										{
 											text: "Evolution", //
 											dataIndex: "libelle_evolutionc", // Valeur de la table
-											width: 46
+											width: 48
 										},
  										{
 											text: "Motivation", //
