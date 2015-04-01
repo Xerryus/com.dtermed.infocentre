@@ -246,7 +246,8 @@ App.controller.define('CForm',
 				var id=App.get('combo#cbo4').getValue();
 				App.get('combo#cbo5').setValue('');
 				App.get('combo#cbo5').getStore().getProxy().extraParams.id=id;
-				App.get('combo#cbo5').getStore().load();				
+				App.get('combo#cbo5').getStore().load();
+				App.get('combo#cbo5').setValue('Autre'); // valeur par defaut
 			},
 		cbo5_onclik: function() // Sous_nature
 			{
