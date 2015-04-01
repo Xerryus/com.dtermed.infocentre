@@ -137,7 +137,7 @@ App.controller.define('CForm',
 							
 						case 3: // Profil Chef de service
 							//Ext.Msg.alert('Omneedia','Profil Chef de Service');
-							//App.get('VForm',{height:490});
+							//App.get('VForm',{height:490}); //
 							App.get('panel#regroupement_z1').el.setVisibilityMode(Ext.Element.DISPLAY);
 							App.get('panel#regroupement_z1').hide(true);
 							App.get('panel#regroupement_z2').el.setVisibilityMode(Ext.Element.DISPLAY);
