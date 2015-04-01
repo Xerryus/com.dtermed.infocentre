@@ -302,6 +302,7 @@ App.view.define('VMain',
 											xtype: 'checkcolumn',
 											text: "Annulation", //
 											dataIndex: "annulation", // Valeur de la table
+											width: 50,
 											disabled: true,
 											hidden: true
 										},
