@@ -108,7 +108,7 @@ App.controller.define('CForm',
 		VForm_onshow: function() // Affiche formulaire nouvelle demande
 			{
 				//profil = 1;
-				App.get('combo#cbo7').setValue('Autre'); // valeur par defaut
+				App.get('combo#cbo7').setValue('Autre'); // valeur par defaut.
 				switch ( profil )
 					{
 						case 1: // Profil Administrateur
