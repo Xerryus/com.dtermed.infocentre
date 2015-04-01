@@ -193,6 +193,7 @@ App.controller.define('CMain',
 							App.get('button#btnvalider').setVisible(false);
 							App.get('button#btnenregistrer').setVisible(false);
 							App.get('button#btnmodifier').setVisible(false);
+							App.get('button#btninstallation').setVisible(false);
 						}
 					dat=record.data;
 					UPDATE_ID=dat.ID_demande;
