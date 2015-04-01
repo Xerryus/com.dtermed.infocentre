@@ -9,7 +9,7 @@ INSERT INTO base(
 					nature, 
 					sous_nature, 
 					evolution, 
-					quantité, 
+					quantite, 
 					phasage, 
 					libelle_commande, 
 					motivation_demande, 
@@ -24,7 +24,8 @@ INSERT INTO base(
 					annulation, 
 					cloture, 
 					annee_budget, 
-					domaine_metier
+					domaine_metier,
+					date_modif
 				) 
 		values (
 					"'+o.service'", 
@@ -37,7 +38,7 @@ INSERT INTO base(
 					"'+o.nature'", 
 					"'+o.sous_nature'", 
 					"'+o.evolution'",
-					"'+o.quantité'", 
+					"'+o.quantite'", 
 					"'+o.phasage'",
 					"'+o.libelle_commande'", 
 					"'+o.motivation_demande'", 
@@ -52,5 +53,6 @@ INSERT INTO base(
 					"'+o.annulation'", 
 					"'+o.cloture'", 
 					"'+o.annee_budget'", 
-					"'+o.domaine_metier'"	
+					"'+o.domaine_metier'",
+					"'+o.date_modif'"
 				)',cb);
