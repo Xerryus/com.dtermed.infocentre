@@ -320,7 +320,7 @@ App.view.define('VMain',
 											width: 40,
 											disabled: true
 											//hidden: true
-										},										
+										}										
 									
 									],							 
 								store: App.store.create('getAffichegrid01', // Creation du store
