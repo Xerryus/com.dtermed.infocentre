@@ -107,7 +107,8 @@ App.controller.define('CForm',
 			},
 		VForm_onshow: function() // Affiche formulaire nouvelle demande
 			{
-				//profil = 1;			
+				//profil = 1;
+				App.get('combo#cbo7').setValue('Autre'); // valeur par defaut
 				switch ( profil )
 					{
 						case 1: // Profil Administrateur
@@ -264,6 +265,7 @@ App.controller.define('CForm',
 		cbo7_onclik: function() // Evolution
 			{
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo7').getValue());
+				//App.get('combo#cbo7').setValue('Autre'); // valeur par defaut
 
 			},
 		rdgpriorite_onclik: function()
