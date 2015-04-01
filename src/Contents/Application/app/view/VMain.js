@@ -310,7 +310,7 @@ App.view.define('VMain',
 											xtype: 'checkcolumn',
 											text: "Installé", //
 											dataIndex: "installe_valide", // Valeur de la table
-											width: 40,
+											width: 44,
 											disabled: true
 											//hidden: true
 										},										
