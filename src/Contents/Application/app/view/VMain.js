@@ -306,13 +306,6 @@ App.view.define('VMain',
 											disabled: true,
 											hidden: true
 										},
- 										{
-											xtype: 'checkcolumn',
-											text: "Cloture", //
-											dataIndex: "cloture", // Valeur de la table
-											disabled: true,
-											width: 50
-										},
 										{
 											xtype: 'checkcolumn',
 											text: "Installé", //
@@ -320,6 +313,13 @@ App.view.define('VMain',
 											width: 40,
 											disabled: true
 											//hidden: true
+										},										
+ 										{
+											xtype: 'checkcolumn',
+											text: "Cloture", //
+											dataIndex: "cloture", // Valeur de la table
+											disabled: true,
+											width: 50
 										}										
 									
 									],							 
