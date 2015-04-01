@@ -287,7 +287,7 @@ App.view.define('VForm',
 													text	: 'Avancement', // texte avancement à coder
 													margin	:
 														{
-															top		: 5,
+															top		: 4,
 															//bottom: 5,
 															left	: 0,
 															right: 0
