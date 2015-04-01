@@ -250,7 +250,9 @@ App.controller.define('CForm',
 			},
 		btnsaisiemanuelle_onclik: function()
 			{
-				App.get('textfield#textfieldsaisiemanuelle').getValue();
+				var textsaisimanuellement ="";
+				textsaisimanuellement = App.get('textfield#textfieldsaisiemanuelle').getValue();
+				Ext.Msg.alert('Omneedia',textsaisimanuellement);
 			},
 		cbo4_onclik: function() // Nature
 			{
