@@ -230,9 +230,9 @@ App.view.define('VMain',
 											width: 30
 										},
  										{
-											text: "Priorité (Phasage)", //
+											text: "Priorité", //Priorité (Phasage)
 											dataIndex: "libelle_prioritec", // Valeur de la table
-											width: 140
+											width: 50
 										},
  										{
 											xtype: 'checkcolumn',
