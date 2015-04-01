@@ -269,12 +269,12 @@ App.view.define('VForm',
 										},
 										{
 											layout	: "vbox",
-											width	: 100,
+											width	: 110,
 											margin	:
 												{
 													top		: 3,
 													bottom	: 0,
-													left	: 12, // 20
+													left	: 10, // 20
 													right	: 10
 												},
 											border	: false,
