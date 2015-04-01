@@ -98,6 +98,7 @@ App.controller.define('CForm',
 							}
 					});
 				dat="";
+				var textsaisimanuellement ="";
 			},
 		on_focus_radio: function(p)
 			{	
@@ -250,7 +251,7 @@ App.controller.define('CForm',
 			},
 		btnsaisiemanuelle_onclik: function()
 			{
-				var textsaisimanuellement ="";
+				//var textsaisimanuellement ="";
 				textsaisimanuellement = App.get('textfield#textfieldsaisiemanuelle').getValue();
 				Ext.Msg.alert('Omneedia',textsaisimanuellement);
 			},
