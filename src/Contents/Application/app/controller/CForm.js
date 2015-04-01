@@ -87,6 +87,11 @@ App.controller.define('CForm',
 								click: "btnenregistrer_onclik"
 								//click: "btnvalider_onclik"
 							},
+						"button#btnsaisiemanuelle":
+							{
+								click: "btnsaisiemanuelle_onclik"
+								//click: "btnvalider_onclik"
+							},							
 						"button#btnmodifier":
 							{
 								click: "btnmodifier_onclik"
@@ -236,12 +241,16 @@ App.controller.define('CForm',
 						{
 							App.get('textfield#textfieldsaisiemanuelle').show();
 							App.get('button#btnsaisiemanuelle').show();
-							//App.get('textfield#textfieldsaisiemanuelle');
+							//
 						} else 
 							{
 								App.get('textfield#textfieldsaisiemanuelle').hide();
 								App.get('button#btnsaisiemanuelle').hide();
 							}
+			},
+		btnsaisiemanuelle_onclik: function()
+			{
+				App.get('textfield#textfieldsaisiemanuelle').getValue();
 			},
 		cbo4_onclik: function() // Nature
 			{
