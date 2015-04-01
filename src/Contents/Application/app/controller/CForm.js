@@ -236,6 +236,7 @@ App.controller.define('CForm',
 						{
 							App.get('textfield#textfieldsaisiemanuelle').show();
 							App.get('button#btnsaisiemanuelle').show();
+							//App.get('textfield#textfieldsaisiemanuelle');
 						} else 
 							{
 								App.get('textfield#textfieldsaisiemanuelle').hide();
