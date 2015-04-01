@@ -99,6 +99,7 @@ App.controller.define('CForm',
 					});
 				dat="";
 				var textsaisimanuellement ="";
+				//var flag_saisimanuellement ="";
 			},
 		on_focus_radio: function(p)
 			{	
@@ -249,13 +250,14 @@ App.controller.define('CForm',
 								App.get('button#btnsaisiemanuelle').hide();
 							}
 			},
-		btnsaisiemanuelle_onclik: function()
+		btnsaisiemanuelle_onclik: function(p)
 			{
 				//var textsaisimanuellement ="";
 				textsaisimanuellement = App.get('textfield#textfieldsaisiemanuelle').getValue();
 				//Ext.Msg.alert('Omneedia',textsaisimanuellement);
 				App.get('combo#cbo3').setValue(textsaisimanuellement);
 				Ext.Msg.alert('Omneedia',App.get('combo#cbo3').getValue());
+				return true;
 				
 			},
 		cbo4_onclik: function() // Nature
@@ -391,12 +393,22 @@ App.controller.define('CForm',
 						return;
 					}
 				if (Fag_control) return;
-		
-				var o= {						
+				
+				var valeur_beneficiaire="";
+				
+				if (btnsaisiemanuelle_onclik())
+					{
+					 valeur_beneficiaire = textsaisimanuellement ; 	
+					} else 
+						{
+							valeur_beneficiaire = App.get('combo#cbo3').getValue() ;
+						};
+				Ext.Msg.alert('valeur_beneficiaire',valeur_beneficiaire);
+/* 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
-							agent_demandeur: App.get('combo#cbo3').getValue(),
-							agent_beneficiaire: App.get('combo#cbo3').getValue(),
+							//agent_demandeur: App.get('combo#cbo3').getValue(),
+							agent_beneficiaire: valeur_beneficiaire,
 							budget_annuel: "12345678",
 							budget_actuel: "2546",
 							date_de_demande: Date.now(),
@@ -428,7 +440,7 @@ App.controller.define('CForm',
 					{
 						if (error) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
-					});
+					}); */
 
 				App.get('VForm').close();
 								
