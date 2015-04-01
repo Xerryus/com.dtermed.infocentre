@@ -312,7 +312,15 @@ App.view.define('VMain',
 											dataIndex: "cloture", // Valeur de la table
 											disabled: true,
 											width: 50
-										}
+										},
+										{
+											xtype: 'checkcolumn',
+											text: "Installé", //
+											dataIndex: "installe_valide", // Valeur de la table
+											width: 40,
+											disabled: true
+											//hidden: true
+										},										
 									
 									],							 
 								store: App.store.create('getAffichegrid01', // Creation du store
