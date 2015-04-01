@@ -304,7 +304,7 @@ App.view.define('VForm',
 													readOnly: true,
 													margin	:
 														{
-															top		: 4,
+															top		: 3,
 															//bottom: 5,
 															left	: 0,
 															right: 0
