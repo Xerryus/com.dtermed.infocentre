@@ -260,6 +260,7 @@ App.controller.define('CForm',
 		btnsaisiemanuelle_onclik: function(p)
 			{
 				//var textsaisimanuellement ="";
+				App.get('textfield#textfieldsaisiemanuelle').show();
 				textsaisimanuellement = App.get('textfield#textfieldsaisiemanuelle').getValue();
 				//Ext.Msg.alert('Omneedia',textsaisimanuellement);
 				App.get('combo#cbo3').setValue(textsaisimanuellement);
