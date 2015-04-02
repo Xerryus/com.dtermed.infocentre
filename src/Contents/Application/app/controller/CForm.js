@@ -414,17 +414,25 @@ App.controller.define('CForm',
 				
 				var valeur_beneficiaire="";
 				
-				if (flag_saisimanuellement == 1 ) //
+/* 				if (flag_saisimanuellement == 1 ) //
 					{
 						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 						
-					}else  //if(flag_saisimanuellement == 0 )  //
+					}else
 					{
 						valeur_beneficiaire = App.get('combo#cbo3').getValue();
 						flag_saisimanuellement = -1 ;
+					}; */
+					
+				if (App.get('textfield#textfieldsaisiemanuelle').getValue()== null) //
+					{
+						//valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
+						valeur_beneficiaire = App.get('combo#cbo3').getValue();
+					}else
+					{
+						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 					};
 						
-
 				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
 				//Ext.Msg.alert('Omneedia',valeur_beneficiaire);
 				
