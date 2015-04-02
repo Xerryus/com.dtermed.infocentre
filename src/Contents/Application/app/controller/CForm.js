@@ -101,17 +101,20 @@ App.controller.define('CForm',
 				var textsaisimanuellement ="";
 				//var flag_saisimanuellement ="";
 			},
+			
 		on_focus_radio: function(p)
 			{	
 				p.up('window').phasage=p.inputValue;
 				p.setValue(true);
 			},
+			
 		on_focus_chekbox: function(p)
 			{	
 				p.up('window').special=p.inputValue;
 				p.setValue(true);
 				//console.log(p);
 			},
+			
 		VForm_onshow: function() // Affiche formulaire nouvelle demande
 			{
 				//profil = 1;
@@ -212,6 +215,7 @@ App.controller.define('CForm',
 					};		
 
 			},
+			
 		cbo1_onclik: function() // Departement
 			{
 				var id=App.get('combo#cbo1').getValue();
@@ -220,6 +224,7 @@ App.controller.define('CForm',
 				App.get('combo#cbo2').getStore().load();
 				App.get('combo#cbo3').setValue(null);
 			},
+			
 		cbo2_onclik: function() // Service
 			{
 				var store = App.get('combo#cbo3').getStore();
@@ -237,19 +242,21 @@ App.controller.define('CForm',
 					});
 				store.load();				
 			},
+			
 		cbo3_onclik: function() // Beneficiaire
 			{
 					if (App.get('combo#cbo3').getValue() == -1) 
 						{
-							App.get('textfield#textfieldsaisiemanuelle').show();
+							//App.get('textfield#textfieldsaisiemanuelle').show();
 							App.get('button#btnsaisiemanuelle').show();
-							//
+							
 						} else 
 							{
 								App.get('textfield#textfieldsaisiemanuelle').hide();
 								App.get('button#btnsaisiemanuelle').hide();
 							}
 			},
+			
 		btnsaisiemanuelle_onclik: function(p)
 			{
 				//var textsaisimanuellement ="";
@@ -260,6 +267,7 @@ App.controller.define('CForm',
 				return true;
 				
 			},
+			
 		cbo4_onclik: function() // Nature
 			{
 				var id=App.get('combo#cbo4').getValue();
@@ -268,10 +276,12 @@ App.controller.define('CForm',
 				App.get('combo#cbo5').getStore().load();
 				App.get('combo#cbo5').setValue('Autre'); // valeur par defaut
 			},
+			
 		cbo5_onclik: function() // Sous_nature
 			{
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo5').getValue());
 			},
+			
 		cbo6_onclik: function() // Domaine metier
 			{
 				var id=App.get('combo#cbo6').getValue();
@@ -280,24 +290,29 @@ App.controller.define('CForm',
 				App.get('combo#cbo4').getStore().load();
 
 			},
+			
 		cbo7_onclik: function() // Evolution
 			{
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo7').getValue());
 				//App.get('combo#cbo7').setValue('Autre'); // valeur par defaut
 
 			},
+			
 		rdgpriorite_onclik: function()
 			{
 				//Ext.Msg.alert('Omneedia',App.get('priorite').getValue());			
 			},
+			
 		chbspecial_onclik: function()
 			{
 				//Ext.Msg.alert('Omneedia',App.get('checkbox#chbspecial').getValue());
 			},
+			
 		btnannuler_onclik: function()
 			{
 				App.get('VForm').close();
 			},
+			
 		btnvalider_onclik: function( p ) // pour valider une demande avec son Px definitif
 			{
 						var rdgvalue=-1;
@@ -351,6 +366,7 @@ App.controller.define('CForm',
 						App.get('VForm').close();						
 						//Ext.Msg.alert('Mise à jour','données mises à jour !');
 			},
+			
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
 				var Fag_control = false;
