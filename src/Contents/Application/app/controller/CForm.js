@@ -99,7 +99,7 @@ App.controller.define('CForm',
 					});
 				dat="";
 				var textsaisimanuellement ="";
-				var flag_saisimanuellement = 0;
+				var flag_saisimanuellement = -1;
 			},
 			
 		on_focus_radio: function(p)
@@ -417,11 +417,12 @@ App.controller.define('CForm',
 				if (flag_saisimanuellement == 1 ) //
 					{
 						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						//flag_saisimanuellement = false ;
+						
 					}else  //if(flag_saisimanuellement == 0 )  //
 					{
 						valeur_beneficiaire = App.get('combo#cbo3').getValue();
-					}
+						flag_saisimanuellement = -1 ;
+					};
 						
 
 				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
