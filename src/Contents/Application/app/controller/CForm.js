@@ -416,11 +416,12 @@ App.controller.define('CForm',
 				
 				if (btnsaisiemanuelle_onclik())
 					{
-					 valeur_beneficiaire = textsaisimanuellement ; 	
+					 valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue() ; 	
 					} else 
 						{
 							valeur_beneficiaire = App.get('combo#cbo3').getValue() ;
 						};
+						
 				alert('valeur_beneficiaire',valeur_beneficiaire);
 				
 /* 				var o= {						
