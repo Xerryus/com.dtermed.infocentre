@@ -423,10 +423,10 @@ App.controller.define('CForm',
 							valeur_beneficiaire = App.get('combo#cbo3').getValue();
 						};
 						
-				Ext.Msg.alert('Omneedia',valeur_beneficiaire);
+				//Ext.Msg.alert('Omneedia',valeur_beneficiaire);
 				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
 				
-/* 				var o= {						
+				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
 							//agent_demandeur: App.get('combo#cbo3').getValue(),
@@ -462,7 +462,7 @@ App.controller.define('CForm',
 					{
 						if (error) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
-					}); */
+					});
 
 				App.get('VForm').close();
 								
