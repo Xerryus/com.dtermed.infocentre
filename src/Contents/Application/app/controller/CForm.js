@@ -423,8 +423,8 @@ App.controller.define('CForm',
 							valeur_beneficiaire = App.get('combo#cbo3').getValue();
 						};
 						
-				//Ext.Msg.alert('Omneedia',valeur_beneficiaire);
-				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
+				Ext.Msg.alert('Omneedia',valeur_beneficiaire);
+				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
 				
 /* 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
