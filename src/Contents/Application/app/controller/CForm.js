@@ -414,7 +414,7 @@ App.controller.define('CForm',
 				
 				var valeur_beneficiaire="";
 				
-				if (flag_saisimanuellement)
+				if (flag_saisimanuellement == true )
 					{
 					 valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue() ; 	
 					} else 
@@ -422,8 +422,8 @@ App.controller.define('CForm',
 							valeur_beneficiaire = App.get('combo#cbo3').getValue() ;
 						};
 						
-				Ext.Msg.alert('valeur_beneficiaire','valeur_beneficiaire');
-				Ext.Msg.alert('valeur_beneficiaire','flag_saisimanuellement');
+				Ext.Msg.alert('valeur_beneficiaire',valeur_beneficiaire);
+				//Ext.Msg.alert('valeur_beneficiaire','flag_saisimanuellement');
 				
 /* 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
