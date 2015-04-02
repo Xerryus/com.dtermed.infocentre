@@ -98,7 +98,7 @@ App.controller.define('CForm',
 							}
 					});
 				dat="";
-				var textsaisimanuellement ="";
+				var textsaisimanuellement = 'null';
 				var flag_saisimanuellement = -1;
 			},
 			
