@@ -403,7 +403,8 @@ App.controller.define('CForm',
 						{
 							valeur_beneficiaire = App.get('combo#cbo3').getValue() ;
 						};
-				Ext.Msg.alert('valeur_beneficiaire',valeur_beneficiaire);
+				alert('valeur_beneficiaire',valeur_beneficiaire);
+				
 /* 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
