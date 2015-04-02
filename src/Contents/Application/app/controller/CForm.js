@@ -99,7 +99,7 @@ App.controller.define('CForm',
 					});
 				dat="";
 				var textsaisimanuellement ="";
-				var flag_saisimanuellement = 0;
+				var flag_saisimanuellement = false;
 			},
 			
 		on_focus_radio: function(p)
@@ -266,7 +266,7 @@ App.controller.define('CForm',
 				//App.get('combo#cbo3').setValue(textsaisimanuellement);
 				//Ext.Msg.alert('Omneedia',App.get('combo#cbo3').getValue());
 				//Ext.Msg.alert('Omneedia',App.get('textfield#textfieldsaisiemanuelle').getValue());
-				flag_saisimanuellement = 1 ;
+				flag_saisimanuellement = true ;
 				
 			},
 			
@@ -414,10 +414,10 @@ App.controller.define('CForm',
 				
 				var valeur_beneficiaire="";
 				
-				if (flag_saisimanuellement == 1 ) //
+				if (flag_saisimanuellement == true ) //
 					{
 						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						flag_saisimanuellement = 0 ;
+						flag_saisimanuellement = false ;
 					} else 
 						{
 							valeur_beneficiaire = App.get('combo#cbo3').getValue();
