@@ -414,7 +414,7 @@ App.controller.define('CForm',
 				
 				var valeur_beneficiaire="";
 				
-				if (flag_saisimanuellement == 1 )
+				if (flag_saisimanuellement == 1 ) //
 					{
 						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 						flag_saisimanuellement = 0 ;
