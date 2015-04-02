@@ -423,7 +423,7 @@ App.controller.define('CForm',
 							valeur_beneficiaire = App.get('combo#cbo3').getValue();
 						};
 						
-				//Ext.Msg.alert('Omneedia',valeur_beneficiaire);
+
 				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
 				
 				var o= {						
@@ -457,14 +457,14 @@ App.controller.define('CForm',
 							annee_budget: "2015",					
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};			
-
- 				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
+				Ext.Msg.alert('Omneedia',o.agent_beneficiaire);
+/*  				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
 					});
 
-				App.get('VForm').close();
+				App.get('VForm').close(); */
 								
 			},
 
