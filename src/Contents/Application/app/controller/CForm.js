@@ -424,8 +424,8 @@ App.controller.define('CForm',
 							flag_saisimanuellement = false ;
 						};
 						
-				//Ext.Msg.alert('valeur_beneficiaire',valeur_beneficiaire);
-				Ext.Msg.alert('valeur_beneficiaire',flag_saisimanuellement);
+				//Ext.Msg.alert('Omneedia',valeur_beneficiaire);
+				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
 				
 /* 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
