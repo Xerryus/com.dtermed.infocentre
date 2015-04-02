@@ -424,7 +424,8 @@ App.controller.define('CForm',
 						};
 						
 
-				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
+				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
+				Ext.Msg.alert('Omneedia',valeur_beneficiaire);
 				
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
@@ -458,6 +459,7 @@ App.controller.define('CForm',
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};			
 				Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
+				
 /*  				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error) Ext.Msg.alert('Insertion','Ok');
