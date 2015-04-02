@@ -425,7 +425,7 @@ App.controller.define('CForm',
 						};
 						
 				//Ext.Msg.alert('valeur_beneficiaire',valeur_beneficiaire);
-				Ext.Msg.alert('valeur_beneficiaire','flag_saisimanuellement');
+				Ext.Msg.alert('valeur_beneficiaire',flag_saisimanuellement);
 				
 /* 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
