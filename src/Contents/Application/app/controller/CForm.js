@@ -98,7 +98,7 @@ App.controller.define('CForm',
 							}
 					});
 				dat="";
-				var textsaisimanuellement = null;
+				var textsaisimanuellement = "";
 				var flag_saisimanuellement = -1;
 			},
 			
@@ -424,13 +424,13 @@ App.controller.define('CForm',
 						flag_saisimanuellement = -1 ;
 					}; */
 					
-				if (App.get('textfield#textfieldsaisiemanuelle').getValue()== null) //
+				if (App.get('textfield#textfieldsaisiemanuelle').getValue()== "") //
 					{
 						//valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 						valeur_beneficiaire = App.get('combo#cbo3').getValue();
 					};
 					
-				if (App.get('textfield#textfieldsaisiemanuelle').getValue() != null)
+				if (App.get('textfield#textfieldsaisiemanuelle').getValue() != "")
 					{
 						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 					};
