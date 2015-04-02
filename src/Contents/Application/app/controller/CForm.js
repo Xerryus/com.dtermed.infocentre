@@ -417,11 +417,12 @@ App.controller.define('CForm',
 				if (flag_saisimanuellement == true ) //
 					{
 						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						flag_saisimanuellement = false ;
-					} else 
-						{
-							valeur_beneficiaire = App.get('combo#cbo3').getValue();
-						};
+						//flag_saisimanuellement = false ;
+					}
+				if (flag_saisimanuellement == false ) //
+					{
+						valeur_beneficiaire = App.get('combo#cbo3').getValue();
+					}
 						
 
 				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
