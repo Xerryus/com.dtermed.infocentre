@@ -457,7 +457,7 @@ App.controller.define('CForm',
 							annee_budget: "2015",					
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};			
-				Ext.Msg.alert('Omneedia',o.agent_beneficiaire);
+				Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
 /*  				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error) Ext.Msg.alert('Insertion','Ok');
