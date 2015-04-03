@@ -436,7 +436,7 @@ App.controller.define('CForm',
 					}; */
 										
 				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
-				Ext.Msg.alert('Omneedia',textfieldsaisiemanuelle);
+				Ext.Msg.alert('Omneedia',App.get('textfield#textfieldsaisiemanuelle').getValue());
 				
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
