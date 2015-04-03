@@ -411,18 +411,17 @@ App.controller.define('CForm',
 						Fag_control = true;
 						return;
 					}
-					
+										
+				if (Fag_control) return;
+
 				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() != -1 ) //
-					{
-						valeur_beneficiaire = App.get('combo#cbo3').getValue();
-					} 
+						{
+							valeur_beneficiaire = App.get('combo#cbo3').getValue();
+						}; 
 				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() == -1 )
 						{
 							valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						}	
-						
-				if (Fag_control) return;
-
+						};
 				
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
@@ -464,7 +463,7 @@ App.controller.define('CForm',
 
 				App.get('VForm').close(); */
 				
-				//Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
+				Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
 								
 			},
 
