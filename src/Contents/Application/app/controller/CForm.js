@@ -412,7 +412,7 @@ App.controller.define('CForm',
 						return;
 					}
 					
-				if (App.get('textfield#textfieldsaisiemanuelle').getValue()== "") //
+				if (App.get('textfield#textfieldsaisiemanuelle').getValue()== '') //
 					{
 						//valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 						valeur_beneficiaire = App.get('combo#cbo3').getValue();
@@ -435,8 +435,8 @@ App.controller.define('CForm',
 						flag_saisimanuellement = -1 ;
 					}; */
 										
-				Ext.Msg.alert('Omneedia',flag_saisimanuellement);
-				//Ext.Msg.alert('Omneedia',valeur_beneficiaire);
+				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
+				Ext.Msg.alert('Omneedia',valeur_beneficiaire);
 				
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
