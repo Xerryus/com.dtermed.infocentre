@@ -372,6 +372,7 @@ App.controller.define('CForm',
 		btnenregistrer_onclik: function(p) // pour créer un nouvel enregistrement de demande
 			{
 				var Fag_control = false;
+				var valeur_beneficiaire="";
 				
 				if ( App.get('combo#cbo1').getValue() == null )
 					{
@@ -423,8 +424,6 @@ App.controller.define('CForm',
 					}
 					
 				if (Fag_control) return;
-				
-				var valeur_beneficiaire="";
 				
 /* 				if (flag_saisimanuellement == 1 ) //
 					{
