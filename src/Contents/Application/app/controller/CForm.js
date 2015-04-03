@@ -415,7 +415,8 @@ App.controller.define('CForm',
 				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() != -1 ) //
 					{
 						valeur_beneficiaire = App.get('combo#cbo3').getValue();
-					} else 
+					} 
+				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() == -1 )
 						{
 							valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
 						}	
@@ -463,7 +464,7 @@ App.controller.define('CForm',
 
 				App.get('VForm').close(); */
 				
-				Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
+				//Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
 								
 			},
 
