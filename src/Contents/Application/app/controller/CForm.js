@@ -426,7 +426,7 @@ App.controller.define('CForm',
 					} else 
 						{
 							valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						};
+						}
 				
 /*				
 				var o= {						
