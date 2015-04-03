@@ -422,7 +422,7 @@ App.controller.define('CForm',
 						
 				if (Fag_control) return;
 
-/*				
+				
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
@@ -455,13 +455,14 @@ App.controller.define('CForm',
 							domaine_metier: App.get('combo#cbo6').getValue()
 						};						
 				
-/*  				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
+/*   				App.TraitementTable.acces_infocentre2015_base_insert(o,function(error,result)
 					{
 						if (error) Ext.Msg.alert('Insertion','Ok');
 						App.get("grid#grid_Base").getStore().load();
 					});
 
 				App.get('VForm').close(); */
+				
 				Ext.Msg.alert('Omneedia',"Agent Bénéficiaire : "+o.agent_beneficiaire);
 								
 			},
