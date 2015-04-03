@@ -414,7 +414,7 @@ App.controller.define('CForm',
 										
 				if (Fag_control) return;
 
-				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() != -1 ) //
+				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() != -1 )
 						{
 							valeur_beneficiaire = App.get('combo#cbo3').getValue();
 						}; 
