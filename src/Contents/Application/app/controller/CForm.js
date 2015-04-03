@@ -247,9 +247,7 @@ App.controller.define('CForm',
 			{
 					if (App.get('combo#cbo3').getValue() == -1) 
 						{
-							//App.get('textfield#textfieldsaisiemanuelle').show();
 							App.get('button#btnsaisiemanuelle').show();
-							
 						} else 
 							{
 								App.get('textfield#textfieldsaisiemanuelle').hide();
