@@ -412,6 +412,13 @@ App.controller.define('CForm',
 						return;
 					}
 					
+/* 				if (App.get('textfield#textfieldsaisiemanuelle').getValue() == -1 )
+					{
+						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
+					} */
+					
+				if (Fag_control) return;
+			
 				if ( App.get('textfield#textfieldsaisiemanuelle').getValue() != -1 ) //
 					{
 						//valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
@@ -419,27 +426,9 @@ App.controller.define('CForm',
 					} else 
 						{
 							valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						}
-/* 				if (App.get('textfield#textfieldsaisiemanuelle').getValue() == -1 )
-					{
-						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-					} */
-					
-				if (Fag_control) return;
+						};
 				
-/* 				if (flag_saisimanuellement == 1 ) //
-					{
-						valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
-						
-					}else
-					{
-						valeur_beneficiaire = App.get('combo#cbo3').getValue();
-						flag_saisimanuellement = -1 ;
-					}; */
-										
-				//Ext.Msg.alert('Omneedia',flag_saisimanuellement);
-				Ext.Msg.alert('Omneedia',App.get('textfield#textfieldsaisiemanuelle').getValue());
-				
+/*				
 				var o= {						
 							service: App.get('combo#cbo2').getValue(),
 							departement: App.get('combo#cbo1').getValue(),
