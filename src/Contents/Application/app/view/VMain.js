@@ -208,7 +208,7 @@ App.view.define('VMain',
  										{
 											text: "Nature", //
 											dataIndex: "libelle_nature", // Valeur de la table
-											width: 90											
+											width: 98											
 										},
  										{
 											text: "Sous nature", //
