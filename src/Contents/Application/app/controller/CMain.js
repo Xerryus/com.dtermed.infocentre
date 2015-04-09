@@ -201,9 +201,9 @@ App.controller.define('CMain',
 					App.get('combo#cbo1').setValue(dat.departement); // Departement
 					App.get('combo#cbo2').setValue(dat.LibSubC); // Service
 					
-					if ( App.get('combo#cbo3').getValue() == null )	App.get('combo#cbo3').setValue('Autre'); // Beneficiaire 
 					if ( App.get('combo#cbo3').getValue() != 0 ) App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
-
+					if ( App.get('combo#cbo3').getValue() == null )	App.get('combo#cbo3').setValue('Autre'); // Beneficiaire
+					
 					console.log(App.get('combo#cbo3').getValue());
 					
 					App.get('combo#cbo6').setValue(dat.ID_domaine_metier); // Domaine metier
