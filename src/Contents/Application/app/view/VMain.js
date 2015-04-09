@@ -139,7 +139,6 @@ App.view.define('VMain',
 								],
 								columns: 
 									[
-  									
 										{
 											text: "Année budg.", //
 											itemId: "col_annee_budgetaire",
