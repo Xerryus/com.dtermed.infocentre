@@ -204,7 +204,7 @@ App.controller.define('CMain',
 					if ( App.get('combo#cbo3').getValue() != 0 ) App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
 					if ( App.get('combo#cbo3').getValue() == false )	App.get('combo#cbo3').setValue('Autre-->commentaire'); // Beneficiaire
 					
-					console.log(App.get('combo#cbo3').getValue());
+					//console.log(App.get('combo#cbo3').getValue());
 					
 					App.get('combo#cbo6').setValue(dat.ID_domaine_metier); // Domaine metier
 					
