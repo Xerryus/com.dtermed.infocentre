@@ -203,10 +203,12 @@ App.controller.define('CMain',
 					
 					if ( App.get('combo#cbo3').getValue() == null )
 						{
-							App.get('combo#cbo3').setValue('Autre');
-						} else { 
-								 App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
-							   }
+							App.get('combo#cbo3').setValue('Autre'); // Beneficiaire
+						} 
+					if ( App.get('combo#cbo3').getValue() != null ) 
+						{ 
+							App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
+						}
 								
 					console.log(App.get('combo#cbo3').getValue());
 					
