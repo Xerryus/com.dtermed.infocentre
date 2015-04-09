@@ -204,7 +204,9 @@ App.controller.define('CMain',
 					if ( App.get('combo#cbo3').getValue() =='' )
 						{
 							App.get('combo#cbo3').setValue('Autre');
-						} else { App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire }
+						} else { 
+								 App.get('combo#cbo3').setValue(dat.NomPre); // Beneficiaire
+							   }
 								
 					console.log(App.get('combo#cbo3').getValue());
 					
