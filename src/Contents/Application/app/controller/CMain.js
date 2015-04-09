@@ -37,7 +37,7 @@ App.controller.define('CMain',
 						}
 				});
 	
-			//App.init('VMain',this.onLoad);
+			App.init('VMain',this.onLoad);
 			dat=""; // Pour stocker le record
 		},
 
