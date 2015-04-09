@@ -419,6 +419,7 @@ App.controller.define('CForm',
 				if ( App.get('combo#cbo3').getValue() == -1 )
 						{
 							valeur_beneficiaire = App.get('textfield#textfieldsaisiemanuelle').getValue();
+							App.get('textarea#txtacommentaire').setValue(valeur_beneficiaire);
 						};
 				
 				var o= {						
