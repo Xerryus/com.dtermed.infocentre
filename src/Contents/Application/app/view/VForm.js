@@ -325,11 +325,7 @@ App.view.define('VForm',
 													left: 12
 													//right: 10
 												}
-										},*/
-										
-										
-										
-										
+										},*/									
 										{
 											xtype: "button",
 											itemId: "btninstallation",
@@ -517,7 +513,6 @@ App.view.define('VForm',
 									]	
 							},
 //-- 5 eme zone hbox ( fin )
-
 //-- 7 eme zone hbox ( debut )
 							{
 								layout: "vbox",
