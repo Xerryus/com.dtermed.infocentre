@@ -118,7 +118,7 @@ App.controller.define('CForm',
 		VForm_onshow: function() // Affiche formulaire nouvelle demande
 			{
 				//profil = 1;
-				App.get('combo#cbo7').setValue('Nouveau'); // valeur par defaut
+				App.get('combo#cbo7').setValue(1); // valeur par defaut
 				App.get('combo#cbo5').setValue('Autre'); // valeur par defaut
 				switch ( profil )
 					{
