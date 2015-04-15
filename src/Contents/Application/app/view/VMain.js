@@ -155,7 +155,6 @@ App.view.define('VMain',
 										itemId: "cboServiceFiltre",
 										width: 200,
 										//allowBlank: false,
-										//flex: 1,
 										margin:
 											{
 												//top: 5,
