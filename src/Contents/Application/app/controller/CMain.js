@@ -174,18 +174,12 @@ App.controller.define('CMain',
 		
 	cboServiceFiltre_onclick : function()
 		{
-				var store = App.get('combo#cbo3').getStore();
+				var store = App.get('combo#cboServiceFiltre').getStore();
 				store.getProxy().extraParams.kuni=App.get('combo#DepartementFiltre').getValue();
 				store.getProxy().extraParams.ksub=App.get('combo#cboServiceFiltre').getValue();
 				store.on('load', function() 
 					{
-						if (store.data.items[0].data.Kage!=-1) store.insert(0, 
-							[
-								{
-									Kage: "-1",
-									NomPre: "Autres..."
-								}
-							]);
+
 					});
 				store.load();			
 		},
