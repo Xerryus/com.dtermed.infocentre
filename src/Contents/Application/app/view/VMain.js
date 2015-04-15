@@ -117,7 +117,7 @@ App.view.define('VMain',
 										labelAlign: "top",
 										//fieldLabel: "Département",
 										itemId: "cboDepartementFiltre",
-										width: 100,
+										width: 160,
 										//allowBlank: false,
 										//flex: 1,
 										margin:
