@@ -127,7 +127,7 @@ App.view.define('VMain',
 												//left: 20,
 												right: 10
 											},
-											displayField: "LibUnic", // Valeur de la liste
+											displayField: "LibUni", // Valeur de la liste "LibUnic"
 											valueField: "Kuni", // Colonne Age de la table (Affichage dans la boite message d'alerte)
 											store: App.store.create('getDepartement', // Creation du store
 												{
