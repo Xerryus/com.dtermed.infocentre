@@ -12,7 +12,8 @@ App.controller.define('CMain',
 			"getBase",
 			"getAffichegrid01",
 			"getAffichegrid02",
-			"getAnneebudgetaire"
+			"getAnneebudgetaire",
+			"getDepartement"
 		],
 
 	init: function()
