@@ -261,10 +261,6 @@ App.controller.define('CForm',
 				//var textsaisimanuellement ="";
 				App.get('textfield#textfieldsaisiemanuelle').show();
 				textsaisimanuellement = App.get('textfield#textfieldsaisiemanuelle').getValue();
-				//Ext.Msg.alert('Omneedia',textsaisimanuellement);
-				//App.get('combo#cbo3').setValue(textsaisimanuellement);
-				//Ext.Msg.alert('Omneedia',App.get('combo#cbo3').getValue());
-				//Ext.Msg.alert('Omneedia',App.get('textfield#textfieldsaisiemanuelle').getValue());
 				flag_saisimanuellement = 1 ;
 				
 			},
