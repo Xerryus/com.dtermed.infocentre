@@ -164,7 +164,7 @@ App.view.define('VMain',
 											displayField: "LibSub", // Valeur de la liste
 											valueField: "Ksub", // Colonne Age de la table (Affichage dans la boite message d'alerte)
 											store: App.store.create('getService',												{
-													autoLoad: true
+													//autoLoad: true
 												})
 							},
 // ======================================================================							
