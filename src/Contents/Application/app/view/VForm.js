@@ -311,21 +311,7 @@ App.view.define('VForm',
 														}
 												}
 											]
-										},
-										/*{
-											xtype: 'progressbar',
-											itemId: "progbAvancement",
-											//labelAlign: "top",
-											//fieldLabel: "Avancement",
-											width: 100,
-											margin:
-												{
-													top: 23,
-													//bottom: 5,
-													left: 12
-													//right: 10
-												}
-										},*/									
+										},							
 										{
 											xtype: "button",
 											itemId: "btninstallation",
