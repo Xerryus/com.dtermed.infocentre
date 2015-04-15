@@ -100,6 +100,44 @@ App.view.define('VMain',
 								width: "100%",
 								/*height: 400,*/
 								tbar:[
+// ======================================================================
+							{
+								xtype: "label",
+								text: "Département :",
+								margin:
+									{
+										top: 0,
+										bottom: 0,
+										left: 20,
+										right: 10
+									}
+							},
+							{
+										xtype: "combo", // Object combobox table departement
+										labelAlign: "top",
+										//fieldLabel: "Département",
+										itemId: "cboDepartementFiltre",
+										width: 60,
+										//allowBlank: false,
+										//flex: 1,
+										margin:
+											{
+												//top: 5,
+												bottom: 5,
+												//left: 20,
+												right: 10
+											},
+										displayField: "LibUni", // Valeur de la liste
+										valueField: "LibUnic", // Colonne Age de la table (Affichage dans la boite message d'alerte)
+										store: App.store.create('getDepartement', // Creation du store
+											{
+												autoLoad: true
+											}
+											)
+									
+							}
+// ======================================================================
+								
 									'->',
 							{
 								xtype: "label",
@@ -112,30 +150,30 @@ App.view.define('VMain',
 										right: 10
 									}
 							},
-								{
-											xtype: "combo", // Object combobox table departement
-											labelAlign: "top",
-											//fieldLabel: "Département",
-											itemId: "cboAnnee_budgetaire",
-											width: 60,
-											//allowBlank: false,
-											//flex: 1,
-											margin:
-												{
-													//top: 5,
-													bottom: 5,
-													//left: 20,
-													right: 10
-												},
-											displayField: "cle_annee", // Valeur de la liste
-											valueField: "ID_annee_budgetaire", // Colonne Age de la table (Affichage dans la boite message d'alerte)
-											store: App.store.create('getAnneebudgetaire', // Creation du store
-												{
-													autoLoad: true
-												}
-												)
-										
-								}
+							{
+										xtype: "combo", // Object combobox table departement
+										labelAlign: "top",
+										//fieldLabel: "Département",
+										itemId: "cboAnnee_budgetaire",
+										width: 60,
+										//allowBlank: false,
+										//flex: 1,
+										margin:
+											{
+												//top: 5,
+												bottom: 5,
+												//left: 20,
+												right: 10
+											},
+										displayField: "cle_annee", // Valeur de la liste
+										valueField: "ID_annee_budgetaire", // Colonne Age de la table (Affichage dans la boite message d'alerte)
+										store: App.store.create('getAnneebudgetaire', // Creation du store
+											{
+												autoLoad: true
+											}
+											)
+									
+							}
 								],
 								columns: 
 									[
