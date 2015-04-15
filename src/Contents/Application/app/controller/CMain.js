@@ -174,7 +174,7 @@ App.controller.define('CMain',
 		
 	cboServiceFiltre_onclick : function()
 		{
-				var store = App.get('combo#cboServiceFiltre').getStore();
+				var store = App.get('combo#cboServiceFiltre').getValue();
 				store.getProxy().extraParams.kuni=App.get('combo#DepartementFiltre').getValue();
 				store.getProxy().extraParams.ksub=App.get('combo#cboServiceFiltre').getValue();
 				store.on('load', function() 
