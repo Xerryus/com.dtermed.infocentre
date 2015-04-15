@@ -16,6 +16,12 @@ TraitementTable = {
 			var db=TraitementTable.using('db');
 			db.model('bpclight','select * from subdis where Archive=0 and kuni='+o.id+' order by LibSubC asc',cb);
 		},
+		
+	acces_bpclight_lecture_servicefiltre: function(o,cb)
+		{
+			var db=TraitementTable.using('db');
+			db.model('bpclight','select * from subdis where Archive=0 order by Ksub asc' order by LibSubC asc',cb);
+		},		
 
 	acces_infocentre2015_lecture_domaine_metier: function(o,cb)
 		{
