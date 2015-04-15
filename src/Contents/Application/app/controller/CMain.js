@@ -165,10 +165,10 @@ App.controller.define('CMain',
 		
 	cboDepartementFiltre_onclik : function()
 		{
-				var id=App.get('combo#cboDepartementFiltre').getValue();
+/* 				var id=App.get('combo#cboDepartementFiltre').getValue();
 				App.get('combo#ServiceFiltre').setValue(null);
 				App.get('combo#ServiceFiltre').getStore().getProxy().extraParams.id=id;
-				App.get('combo#ServiceFiltre').getStore().load();
+				App.get('combo#ServiceFiltre').getStore().load(); */
 		},
 		
 	cboServiceFiltre_onclick : function()
