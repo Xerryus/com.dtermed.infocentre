@@ -169,19 +169,11 @@ App.controller.define('CMain',
 				App.get('combo#ServiceFiltre').setValue(null);
 				App.get('combo#ServiceFiltre').getStore().getProxy().extraParams.id=id;
 				App.get('combo#ServiceFiltre').getStore().load();
-				//App.get('combo#cbo3').setValue(null);
 		},
 		
 	cboServiceFiltre_onclick : function()
 		{
-				var store = App.get('combo#cboServiceFiltre').getValue();
-				store.getProxy().extraParams.kuni=App.get('combo#DepartementFiltre').getValue();
-				store.getProxy().extraParams.ksub=App.get('combo#cboServiceFiltre').getValue();
-				store.on('load', function() 
-					{
-
-					});
-				store.load();			
+			
 		},
 	
 	grid_onselect: function(p, record) // quand on clique sur un enregistrement dans le tableau
