@@ -112,26 +112,26 @@ App.view.define('VMain',
 									}
 							},
 							{
-										xtype: "combo", // Object combobox table departement
-										labelAlign: "top",
-										//fieldLabel: "Département",
-										itemId: "cboDepartementFiltre",
-										width: 260,
-										//allowBlank: false,
-										//flex: 1,
-										margin:
-											{
-												//top: 5,
-												bottom: 5,
-												//left: 20,
-												right: 10
-											},
-											displayField: "LibUni", // Valeur de la liste "LibUnic"
-											valueField: "Kuni", // Colonne Age de la table (Affichage dans la boite message d'alerte)
-											store: App.store.create('getDepartement', // Creation du store
-												{
-													autoLoad: true
-												})
+								xtype: "combo", // Object combobox table departement
+								labelAlign: "top",
+								//fieldLabel: "Département",
+								itemId: "cboDepartementFiltre",
+								width: 260,
+								//allowBlank: false,
+								//flex: 1,
+								margin:
+									{
+										//top: 5,
+										bottom: 5,
+										//left: 20,
+										right: 10
+									},
+									displayField: "LibUni", // Valeur de la liste "LibUnic"
+									valueField: "Kuni", // Colonne Age de la table (Affichage dans la boite message d'alerte)
+									store: App.store.create('getDepartement', // Creation du store
+										{
+											autoLoad: true
+										})
 									
 							},
 // ======================================================================
@@ -148,22 +148,22 @@ App.view.define('VMain',
 									}
 							},
 							{
-										xtype: "combo", // Object combobox table departement
-										labelAlign: "top",
-										//fieldLabel: "Service",
-										itemId: "cboServiceFiltre",
-										width: 200,
-										//allowBlank: false,
-										margin:
-											{
-												//top: 5,
-												bottom: 5,
-												//left: 20,
-												right: 10
-											},
-											displayField: "LibSub", // Valeur de la liste
-											valueField: "Ksub", // Colonne Age de la table (Affichage dans la boite message d'alerte)
-											store: App.store.create('getServiceFiltre')
+								xtype: "combo", // Object combobox table departement
+								labelAlign: "top",
+								//fieldLabel: "Service",
+								itemId: "cboServiceFiltre",
+								width: 200,
+								//allowBlank: false,
+								margin:
+									{
+										//top: 5,
+										bottom: 5,
+										//left: 20,
+										right: 10
+									},
+									displayField: "LibSub", // Valeur de la liste
+									valueField: "Ksub", // Colonne Age de la table (Affichage dans la boite message d'alerte)
+									store: App.store.create('getServiceFiltre')
 							},
 // ======================================================================							
 									'->',
@@ -394,8 +394,7 @@ App.view.define('VMain',
 										listeners: {
 											load: function(p)
 											{
-												//alert('chargé');
-												
+												//alert('chargé');											
 											}
 										}
 									})					
