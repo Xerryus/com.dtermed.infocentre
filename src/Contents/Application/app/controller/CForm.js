@@ -119,7 +119,7 @@ App.controller.define('CForm',
 			{
 				//profil = 1;
 				App.get('combo#cbo7').setValue(1); // valeur par defaut
-				//App.get('combo#cbo5').setValue('Autre'); // valeur par defaut
+
 				switch ( profil )
 					{
 						case 1: // Profil Administrateur
