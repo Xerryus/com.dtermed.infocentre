@@ -174,7 +174,20 @@ App.controller.define('CMain',
 		
 	cboServiceFiltre_onclick : function()
 		{
-			
+				var store = App.get('combo#cbo3').getStore();
+				store.getProxy().extraParams.kuni=App.get('combo#DepartementFiltre').getValue();
+				store.getProxy().extraParams.ksub=App.get('combo#cboServiceFiltre').getValue();
+				store.on('load', function() 
+					{
+						if (store.data.items[0].data.Kage!=-1) store.insert(0, 
+							[
+								{
+									Kage: "-1",
+									NomPre: "Autres..."
+								}
+							]);
+					});
+				store.load();			
 		},
 	
 	grid_onselect: function(p, record) // quand on clique sur un enregistrement dans le tableau
