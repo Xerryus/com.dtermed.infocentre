@@ -167,7 +167,7 @@ App.controller.define('CMain',
 		{
 				var id=App.get('combo#cboDepartementFiltre').getValue();
 				//App.get('combo#ServiceFiltre').setValue('');
-				App.get('combo#ServiceFiltre').getStore().getProxy().extraParams.id=id;
+				//App.get('combo#ServiceFiltre').getStore().getProxy().extraParams.id=id;
 				App.get('combo#ServiceFiltre').getStore().load();
 				console.log(id);
 		},
