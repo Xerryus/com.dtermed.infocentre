@@ -20,16 +20,13 @@ TraitementTable = {
 	acces_infocentre2015_lecture_domaine_metier: function(o,cb)
 		{
 			var db=TraitementTable.using('db');
-			db.model('infocentre2015','select * from domaine_metier',cb);
-			
+			db.model('infocentre2015','select * from domaine_metier',cb);			
 		},
 		
 	acces_infocentre2015_lecture_nature: function(o,cb)
 		{
-			//console.log(o);
 			var db=TraitementTable.using('db');
 			db.model('infocentre2015','select * from nature where ID_domaine_metier='+o.id,cb);
-			//db.model('infocentre2015','select * from nature',cb);
 		},
 	acces_infocentre2015_lecture_evolution: function(o,cb)
 		{
