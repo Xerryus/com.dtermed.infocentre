@@ -13,7 +13,8 @@ App.controller.define('CMain',
 			"getAffichegrid01",
 			"getAffichegrid02",
 			"getAnneebudgetaire",
-			"getDepartement"
+			"getDepartement",
+			"getService"
 		],
 
 	init: function()

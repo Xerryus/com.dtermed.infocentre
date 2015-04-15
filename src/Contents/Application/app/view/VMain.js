@@ -135,6 +135,39 @@ App.view.define('VMain',
 												})
 									
 							},
+// ======================================================================
+// ======================================================================
+							{
+								xtype: "label",
+								text: "Service :",
+								margin:
+									{
+										top: 0,
+										bottom: 0,
+										left: 20,
+										right: 10
+									}
+							},
+							{
+										xtype: "combo", // Object combobox table departement
+										labelAlign: "top",
+										//fieldLabel: "Service",
+										itemId: "cboServiceFiltre",
+										width: 200,
+										//allowBlank: false,
+										//flex: 1,
+										margin:
+											{
+												//top: 5,
+												bottom: 5,
+												//left: 20,
+												right: 10
+											},
+											displayField: "LibSub", // Valeur de la liste
+											valueField: "Ksub", // Colonne Age de la table (Affichage dans la boite message d'alerte)
+											store: App.store.create('getService')
+									
+							},
 // ======================================================================							
 									'->',
 							{
