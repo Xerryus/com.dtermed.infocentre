@@ -29,6 +29,14 @@ App.controller.define('CMain',
 						{
 							click: "clickme_onclick"
 						},
+					"combo#cboDepartementFiltre":
+						{
+							select: "cboDepartementFiltre_onclik"
+						},
+					"combo#cboServiceFiltre":
+						{
+							select: "cboServiceFiltre_onclick"
+						},						
 					"combo#cboAnnee_budgetaire":
 						{
 							select: "cboAnnee_budgetaire_onclik"
@@ -155,6 +163,16 @@ App.controller.define('CMain',
 
 		},
 		
+	cboDepartementFiltre_onclik : function()
+		{
+			
+		},
+		
+	cboServiceFiltre_onclick : function()
+		{
+			
+		},
+	
 	grid_onselect: function(p, record) // quand on clique sur un enregistrement dans le tableau
 		{
 			if ( profil != 5 )
